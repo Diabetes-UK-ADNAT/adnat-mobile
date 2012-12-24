@@ -48,7 +48,7 @@ Ext.define("adnat.view.Contact", {
 				text: 'Send',
 				ui: 'confirm',
 				handler: function() {
-					this.up('formpanel').submit();
+					//this.up('formpanel').submit();
 				}
 			}
 		],

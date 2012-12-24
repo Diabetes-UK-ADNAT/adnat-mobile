@@ -3,6 +3,8 @@ Ext.define("adnat.view.Welcome", {
 	xtype: 'welcome',
     requires: [
         'Ext.TitleBar',
+		'Ext.field.Email',
+		'Ext.field.Password',
     ],
     config: {
 		title: 'Welcome',
