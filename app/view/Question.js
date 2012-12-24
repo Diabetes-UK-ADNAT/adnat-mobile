@@ -147,7 +147,8 @@ task.delay(1500); //the callback function will now be called after 1500ms
 					width: '100px',
 					handler: function() {
 						//Ext.Viewport.setActiveItem(Ext.create('adnat.view.Welcome'));
-						Ext.getCmp('mainTabPanel').setActiveItem(0);
+						//Ext.getCmp('mainTabPanel').setActiveItem(0);
+						utilAlert();
 					},
 				},
 				{xtype: 'spacer'},
@@ -157,7 +158,8 @@ task.delay(1500); //the callback function will now be called after 1500ms
 					ui: 'confirm',
 					width: '100px',
 					handler: function() {
-						Ext.getCmp('mainTabPanel').setActiveItem(2);
+						adnatAlert();
+						//Ext.getCmp('mainTabPanel').setActiveItem(2);
 						//Ext.Viewport.add(Ext.create('adnat.view.TabQ2'));
 						//Ext.Viewport.setActiveItem(Ext.create('adnat.view.TabQ2'));
 						//Ext.getCmp('mainTabPanel2').setActiveItem(1);
