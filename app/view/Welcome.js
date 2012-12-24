@@ -1,0 +1,59 @@
+Ext.define("adnat.view.Welcome", {
+    extend: 'Ext.Panel',
+	xtype: 'welcome',
+    requires: [
+        'Ext.TitleBar',
+    ],
+    config: {
+		title: 'Welcome',
+		iconCls: 'home',
+
+		styleHtmlContent: true,
+		scrollable: true,
+
+		items: [
+			{
+				html: [
+					"<div class=\"centered\">",
+					"<h1>Welcome to ADNAT</h1>",
+					"<img src=\"../resources/images/adnatpic4.1.png\"/>",
+					"<img src=\"../resources/images/adnatpic3.png\"/>",
+					"<img src=\"../resources/images/adnatpic4.png\"/>",
+					"</div>",
+				].join("")
+			},
+			{
+				docked: 'top',
+				xtype: 'titlebar',
+				title: 'ADNAT'
+			},
+			{
+				xtype: 'fieldset',
+				title: 'ADNAT Login',
+				instructions: 'Login to take ADNAT',
+				items: [
+					{
+						xtype: 'emailfield',
+						name : 'email',
+						label: 'Email',
+
+					},
+					{
+						xtype: 'passwordfield',
+						name : 'password',
+						label: 'Password',
+					},
+				]
+			},
+			{
+				xtype: 'button',
+				text: 'Login',
+				ui: 'confirm',
+				handler: function() {
+					//Ext.Viewport.setActiveItem(Ext.create('adnat.view.Results'));
+					Ext.getCmp('mainTabPanel').setActiveItem(1);
+				},
+			},
+		],
+	},
+});

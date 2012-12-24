@@ -1,6 +1,6 @@
-Ext.define("adnat.view.Main", {
+Ext.define("adnat.view.TabQ2", {
     extend: 'Ext.tab.Panel',
-	id:'mainTabPanel',
+	id:'mainTabPanel2',
     requires: [
         //'Ext.TitleBar', 'Ext.Video'
     ],
@@ -10,7 +10,7 @@ Ext.define("adnat.view.Main", {
         items: [
 			{ xtype: 'welcome', },
 			//{ xtype: 'survey', },
-			{ xtype: 'question', },
+			{ xtype: 'question2', },
 			{ xtype: 'results', },
 			//{ xtype: 'help', },
 			{ xtype: 'contact', },

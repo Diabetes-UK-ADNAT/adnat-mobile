@@ -12,7 +12,19 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    models: [
+        'Page',
+    ],
+
+    views: ['Main', 'Welcome', 'Help', 'Survey', 'Contact', 'Results', 'Question', 'Question2', 'Question3', 'TabQ2', 'TabQ3', 'XVideo'],
+
+	controllers: [
+        'PageController',
+    ],
+
+    stores: [
+		'Pages',
+	],
 
     icon: {
         '57': 'resources/icons/Icon.png',
