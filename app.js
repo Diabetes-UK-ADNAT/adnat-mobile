@@ -20,6 +20,7 @@ Ext.application({
 
 	controllers: [
         'PageController',
+        'QuestionController',
     ],
 
     stores: [

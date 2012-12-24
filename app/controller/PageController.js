@@ -9,6 +9,12 @@ Ext.define('adnat.controller.PageController', {
 			survey: '#survey',
         },
         control: {
+			prevButton: {
+				tap: "prevPage"
+			},
+			nextButton: {
+				tap: "nextPage"
+			},
         },
     },
     launch: function() {
@@ -26,6 +32,14 @@ Ext.define('adnat.controller.PageController', {
 		console.log('doPage #' + id);
 		this.test(id);
 	},
+
+	prevPage: function(){
+		adnatAlert();
+	},
+	nextPage: function(){
+		utilAlert();
+	},
+
 	/*
 			{
 				id: 'test',

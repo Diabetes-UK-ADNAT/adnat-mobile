@@ -142,28 +142,30 @@ task.delay(1500); //the callback function will now be called after 1500ms
 				{
 					xtype: 'button',
 					text: 'Prev',
+					id: 'prevButton',
 					ui: 'default',
 					disabled: false,
 					width: '100px',
-					handler: function() {
+					//handler: function() {
 						//Ext.Viewport.setActiveItem(Ext.create('adnat.view.Welcome'));
 						//Ext.getCmp('mainTabPanel').setActiveItem(0);
-						utilAlert();
-					},
+						//utilAlert();
+					//},
 				},
 				{xtype: 'spacer'},
 				{
 					xtype: 'button',
 					text: 'Next',
+					id: 'nextButton',
 					ui: 'confirm',
 					width: '100px',
-					handler: function() {
-						adnatAlert();
+					//handler: function() {
+						//adnatAlert();
 						//Ext.getCmp('mainTabPanel').setActiveItem(2);
 						//Ext.Viewport.add(Ext.create('adnat.view.TabQ2'));
 						//Ext.Viewport.setActiveItem(Ext.create('adnat.view.TabQ2'));
 						//Ext.getCmp('mainTabPanel2').setActiveItem(1);
-					},
+					//},
 				},
 				{xtype: 'spacer'},
 			]},
