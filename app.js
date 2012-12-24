@@ -16,7 +16,21 @@ Ext.application({
         'Page',
     ],
 
-    views: ['Main', 'Welcome', 'Help', 'Survey', 'Contact', 'Results', 'Question', 'Question2', 'Question3', 'TabQ2', 'TabQ3', 'XVideo'],
+    views: [
+	'Main', 
+	'Welcome', 
+	'Help', 
+	'Survey', 
+	'Contact', 
+	'Results', 
+	'Question', 
+	'ListQuestions',
+	'Question2', 
+	'Question3', 
+	'TabQ2', 
+	'TabQ3', 
+	'XVideo',
+	],
 
 	controllers: [
         'PageController',
