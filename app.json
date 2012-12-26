@@ -49,6 +49,9 @@
 		{
             "path": "app/lib/util.js"
 		},
+		{
+            "path": "app/lib/question.js"
+		},
     ],
 
     /**

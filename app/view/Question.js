@@ -5,9 +5,10 @@ Ext.define("adnat.view.Question", {
         'Ext.TitleBar',
 		'Ext.form.FieldSet',
 		'Ext.field.Number',
+		'Ext.data.proxy.JsonP',
     ],
     config: {
-		id: 'question', // works with refs to enable this.getSurvey()
+		id: 'question', // works with refs to enable this.getQuestion()
 		title: 'ADNAT',
 		iconCls: 'compose',
 

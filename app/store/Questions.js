@@ -6,10 +6,8 @@ Ext.define('adnat.store.Questions', {
 		proxy:{
 			type:'ajax',
 			url:'app/data/questions.json',
-			reader:'json'
+			reader:'json',
 		},
-		autoLoad:true
+		autoLoad:true,
 	},
-});
-
 });

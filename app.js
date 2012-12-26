@@ -13,32 +13,24 @@ Ext.application({
     ],
 
     models: [
-        'Page',
+		'Question',
     ],
 
     views: [
 	'Main', 
 	'Welcome', 
 	'Help', 
-	'Survey', 
 	'Contact', 
 	'Results', 
 	'Question', 
-	'ListQuestions',
-	'Question2', 
-	'Question3', 
-	'TabQ2', 
-	'TabQ3', 
-	'XVideo',
 	],
 
 	controllers: [
-        'PageController',
         'QuestionController',
     ],
 
     stores: [
-		'Pages',
+		'Questions',
 	],
 
     icon: {

@@ -17,10 +17,23 @@ Ext.define('adnat.controller.QuestionController', {
 			},
         },
     },
+    launch: function() {
+        Ext.getStore('Questions').load({
+            callback: this.onQuestionsStoreLoad,
+            scope: this
+        });
+    },
+	onQuestionsStoreLoad : function() {
+		console.log('onQuestionsStoreLoad');
+        var q = Ext.getStore('Questions').getAt(0);
+		console.log(q);
+    },
 	prevPage: function(){
-		adnatAlert();
+		//adnatAlert();
+		getQuestion1(this.getQuestion());
 	},
 	nextPage: function(){
-		utilAlert();
+		//utilAlert();
+		getQuestion2(this.getQuestion());
 	},
 });
