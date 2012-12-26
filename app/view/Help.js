@@ -3,6 +3,7 @@ Ext.define("adnat.view.Help", {
 	xtype: 'help',
     requires: [
         'Ext.TitleBar',
+		'Ext.dataview.NestedList',
     ],
     config: {
 		title: 'Help',

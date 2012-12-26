@@ -4,6 +4,7 @@ function questionAlert() {
 
 
 function getQuestion1( component ) {
+	Ext.getStore('Questions').info();
 	console.log('getQuestion1');
 	component.removeAll();
 	var response = '{ success: true, data: [ ' +
@@ -17,6 +18,7 @@ function getQuestion1( component ) {
 }
 
 function getQuestion2( component ) {
+	Ext.getStore('Questions').info();
 	console.log('getQuestion2');
 	component.removeAll();
 	var response = '{ success: true, data: [ ' +

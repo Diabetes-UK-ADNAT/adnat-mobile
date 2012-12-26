@@ -17,7 +17,8 @@ Ext.define('adnat.controller.QuestionController', {
 			},
         },
     },
-    launch: function() {
+    /*
+	launch: function() {
         Ext.getStore('Questions').load({
             callback: this.onQuestionsStoreLoad,
             scope: this
@@ -26,22 +27,13 @@ Ext.define('adnat.controller.QuestionController', {
 	onQuestionsStoreLoad : function() {
 		console.log('onQuestionsStoreLoad');
         var s = Ext.getStore('Questions');
-		s.test();
-		console.log(s.getAt(0));
-		console.log(s.getCount());
-		console.log(s.getTotalCount());
-		console.log(s.getData());
-		var a = s.getData();
-		for (var i=0; i<a.length; i++) {
-			console.log(a[i]);
-		}
+		s.info();
     },
-	prevPage: function(){
-		//adnatAlert();
+	*/
+    prevPage: function(){
 		getQuestion1(this.getQuestion());
 	},
 	nextPage: function(){
-		//utilAlert();
 		getQuestion2(this.getQuestion());
 	},
 });
