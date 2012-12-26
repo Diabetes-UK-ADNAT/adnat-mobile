@@ -6,6 +6,7 @@ Ext.define("adnat.view.Question", {
 		'Ext.form.FieldSet',
 		'Ext.field.Number',
 		'Ext.data.proxy.JsonP',
+		'Ext.field.Radio',
     ],
     config: {
 		id: 'question', // works with refs to enable this.getQuestion()

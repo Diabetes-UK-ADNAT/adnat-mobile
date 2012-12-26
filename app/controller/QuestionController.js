@@ -25,8 +25,16 @@ Ext.define('adnat.controller.QuestionController', {
     },
 	onQuestionsStoreLoad : function() {
 		console.log('onQuestionsStoreLoad');
-        var q = Ext.getStore('Questions').getAt(0);
-		console.log(q);
+        var s = Ext.getStore('Questions');
+		s.test();
+		console.log(s.getAt(0));
+		console.log(s.getCount());
+		console.log(s.getTotalCount());
+		console.log(s.getData());
+		var a = s.getData();
+		for (var i=0; i<a.length; i++) {
+			console.log(a[i]);
+		}
     },
 	prevPage: function(){
 		//adnatAlert();

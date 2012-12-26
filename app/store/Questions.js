@@ -9,5 +9,14 @@ Ext.define('adnat.store.Questions', {
 			reader:'json',
 		},
 		autoLoad:true,
+		sorters: [
+			{
+				property : 'ordinal',
+				direction: 'ASC',
+			},
+		],
 	},
+	test : function() {
+		console.log("test function in store");
+	}
 });
