@@ -27,6 +27,7 @@ Ext.define("adnat.view.Question", {
 			},
 			{
 				xtype: 'fieldset',
+				id: 'questionComponent',
 				items: [
 					{xtype: 'textfield', name: 'text'},
 					{xtype: 'textfield', name: 'ordinal'},

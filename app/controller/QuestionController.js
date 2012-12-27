@@ -47,26 +47,23 @@ Ext.define('adnat.controller.QuestionController', {
 		//view
 		//title = q.get('text'); or use template?
 		//console.log(f.getRecord());
-		var f = this.getQuestion();
+		var f = this.getQuestionComponent();
 		f.removeAll();
-
 		/*
 		var response = '{ success: true, data: [ ' +
 			'{xtype: "textfield", name: "ordinal", value: "'+ q.get('ordinal') +'"}, ' +
 			'{xtype: "textfield", name: "text", value: "'+ q.get('text') +'"}, ' +
 			'{xtype: "textfield", name: "options", value: "'+ q.get('options') +'"}, ' +
 			 '] }' ;
-		 */
-
+			  */
 		var response = '{ success: true, data: [ ' +
 			'{xtype: "textfield", name: "ordinal",}, ' +
 			'{xtype: "textfield", name: "text", }, ' +
 			'{xtype: "textfield", name: "options",}, ' +
-			 '] }' ;
+			  '] }' ;
 		f.add(Ext.decode(response).data);
 
-
 		// find previous response if it exists and put on question
-		f.setRecord(q);
+		this.getQuestion().setRecord(q);
 	},
 });

@@ -30,6 +30,34 @@ function getQuestion2( component ) {
 	component.add(Ext.decode(response).data);
 }
 
-
+function getPrevNextButtons() {
+return " \
+			{			\
+				layout: 'hbox',\
+				align: 'center',\
+				pack: 'center',\
+				items: [\
+				{xtype: 'spacer'},\
+				{\
+					xtype: 'button',\
+					text: 'Prev',\
+					id: 'prevButton',\
+					ui: 'default',\
+					disabled: false,\
+					width: '100px',\
+				},\
+				{xtype: 'spacer'},\
+				{\
+					xtype: 'button',\
+					text: 'Next',\
+					id: 'nextButton',\
+					ui: 'confirm',\
+					width: '100px',\
+				},\
+				{xtype: 'spacer'},\
+				],\
+			},\
+";
+}	
 
 
