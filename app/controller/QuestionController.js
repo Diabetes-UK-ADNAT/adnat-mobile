@@ -5,6 +5,7 @@ Ext.define('adnat.controller.QuestionController', {
 		},
         refs: {
 			question: '#questionPanel',
+			title: '#title',
 			questionComponent: '#questionComponent',
 			prevButton: '#prevButton',
 			nextButton: '#nextButton',
@@ -36,8 +37,17 @@ Ext.define('adnat.controller.QuestionController', {
         var s = Ext.getStore('Questions');
 		var q = s.getAt(1);
 		//view
-		var f = this.getQuestion();
-		f.setRecord(q);
+		this.getTitle().setHtml(q.get('text'));
+
+		var f = this.getQuestionComponent();
+		f.removeAll();
+		var response = '{ success: true, data: [ ' +
+			'{xtype: "textfield", name: "ordinal",}, ' +
+			'{xtype: "textfield", name: "options",}, ' +
+			  '] }' ;
+		f.add(Ext.decode(response).data);
+		// find previous response if it exists and put on question
+		this.getQuestion().setRecord(q);
 	},
 
 	nextPage: function(){
@@ -45,20 +55,12 @@ Ext.define('adnat.controller.QuestionController', {
         var s = Ext.getStore('Questions');
 		var q = s.getAt(2);
 		//view
-		//title = q.get('text'); or use template?
-		//console.log(f.getRecord());
+		this.getTitle().setHtml(q.get('text'));
+
 		var f = this.getQuestionComponent();
 		f.removeAll();
-		/*
-		var response = '{ success: true, data: [ ' +
-			'{xtype: "textfield", name: "ordinal", value: "'+ q.get('ordinal') +'"}, ' +
-			'{xtype: "textfield", name: "text", value: "'+ q.get('text') +'"}, ' +
-			'{xtype: "textfield", name: "options", value: "'+ q.get('options') +'"}, ' +
-			 '] }' ;
-			  */
 		var response = '{ success: true, data: [ ' +
 			'{xtype: "textfield", name: "ordinal",}, ' +
-			'{xtype: "textfield", name: "text", }, ' +
 			'{xtype: "textfield", name: "options",}, ' +
 			  '] }' ;
 		f.add(Ext.decode(response).data);
