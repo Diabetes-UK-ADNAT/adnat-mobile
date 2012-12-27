@@ -1,5 +1,5 @@
 Ext.define("adnat.view.Question", {
-    extend: 'Ext.Panel',
+    extend: 'Ext.form.Panel',
 	xtype: 'question',
     requires: [
         'Ext.TitleBar',
@@ -7,35 +7,37 @@ Ext.define("adnat.view.Question", {
 		'Ext.field.Number',
 		'Ext.data.proxy.JsonP',
 		'Ext.field.Radio',
+		'Ext.Label',
     ],
     config: {
-		id: 'question', // works with refs to enable this.getQuestion()
+		id: 'questionPanel', // works with refs to enable this.getQuestion()
 		title: 'ADNAT',
 		iconCls: 'compose',
-
 		styleHtmlContent: true,
 		scrollable: true,
-
 		items: [
+			{xtype: 'textfield', name: 'text'},
+			{xtype: 'textfield', name: 'ordinal'},
+			{xtype: 'textfield', name: 'options'},
 			{
 				docked: 'top',
 				xtype: 'titlebar',
 				title: 'ADNAT'
 			},
 			{
+				id : 'questionText',
+				name: 'questionText',
 				padding: '1.2em',
 				html: [
 				"<div class=\"question\">",
                 "How many times a week do you eat treats such ",
 				"as sweets, chocolate, fast food, takeaways?",
 				"</div>",
-				].join("")
+			].join("")
 			},
 			{
 				id: 'test',
                 xtype: 'fieldset',
-				//centered: true,
-				//width: '80%',
                 items: [
 					{
 						xtype: 'radiofield',
@@ -82,13 +84,6 @@ Ext.define("adnat.view.Question", {
 									"<img src=\"../resources/images/tl-yellow.png\"/>",
 									"</div>",
 								].join(""));
-/*
-//create the delayed task instance with our callback
-var task = Ext.create('Ext.util.DelayedTask', function() {
-	Ext.Viewport.setActiveItem(Ext.create('adnat.view.Results'));
-});
-task.delay(1500); //the callback function will now be called after 1500ms
-*/
 							}
 						},
 					},
@@ -148,11 +143,6 @@ task.delay(1500); //the callback function will now be called after 1500ms
 					ui: 'default',
 					disabled: false,
 					width: '100px',
-					//handler: function() {
-						//Ext.Viewport.setActiveItem(Ext.create('adnat.view.Welcome'));
-						//Ext.getCmp('mainTabPanel').setActiveItem(0);
-						//utilAlert();
-					//},
 				},
 				{xtype: 'spacer'},
 				{
@@ -161,13 +151,6 @@ task.delay(1500); //the callback function will now be called after 1500ms
 					id: 'nextButton',
 					ui: 'confirm',
 					width: '100px',
-					//handler: function() {
-						//adnatAlert();
-						//Ext.getCmp('mainTabPanel').setActiveItem(2);
-						//Ext.Viewport.add(Ext.create('adnat.view.TabQ2'));
-						//Ext.Viewport.setActiveItem(Ext.create('adnat.view.TabQ2'));
-						//Ext.getCmp('mainTabPanel2').setActiveItem(1);
-					//},
 				},
 				{xtype: 'spacer'},
 			]},

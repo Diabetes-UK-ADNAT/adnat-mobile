@@ -4,7 +4,7 @@ Ext.define('adnat.controller.QuestionController', {
         routes: {
 		},
         refs: {
-			question: '#question',
+			question: '#questionPanel',
 			prevButton: '#prevButton',
 			nextButton: '#nextButton',
         },
@@ -17,7 +17,7 @@ Ext.define('adnat.controller.QuestionController', {
 			},
         },
     },
-    /*
+	/*
 	launch: function() {
         Ext.getStore('Questions').load({
             callback: this.onQuestionsStoreLoad,
@@ -31,9 +31,29 @@ Ext.define('adnat.controller.QuestionController', {
     },
 	*/
     prevPage: function(){
-		getQuestion1(this.getQuestion());
+		//store
+        var s = Ext.getStore('Questions');
+		var q = s.getAt(1);
+		//view
+		var f = this.getQuestion();
+		f.setRecord(q);
 	},
 	nextPage: function(){
-		getQuestion2(this.getQuestion());
+		//store
+        var s = Ext.getStore('Questions');
+		var q = s.getAt(2);
+		//view
+		var f = this.getQuestion();
+		f.setRecord(q);
+		console.log(f.getRecord());
+		/*
+		f.removeAll();
+		var response = '{ success: true, data: [ ' +
+			'{xtype: "textfield", name: "ordinal", value: "'+ q.get('ordinal') +'"}, ' +
+			'{xtype: "textfield", name: "text", value: "'+ q.get('text') +'"}, ' +
+			'{xtype: "textfield", name: "options", value: "'+ q.get('options') +'"}, ' +
+			 '] }' ;
+		f.add(Ext.decode(response).data);
+		*/
 	},
 });
