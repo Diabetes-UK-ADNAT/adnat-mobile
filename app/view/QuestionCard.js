@@ -1,6 +1,6 @@
-Ext.define("adnat.view.Question", {
+Ext.define("adnat.view.QuestionCard", {
     extend: 'Ext.form.Panel',
-	xtype: 'question',
+	xtype: 'questioncard',
     requires: [
         'Ext.TitleBar',
 		'Ext.form.FieldSet',
@@ -10,7 +10,7 @@ Ext.define("adnat.view.Question", {
 		'Ext.Label',
     ],
     config: {
-		id: 'questionPanel', // works with refs to enable this.getQuestion()
+		id: 'questioncard', 
 		title: 'ADNAT',
 		iconCls: 'compose',
 		styleHtmlContent: true,
@@ -63,3 +63,4 @@ Ext.define("adnat.view.Question", {
 		].join(""),
 	}
 });
+

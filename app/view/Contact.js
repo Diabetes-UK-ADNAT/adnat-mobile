@@ -5,6 +5,7 @@ Ext.define("adnat.view.Contact", {
         'Ext.TitleBar',
     ],
     config: {
+		id: 'contact', 
 		title: 'Contact',
 		iconCls: 'reply',
 

@@ -17,12 +17,13 @@ Ext.application({
     ],
 
     views: [
-	'Main', 
-	'Welcome', 
-	'Help', 
-	'Contact', 
-	'Results', 
-	'Question', 
+		'Main', 
+		'Welcome', 
+		'Help', 
+		'Contact', 
+		'Results', 
+		'Question', 
+		'QuestionCard', 
 	],
 
 	controllers: [
