@@ -33,9 +33,12 @@ Ext.define('adnat.controller.QuestionController', {
     },
 	*/
     prevPage: function(){
-		//store
         var s = Ext.getStore('Questions');
-		var q = s.getAt(1);
+		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
+	    var newO = m.get('ordinal') - 1;
+		if ( newO < 0 ) newO = s.getCount() - 1;
+		//store
+		var q = s.getAt(newO);
 		//view
 		this.getTitle().setHtml(q.get('text'));
 
@@ -51,9 +54,12 @@ Ext.define('adnat.controller.QuestionController', {
 	},
 
 	nextPage: function(){
+		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
+	    var newO = m.get('ordinal') + 1;
+		if ( newO > 4 ) newO = 0;
 		//store
         var s = Ext.getStore('Questions');
-		var q = s.getAt(2);
+		var q = s.getAt(newO);
 		//view
 		this.getTitle().setHtml(q.get('text'));
 
