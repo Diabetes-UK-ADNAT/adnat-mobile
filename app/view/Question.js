@@ -23,6 +23,7 @@ Ext.define("adnat.view.Question", {
 			},
 			{
 				id: 'title',
+				padding: '1.2em',
 				html: "this is the question text here",
 			},
 			{
