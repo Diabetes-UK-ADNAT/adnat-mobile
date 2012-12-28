@@ -2,27 +2,47 @@
 {
 "id":1, "ordinal":0,"type":"mc",
 "text":"This is the first question",
-"options":"these are the options",
+"options":[
+	{"text":"1 This is option one", "value":1, "color":"red"},
+	{"text":"1 This is option two", "value":2, "color":"yellow"},
+	{"text":"1 This is option three", "value":3, "color":"green"},
+],
 },
 {
 "id":2, "ordinal":1,"type":"mc",
 "text":"This is a second question",
-"options":"these are the other options",
+"options":[
+	{"text":"2 This is option one", "value":1, "color":"red"},
+	{"text":"2 This is option two", "value":2, "color":"yellow"},
+	{"text":"2 This is option three", "value":3, "color":"green"},
+],
 },
 {
 "id":3, "ordinal":2, "type":"mc",
 "text":"This is a third question",
-"options":"these are the other options for q3",
+"options":[
+	{"text":"3 This is option one", "value":1, "color":"red"},
+	{"text":"3 This is option two", "value":2, "color":"yellow"},
+	{"text":"3 This is option three", "value":3, "color":"green"},
+],
 },
 {
 "id":4, "ordinal":3, "type":"mc",
 "text":"This is a fourth question",
-"options":"these are the other options for q3",
+"options":[
+	{"text":"4 This is option one", "value":1, "color":"red"},
+	{"text":"4 This is option two", "value":2, "color":"yellow"},
+	{"text":"4 This is option three", "value":3, "color":"green"},
+],
 },
 {
 "id":5, "ordinal":4, "type":"mc",
 "text":"This is a fifth question",
-"options":"these are the other options for q3",
+"options":[
+	{"text":"5 This is option one", "value":1, "color":"red"},
+	{"text":"5 This is option two", "value":2, "color":"yellow"},
+	{"text":"5 This is option three", "value":3, "color":"green"},
+],
 },
 ]
 

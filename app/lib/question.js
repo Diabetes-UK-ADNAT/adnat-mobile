@@ -20,12 +20,6 @@ function getStopLight(name) {
 	t.compile();
 	return t.apply( {n: name } );
 }
-function getStopLightOptionStart(name,text,color) {
-	return '{ xtype: "fieldset", items: [ ' ;
-}	
-function getStopLightOptionEnd(name,text,color) {
-	return '], }, ' ;
-}
 function getStopLightOption(name,text,color) {
 	var t = new Ext.Template([
 	'{ ' ,
@@ -49,20 +43,20 @@ function getStopLightOption(name,text,color) {
 }	
 
 function buildQuestion(q) {
-		// build a stoplight question
 		var name = Date.now();
-		var text = 'my option text';
-		var color = 'red';
+		var options = q.get('options');
 		var response = '{ success: true, data: [ ' +
 			'{xtype: "hiddenfield", name: "ordinal",}, ' +
-			getStopLightOptionStart(name,text,color) +
+			'{ xtype: "fieldset", items: [ ';
+
 			//for each option (fixme: could do w/ template also)
-			getStopLightOption(name,'red1','red') +
-			getStopLightOption(name,'yellow1','yellow') +
-			getStopLightOption(name,'green1','green') +
+			options.forEach(function(entry) {
+				response = response + getStopLightOption(name,entry['text'],entry['color']);
+			});
 			//
-			getStopLightOptionEnd(name,text,'green') +
-			getStopLight(name) + 
-			'] }' ;
+			response = response + 
+				'], }, ' + //items
+				getStopLight(name) + 
+				'] }' ; //outer json array
 		return response;
 }	

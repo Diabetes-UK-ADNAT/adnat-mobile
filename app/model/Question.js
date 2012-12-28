@@ -21,7 +21,7 @@ Ext.define('adnat.model.Question', {
             {
 				id: 4,
                 name: 'options',
-                type: 'string', //json?
+                type: 'auto', 
             },
         ],
         proxy: {
