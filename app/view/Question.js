@@ -3,11 +3,12 @@ Ext.define("adnat.view.Question", {
 	xtype: 'question',
     requires: [
         'Ext.TitleBar',
+		'Ext.Label',
 		'Ext.form.FieldSet',
 		'Ext.field.Number',
-		'Ext.data.proxy.JsonP',
 		'Ext.field.Radio',
-		'Ext.Label',
+		'Ext.field.Hidden',
+		'Ext.data.proxy.JsonP',
     ],
     config: {
 		id: 'questionPanel', // works with refs to enable this.getQuestion()
