@@ -6,13 +6,19 @@ function setTitle(component,q) {
 	html = tpl.apply( {t: q.get('text') } );
 	component.getTitle().setHtml(html);
 }
+function setQuestion(f, q) {
+	// set question
+	f.removeAll();
+	var response = buildQuestion(q);
+	f.add(Ext.decode(response).data);
+}
 
 function buildQuestion(q) {
-		var nm = Date.now();
-		var opts = q.get('options');
 		var tpl = new Ext.XTemplate(
 			'{ success: true, data: [ ' ,
-				//fixme stripped by template? '{ xtype: "hiddenfield", name: "ordinal", }, ' ,
+				// fields
+				'{ xtype: "hiddenfield", name: "ordinal", suborgetsdropped: "{name}"}, ' ,
+				// options fieldset
 				'{ xtype: "fieldset", items: [ ',
 					'<tpl for="options">',     
 					'{ ' ,
@@ -32,6 +38,7 @@ function buildQuestion(q) {
 					'}, ' ,
 					'</tpl>',
 				'], }, ' , 
+				// stoplight
 				"{ html: '",
 				'<div>&nbsp;</div>',
 				'<div id="{name}" class="centered">',
@@ -42,8 +49,8 @@ function buildQuestion(q) {
 			'] }'  
 		);
 		tpl.compile();
-		var response = tpl.apply({name:nm, options:opts});  
-		console.log(response);
+		var response = tpl.apply({name:Date.now(), options:q.get('options')});  
+		//console.log(response);
 		return response;
 }	
 

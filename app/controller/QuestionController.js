@@ -32,53 +32,29 @@ Ext.define('adnat.controller.QuestionController', {
 		this.nextPage(); //fixme current question
     },
 
-    prevPage: function(){
+	showQuestion: function(newO) {
         var s = Ext.getStore('Questions');
-		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
-	    var newO = m.get('ordinal') - 1;
-		if ( newO < 0 ) newO = s.getCount() - 1;
-		//store
+		if ( newO < 0 ) {
+			newO = s.getCount() - 1;
+		} else if ( newO > s.getCount() - 1) {
+			newO = 0;
+		}
 		var q = s.getAt(newO);
 
-		
-
-		//
-		//view
 		setTitle(this,q);
-
-
-		var f = this.getQuestionComponent();
-		f.removeAll();
-		var response = buildQuestion(q);
-		f.add(Ext.decode(response).data);
+		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
 		this.getQuestion().setRecord(q);
+	},
+
+    prevPage: function(){
+		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
+		this.showQuestion( m.get('ordinal') - 1 ); 
 	},
 
 	nextPage: function(){
 		// form data
 		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
-
-		// next question
-	    var newO = m.get('ordinal') + 1;
-		if ( newO > 4 ) newO = 0;
-		
-		//store
-        var s = Ext.getStore('Questions');
-		var q = s.getAt(newO);
-
-		// view 
-		//set the question text
-		setTitle(this,q);
-
-		// view build question
-		var f = this.getQuestionComponent();
-		f.removeAll();
-
-		var response = buildQuestion(q);
-		// put on the form
-		f.add(Ext.decode(response).data);
-		// find previous response if it exists and put on question
-		this.getQuestion().setRecord(q);
+	    this.showQuestion(m.get('ordinal') + 1);
 	},
 });
