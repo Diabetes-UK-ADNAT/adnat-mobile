@@ -71,7 +71,8 @@ function saveResponse(r) {
 	var find = s.find('ordinal', r.get('ordinal'));
 	if (find != -1) {
 		s.removeAt(find);
+		s.sync();
 	}
-	s.add(r);
+	r.save();
 	s.sync();
 }

@@ -39,8 +39,13 @@ Ext.define('adnat.controller.QuestionController', {
 		// find previous response if it exists and put on question
 		// fixme ordinal == break if new version of questions
 		var s = Ext.getStore('Responses');
+		s.load();
 		var r = s.findRecord('ordinal', q.get('ordinal'));
-		this.getQuestion().setRecord(r);
+		if ( r != null ) {
+			this.getQuestion().setRecord(r);
+		} else {
+			this.getQuestion().setRecord(q);
+		}
 	},
 
     prevPage: function(){

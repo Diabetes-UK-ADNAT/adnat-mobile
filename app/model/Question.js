@@ -24,10 +24,6 @@ Ext.define('adnat.model.Question', {
                 type: 'auto', 
             },
         ],
-        proxy: {
-            type: 'localstorage',
-            id: 'questions-local'
-        }
     }
 });
 
