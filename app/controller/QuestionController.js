@@ -29,32 +29,42 @@ Ext.define('adnat.controller.QuestionController', {
 		//console.log('onQuestionsStoreLoad');
         var s = Ext.getStore('Questions');
 		//s.info();
-		this.showQuestion(0);
+		this.showQuestion(0,0);
     },
 
-	showQuestion: function(newO) {
-        var s = Ext.getStore('Questions');
-		if ( newO < 0 ) {
-			newO = s.getCount() - 1;
-		} else if ( newO > s.getCount() - 1) {
-			newO = 0;
-		}
-		var q = s.getAt(newO);
-
+	showQuestion: function(newO,direction) {
+		var q = getNextQuestion(newO, direction);
 		setTitle(this,q);
 		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
-		this.getQuestion().setRecord(q);
+		// fixme ordinal == break if new version of questions
+		var s = Ext.getStore('Responses');
+		var r = s.findRecord('ordinal', q.get('ordinal'));
+		this.getQuestion().setRecord(r);
 	},
 
     prevPage: function(){
-		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
-		this.showQuestion( m.get('ordinal') - 1 ); 
+		// fixme validate 
+		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
+		saveResponse(r);
+		this.showQuestion( r.get('ordinal') - 1, -1 ); 
+        /*
+		 * var errors = r.validate();
+        if (!errors.isValid()) {
+            Ext.Msg.alert('validation');
+			console.log('m valid? ', errors.isValid()); // returns 'false' as there were validation errors
+			console.log('All Errors:', errors.items); // returns the array of all errors found on this model instance
+			console.log('Field One Errors:', errors.getByField('fieldone')); // returns the errors for the age field
+            r.reject();
+            return;
+        }
+		*/
 	},
 
 	nextPage: function(){
-		// form data
-		m = Ext.create('adnat.model.Question', this.getQuestion().getValues() );
-	    this.showQuestion(m.get('ordinal') + 1);
+		// fixme validate 
+		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
+		saveResponse(r);
+		this.showQuestion( r.get('ordinal') + 1, 1 ); 
 	},
 });

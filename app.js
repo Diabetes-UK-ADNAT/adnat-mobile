@@ -14,6 +14,7 @@ Ext.application({
 
     models: [
 		'Question',
+		'Response',
     ],
 
     views: [
@@ -32,6 +33,7 @@ Ext.application({
 
     stores: [
 		'Questions',
+		'Responses',
 	],
 
     icon: {

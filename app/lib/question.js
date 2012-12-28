@@ -11,6 +11,17 @@ function setQuestion(c, q) {
 	var response = buildQuestion(q);
 	c.add(Ext.decode(response).data);
 }
+function getNextQuestion(newO, direction) {
+	// direction = 0 for direct, -1 for prev, 1 for next
+	var s = Ext.getStore('Questions');
+	if ( newO < 0 ) {
+		newO = s.getCount() - 1;
+	} else if ( newO > s.getCount() - 1) {
+		newO = 0;
+	}
+	var q = s.getAt(newO);
+	return q;
+}
 
 function buildQuestion(q) {
 	//fixme switch on question types here
@@ -23,8 +34,9 @@ function buildQuestion(q) {
 				'<tpl for="options">',     
 				'{ ' ,
 					'xtype: "radiofield", ' ,
-					'name : "color", ' ,
+					'name : "options", ' ,
 					'label: "{text}", ' ,
+					'value: "{value}", ' ,
 					'labelWidth: "66%",	 ' ,
 					'listeners: { ',
 						'check: function(button) { ',
@@ -54,4 +66,12 @@ function buildQuestion(q) {
 	return response;
 }	
 
-
+function saveResponse(r) {
+	var s = Ext.getStore('Responses');
+	var find = s.find('ordinal', r.get('ordinal'));
+	if (find != -1) {
+		s.removeAt(find);
+	}
+	s.add(r);
+	s.sync();
+}
