@@ -29,7 +29,7 @@ Ext.define('adnat.controller.QuestionController', {
 		//console.log('onQuestionsStoreLoad');
         var s = Ext.getStore('Questions');
 		//s.info();
-		this.nextPage(); //fixme current question
+		this.showQuestion(0);
     },
 
 	showQuestion: function(newO) {

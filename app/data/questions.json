@@ -44,5 +44,14 @@
 	{"text":"5 This is option three", "value":3, "color":"green"},
 ],
 },
+{
+"id":6, "ordinal":5, "type":"mc",
+"text":"This is a sixth question",
+"options":[
+	{"text":"6 This is option one", "value":1, "color":"yellow"},
+	{"text":"6 This is option two", "value":2, "color":"yellow"},
+	{"text":"6 This is option three", "value":3, "color":"green"},
+],
+},
 ]
 

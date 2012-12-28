@@ -14,6 +14,7 @@ function setQuestion(f, q) {
 }
 
 function buildQuestion(q) {
+	//fixme switch on question types here
 		var tpl = new Ext.XTemplate(
 			'{ success: true, data: [ ' ,
 				// fields
