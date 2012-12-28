@@ -2,17 +2,26 @@ Ext.define('adnat.model.Response', {
     extend: 'Ext.data.Model',
     config: {
 		idProperty: 'id',
+		identifier: {
+			type: 'uuid',
+			prefix: '',
+		},
         fields: [
             {
 				id: 1,
-                name: 'ordinal',
+                name: 'q',
                 type: 'int',
-				isUnique: true,
             },
             {
 				id: 2,
                 name: 'options',
                 type: 'auto', 
+            },
+            {
+				id: 3,
+                name: 'ordinal',
+                type: 'int', 
+				persist: false,
             },
         ],
         proxy: {

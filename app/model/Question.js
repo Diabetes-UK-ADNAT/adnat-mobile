@@ -5,21 +5,26 @@ Ext.define('adnat.model.Question', {
         fields: [
             {
 				id: 1,
-                name: 'ordinal',
+                name: 'id',
                 type: 'int',
             },
             {
 				id: 2,
+                name: 'ordinal',
+                type: 'int',
+            },
+            {
+				id: 3,
                 name: 'type',
                 type: 'string',
             },
             {
-				id: 3,
+				id: 4,
                 name: 'text',
                 type: 'string',
             },
             {
-				id: 4,
+				id: 5,
                 name: 'options',
                 type: 'auto', 
             },

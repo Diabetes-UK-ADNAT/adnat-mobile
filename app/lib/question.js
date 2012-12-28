@@ -28,6 +28,7 @@ function buildQuestion(q) {
 	var tpl = new Ext.XTemplate(
 		'{ success: true, data: [ ' ,
 			// fields
+			'{ xtype: "hiddenfield", name: "q", suborgetsdropped: "{name}"}, ' ,
 			'{ xtype: "hiddenfield", name: "ordinal", suborgetsdropped: "{name}"}, ' ,
 			// options fieldset
 			'{ xtype: "fieldset", items: [ ',
@@ -68,7 +69,7 @@ function buildQuestion(q) {
 
 function saveResponse(r) {
 	var s = Ext.getStore('Responses');
-	var find = s.find('ordinal', r.get('ordinal'));
+	var find = s.find('q', r.get('q'));
 	if (find != -1) {
 		s.removeAt(find);
 		s.sync();
