@@ -8,7 +8,6 @@ Ext.define("adnat.view.Contact", {
 		id: 'contact', 
 		title: 'Contact',
 		iconCls: 'reply',
-
 		styleHtmlContent: true,
 		scrollable: true,
 		items: [

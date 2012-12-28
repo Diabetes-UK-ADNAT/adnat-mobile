@@ -39,23 +39,14 @@ Ext.define('adnat.controller.QuestionController', {
 		if ( newO < 0 ) newO = s.getCount() - 1;
 		//store
 		var q = s.getAt(newO);
+		//
 		//view
-		this.getTitle().setHtml(getTitle(q.get('text')));
+		setTitle(this,q);
+
 
 		var f = this.getQuestionComponent();
 		f.removeAll();
-		var name = Date.now();
-		var text = 'my option text';
-		var color = 'red';
-		var response = '{ success: true, data: [ ' +
-			'{xtype: "hiddenfield", name: "ordinal",}, ' +
-			getStopLightOptionStart(name,text,color) +
-			getStopLightOption(name,'red1','red') +
-			getStopLightOption(name,'yellow1','yellow') +
-			getStopLightOption(name,'green1','green') +
-			getStopLightOptionEnd(name,text,'green') +
-			getStopLight(name) + 
-			'] }' ;
+		var response = buildQuestion(q);
 		f.add(Ext.decode(response).data);
 		// find previous response if it exists and put on question
 		this.getQuestion().setRecord(q);
@@ -74,25 +65,14 @@ Ext.define('adnat.controller.QuestionController', {
 		var q = s.getAt(newO);
 
 		// view 
+		//set the question text
+		setTitle(this,q);
+
+		// view build question
 		var f = this.getQuestionComponent();
 		f.removeAll();
 
-		//set the question text
-		this.getTitle().setHtml(getTitle(q.get('text')));
-		// build a stoplight question
-		var name = Date.now();
-		var text = 'my option text';
-		var color = 'red';
-		var response = '{ success: true, data: [ ' +
-			'{xtype: "hiddenfield", name: "ordinal",}, ' +
-			getStopLightOptionStart(name,text,color) +
-			getStopLightOption(name,'red1','red') +
-			getStopLightOption(name,'yellow1','yellow') +
-			getStopLightOption(name,'green1','green') +
-			getStopLightOptionEnd(name,text,'green') +
-			getStopLight(name) + 
-			'] }' ;
-
+		var response = buildQuestion(q);
 		// put on the form
 		f.add(Ext.decode(response).data);
 		// find previous response if it exists and put on question
