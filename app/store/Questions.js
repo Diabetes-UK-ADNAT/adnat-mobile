@@ -6,7 +6,11 @@ Ext.define('adnat.store.Questions', {
 		proxy:{
 			type:'ajax',
 			url:'app/data/questions.json',
-			reader:'json',
+			reader : {
+				type : 'json',
+				rootProperty : 'questions',
+				totalCount : 'total',
+			},
 		},
 		autoLoad:true,
 		sorters: [
@@ -18,10 +22,10 @@ Ext.define('adnat.store.Questions', {
 	},
 	info : function() {
 		console.log("Question Store info");
+		console.log(this.getTotalCount());
 		/*
 		console.log(this.getAt(0));
 		console.log(this.getCount());
-		console.log(this.getTotalCount());
 		console.log(this.getData());
 		var a = this.getData();
 		for (var i=0; i<a.length; i++) {
