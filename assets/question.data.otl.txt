@@ -25,8 +25,7 @@ Guardian
 Sister(s) Number
 Brother(s) Number
 Step-sister(s)
-Step-
-brother(s)
+Step-brother(s)
 Grand-mother(s)
 Grand-father(s)
 Number
@@ -40,7 +39,7 @@ Number
 Aunty(ies)
 Uncle(s)
 Cousin(s)
-Au pair/ Nanny
+Au pair / Nanny
 Number
 ??
 Number
@@ -73,10 +72,8 @@ kilograms
 Do know
 Demo 7. Which insulin regime do you use? (Tick one)
 I take a set amount of insulin twice a day (at breakfast and tea time) (Twice daily)  
-I take one injection at a similar time every day which lasts for up to 24 hours,    
-plus I inject every time I eat with fast-acting insulin (Multiple injections/basal bolus) 
-I take one injection which lasts for 24 hours, plus a mixture of short acting insulin and 
-long and short acting (mixed) insulin throughout the day (Combined)  
+I take one injection at a similar time every day which lasts for up to 24 hours, plus I inject every time I eat with fast-acting insulin (Multiple injections / basal bolus) 
+I take one injection which lasts for 24 hours, plus a mixture of short acting insulin and long and short acting (mixed) insulin throughout the day (Combined)  
 I have an insulin pump 
 I do know 
 Demo 8. How long have you been on this regime?
@@ -85,7 +82,7 @@ Between 1 year and 3 years
 Between 3 years and 5 years
 Over 5 years
 Demo 9. How do you feel about your regime?
-It?s the best one for me      
+It's the best one for me      
 I'm not sure 
 I would like to change to another regime 
 Demo 10. How do you feel about your diabetes at the moment?
@@ -96,8 +93,7 @@ Activity 11. How active are you? (Tick one)
 Very active
 I do some, but I could do more
 Not active at all
-Activity 12. Do you do any of the following pulse-raising sports or physical activities? (Tick 
-all that apply)
+Activity 12. Do you do any of the following pulse-raising sports or physical activities? (Tick all that apply)
 Football
 Tennis
 Rounders
@@ -107,9 +103,8 @@ Badminton
 Squash
 Swimming
 Athletics
-Running/ 
-jogging
-Aerobics/ aqua 
+Running / jogging
+Aerobics / aqua 
 aerobics
 Martial arts
 Yoga
@@ -117,7 +112,7 @@ Rowing
 Cycling
 Exercise DVD
 Go to the gym  
-Home gym/ exercise equipment
+Home gym / exercise equipment
 Hockey
 Gymnastics
 Baseball
@@ -132,30 +127,25 @@ Activity 13. Are you active in any other ways, such as? (Tick all that apply)
 P.E. in school
 House work
 Walking the dog   
-Walking to/ 
-from school
-Walking to/ 
-from bus stop  
-Walking to/ from train station  
-Riding bike to/ 
-from school
-Riding bike to/ 
-from bus stop  
-Riding bike to/ from train 
+Walking to / from school
+Walking to / from bus stop  
+Walking to / from train station  
+Riding bike to / from school
+Riding bike to / from bus stop  
+Riding bike to / from train 
 station  
 Walking with 
-friends/ family
+friends / family
 Bike rides with 
-friends/family      
+friends /family      
 Shopping            
 Care of animals 
 (e.g. horses)
-Care of siblings/ 
-children
+Care of siblings / children
 Trampolining in garden
 Gardening
 Playing on active games console e.g. Nintendo Wii
-Active job e.g. Waitressing/ labouring
+Active job e.g. Waitressing / labouring
 Drama
 None of the above
 Other ? (Please write) ?????????????????????????????????????????
@@ -185,7 +175,7 @@ It makes me feel good
 To stay healthy
 I am good at it
 I enjoy it
-To make/ spend time with 
+To make / spend time with 
 friends
 It keeps my blood 
 sugars low
@@ -195,28 +185,26 @@ insulin
 It helps me to lose 
 weight
 I have to do it in school
-To avoid boredom/ it?s 
+To avoid boredom / it's 
 something to do  
-It?s the most practical form of transport (e.g. walking back from train/bus station or 
+it's the most practical form of transport (e.g. walking back from train / bus station or 
 school)
 I do do any 
 exercise
 Other ? (Please write below) 
 ???????????????????????????????????????
-Activity 18. What stops or prevents you from starting to do exercise or physical activity? 
-(Tick all that apply)
+Activity 18. What stops or prevents you from starting to do exercise or physical activity?  (Tick all that apply)
 Nothing 
  ? 
 Being ill eg infection
 I am not very good at it
-I do like/ enjoy exercise or sport
+I do like / enjoy exercise or sport
 My weight
 If my blood glucose is low
 It is difficult to manage my 
 diabetes when I do exercise
 It is difficult to do exercise with an insulin pump
-I would rather watch TV/ 
-play computer games
+I would rather watch TV / play computer games
 I do have the opportunity to do the sports I like 
 (e.g. swimming at school) 
 I do have time
@@ -236,8 +224,7 @@ physical activity but sometimes I have trouble
 =
 I can manage my blood glucose levels whilst exercising or doing physical 
 activity
-ActiveBgMgmt 21. What makes it difficult to manage your blood glucose levels when exercising or 
-physical activity? (Tick all that apply)
+ActiveBgMgmt 21. What makes it difficult to manage your blood glucose levels when exercising or physical activity? (Tick all that apply)
 I do find it difficult 
 Exercise makes my diabetes control worse   
 I am frightened of getting a hypo 
@@ -253,50 +240,45 @@ I do know
 They usually go lower 
 They vary 
 I end up having a hypo                    
-ActiveBgMgmt 23. When doing exercise or physical activity, my blood glucose levels depend on ? 
-(Tick all that apply)
+ActiveBgMgmt 23. When doing exercise or physical activity, my blood glucose levels depend on ?  (Tick all that apply)
 What type of exercise I am doing
 How much insulin I have taken
 How much I have eaten  
 How much activity I have already done
 Time of day
 Other ? (Please write) ??????????????????????????????????????????????
-ActiveBgMgmt 24. What would you do if your blood glucose levels went higher during exercise or 
-physical activity? (Tick all that apply) 
+ActiveBgMgmt 24. What would you do if your blood glucose levels went higher during exercise or physical activity? (Tick all that apply) 
 Do nothing 
 Check my blood glucose levels
 Take more insulin
 Have something to eat or drink containing carbohydrate                            
 Check my blood glucose levels  afterwards to keep an eye on them
 Other ? (Please write ?????????????????????????????????????.
-ActiveBgMgmt 25. What would you do if your blood glucose levels went low during 
-exercise or physical activity? (Tick all that apply) 
+ActiveBgMgmt 25. What would you do if your blood glucose levels went low during exercise or physical activity? (Tick all that apply) 
 Do nothing 
 Check my blood glucose levels
 Wait for blood glucose levels to come back up then  carry on
-Have something to eat/drink containing carbohydrate
+Have something to eat / drink containing carbohydrate
 Check my blood glucose levels afterwards to keep an eye on them
 Take less insulin
 Other ? (Please write) ????????????????????????????????????
-ActiveBgMgmt 26. Which of the following would you do BEFORE exercise and/or physical activity? 
-(Tick all that apply) 
+ActiveBgMgmt 26. Which of the following would you do BEFORE exercise and / or physical activity?  (Tick all that apply) 
 Take more insulin
 Take less insulin
 Test my blood glucose levels
 Take off my insulin pump
 Adjust the settings on my pump
-Depending on my blood glucose level, eat/drink 
+Depending on my blood glucose level, eat / drink 
 something  containing carbohydrate
 None of the above
 Other ? (Please write) ?????????????????????????????????????????????
-ActiveBgMgmt 27. Which of the following would you do AFTER exercise and/or taking part in 
-physical activity? (Tick all that apply) 
+ActiveBgMgmt 27. Which of the following would you do AFTER exercise and / or taking part in physical activity? (Tick all that apply) 
 Take more insulin
 Take less insulin
 Test my blood glucose levels
 Take off my insulin pump
 Adjust the settings on my pump
-Eat/ drink something containing carbohydrate
+Eat / drink something containing carbohydrate
 Watch out for my blood glucose levels falling later in the day
 None of the above 
 Other ? (Please write) ??????????????????????????????????????????????....
@@ -355,7 +337,7 @@ Something else ? (Please write)???????????????????????????????????
 Eating 31. What do you usually eat for lunch? (Tick all that apply)
 I do eat lunch   ?      Go to Question 32
 GROUP:FOOD
-Sandwich/ Panini
+Sandwich / Panini
 Salad
 Soup
 Fish
@@ -364,10 +346,10 @@ Lamb
 Chicken
 Turkey
 Burger
-Pie/pasty
+Pie / pasty
 Pizza
 Chips
-Potato/es
+Potato / es
 Pasta
 Rice
 Curry
@@ -409,7 +391,7 @@ Lamb
 Veggie Burger
 Chicken
 Beef
-Pie/Pasty
+Pie / Pasty
 Sausages
 Fishcake
 Boiled potato
@@ -430,7 +412,7 @@ Yogurt
 Fruit
 Cake(s)
 Ice cream
-Biscuit/ cookie
+Biscuit / cookie
 Muffin
 Crumble
 Pie
@@ -462,7 +444,7 @@ Chocolate bar
 Sweets
 Cake
 Something else ? (Please write)???????????????????????????????????
-Eating 34. Do you eat fruit and/or vegetables? (Tick one)
+Eating 34. Do you eat fruit and / or vegetables? (Tick one)
 Yes usually every day        
 Sometimes but not every day
 No or very rarely      
@@ -486,7 +468,7 @@ Some
 A little
 None 
 Me
-My mum/dad/carer/guardian
+My mum / dad / carer / guardian
 My friends
 School
 Other ? (Please write)??????????????????????????????????.
@@ -501,12 +483,12 @@ I eat whatever I like and my blood glucose is not well controlled
 I do always eat when I'm supposed to and I have hypos	
 Other ? (Please write)??????????????????????????????????.
 GROUP:TREATING HYPOS
-Hypos 39. What would you normally eat and/or drink to treat a hypo? (Tick all that 
+Hypos 39. What would you normally eat and / or drink to treat a hypo? (Tick all that 
 apply)
 Fruit juice
 Glucose tablets
 Glucose drink e.g. Lucozade
-GlucoGel/Hypostop
+GlucoGel / Hypostop
 Milk
 Fruit
 Cereal bar
@@ -528,13 +510,12 @@ insulin accordingly
 I never calculate carbohydrates in the food I eat before deciding how 
 much insulin to take 
 I'm not sure what carbohydrates are 
-Carbs 42. What helps you to work out the carbohydrate content in your food? (Tick all 
-that apply)
+Carbs 42. What helps you to work out the carbohydrate content in your food? (Tick all that apply)
 Attending a carbohydrate counting course
 Carbohydrate counting book
 Weighing scales
 Labelling on food packaging
-Making a list of the amount of carbohydrate in certain foods/meals so that I know 
+Making a list of the amount of carbohydrate in certain foods / meals so that I know 
 what it is for next time
 Remembering how much carbohydrate is in certain foods
 Someone helps me to work it out
@@ -542,18 +523,17 @@ I work it out for myself
 I guess
 I do think about carbohydrates at all
 Other ? (Please write)????????????????????????????????????????????..
-Carbs 43. What might stop you from working out the carbohydrate content correctly in 
-the food you eat? (Tick all that apply)
+Carbs 43. What might stop you from working out the carbohydrate content correctly in the food you eat? (Tick all that apply)
 No one helps me
 I find it difficult
 I do need to  
 I do have time
 I have been taught how to do it
 I know how to do it but I ca be bothered
-It does say/ isn't clear on the packaging
+It does say / isn't clear on the packaging
 Anticipating that I will eat more than I actually do
 Not having a book to help me
-Eating out in cafes/restaurants
+Eating out in cafes / restaurants
 Nothing, I always work out the carbohydrates in my food
 Other ? (Please write)????????????????????????????????????..
 Carbs 44. What?s important to you when choosing what you eat? 
@@ -577,7 +557,7 @@ Weight 46. If you have tried to gain or lose weight, what did you do? (Please wr
 ????????????????????????????????????????????????????????????
 ????????????????????????????????????????????????????????????
 ????????????????????????????????????????????????????????????
-Weight 47. Would you like help/advice on how to lose or gain weight safely? (Tick one)
+Weight 47. Would you like help / advice on how to lose or gain weight safely? (Tick one)
 Yes
 No
 Weight 48. Now you have answered the questions about eating, how healthy do you think 
@@ -596,11 +576,11 @@ Once or twice
 3-5 times
 More than 5 times
 Testing 51. What motivates you to test your blood glucose? (Tick all that apply)
-Mum/dad/carer reminding me
-If I feel high/low
-I always do it before and/or after I have something to eat
+Mum / dad / carer reminding me
+If I feel high / low
+I always do it before and / or after I have something to eat
 I want to know what my blood glucose levels are
-Doctors/nurses tell me to do it 
+Doctors / nurses tell me to do it 
 I want to get a good HbA1c result
 Nothing would help me to test, I never do it
 Other ? (Please write)????????????????????????????????????????
@@ -631,7 +611,7 @@ I do know because I don't usually test my blood
 Testing 54. What do you do with your blood glucose test results? (Tick all that apply)
 Record them in?
 Use them to work out how much?
-Diary/paper chart
+Diary / paper chart
 Insulin I should take
 Electronic device
 How much carbohydrates to eat
@@ -651,11 +631,11 @@ Very happy
 It is improving
 Could do better
 LOWS?
-Managing 57. How often do you have hypos/low blood glucose (less than 4mmols/l) (Tick one)
+Managing 57. How often do you have hypos / low blood glucose (less than 4mmols/l) (Tick one)
 Often
 Every now and again   
-Rarely/Never
-Managing 58. Do you know when you are going hypo/low without testing your blood glucose? 
+Rarely / Never
+Managing 58. Do you know when you are going hypo / low without testing your blood glucose? 
 (Tick one)
 Yes
 No
@@ -672,27 +652,27 @@ I feel hot and
 sweaty
 I feel dizzy  
 Really hungry
-Nauseas/sick
+Nauseas / sick
 I ca concentrate
 Spaced out
 I go all quiet
-Irritable/ moody
+Irritable / moody
 I start to laugh at random things and get on people?s nerves
 Sometimes I dream I'm having a hypo, then I wake up and I am having one
 I do feel anything
 Stomach pain       ?
 Something else ? (Please write)?????????????????????????????????........
-Managing 60. What makes you hypo/low? (Tick all that apply)
-Physical activity/exercise
-Being stressed/excited
+Managing 60. What makes you hypo / low? (Tick all that apply)
+Physical activity / exercise
+Being stressed / excited
 The weather
 Injecting too much insulin
 Drinking alcohol
 Do know, it just happens
-Missing a meal/ not eating enough carbohydrate
+Missing a meal / not eating enough carbohydrate
 Other ? (Please write)????????????????????????????????????..
-Managing 61. What do you do if you are hypo/low? (Tick all that apply)
-Have something to eat/drink that contains carbohydrate      
+Managing 61. What do you do if you are hypo / low? (Tick all that apply)
+Have something to eat / drink that contains carbohydrate      
 Have a rest until my levels go back up
 Alter my insulin dose (give less insulin)
 Nothing, just carry on with what I was doing 
@@ -708,7 +688,7 @@ Go to Question 63
  No      
 Go to Question 68   
 Managing 63. Did you require assistance from a medical person such as a paramedic or a 
-doctor or a nurse or from your mum/dad/carer? (Tick one)
+doctor or a nurse or from your mum / dad / carer? (Tick one)
 Yes
 No
 Not sure
@@ -722,7 +702,7 @@ write below)
 Managing 66. How often do you have high blood glucose (more than 10 mmols/l)? (Tick one)
 Often
 Every now and again   
-Rarely/Never
+Rarely / Never
 Managing 67. Do you know if your blood glucose is going high without testing your blood? 
 (Tick one)
 Yes
@@ -731,8 +711,7 @@ Sometimes
 Not sure
 I ca tell but others notice the change in me
 Managing 68. How do you feel when your blood glucose is high? (Tick all that apply)
-Really thirsty/ 
-dehydrated  
+Really thirsty / dehydrated  
 I go to the toilet a lot more than usual
 Really hot
 Do feel hungry
@@ -755,11 +734,10 @@ Physical activity
 Not enough insulin
 Forgetting an injection
 Forgetting to give insulin through my pump
-The weather/ temperature
+The weather / temperature
 Do know, it just happens 
 Something else ? (Please write)??????????????????????????????????
-Managing 70. What would you do if you tested your blood and it was high? (Tick all that 
-apply)
+Managing 70. What would you do if you tested your blood and it was high? (Tick all that apply)
 Do some exercise
 Inject some insulin
 Adjust the insulin in my 
@@ -781,7 +759,7 @@ What is ketoacidosis? Ketoacidosis occurs when there are very
 high levels of ketones (acid) in the blood. They appear in the 
 urine when your body doesn't have enough insulin.
 Managing 72. Did you require assistance from a medical person such as a paramedic or a 
-Doctor or a Nurse or from your mum/dad/carer? (Tick one)
+Doctor or a Nurse or from your mum / dad / carer? (Tick one)
 Yes
 No
 Not sure
@@ -837,15 +815,14 @@ Medication 78. How do you feel about injecting or using your insulin pump? (Tick
 Medication 79. Who usually sets up (prepares) your insulin injections or changes the set on 
 your pump? (Tick one)
 Always me
-Always my mum/dad/carer
-Usually me, but my mum/dad/carer do some
-Usually my mum/dad/carer but I do some
+Always my mum / dad / carer
+Usually me, but my mum / dad / carer do some
+Usually my mum / dad / carer but I do some
  Other ? (Please write)??????????????????????????????????????????.. 
-Medication 80. What motivates you to do your injections or to give insulin through your pump? 
-(Tick all that apply)
-My mum/dad/carer reminding me
-My mum/dad/carer setting up the needles for me
-It?s just part of my daily life
+Medication 80. What motivates you to do your injections or to give insulin through your pump?  (Tick all that apply)
+My mum / dad / carer reminding me
+My mum / dad / carer setting up the needles for me
+it's just part of my daily life
 Knowing that it helps me to control my diabetes
 I feel a lot happier when I?ve done my insulin
 I do want to feel ill
@@ -910,9 +887,9 @@ Once a week
 Other ? (Please write)??????????????????????????????????????????
 InsulinPump 86. Who inserts your canula? (Tick one)
 Always me
-Always my mum/dad/carer
-Usually me, but my mum/dad/carer do sometimes
-Usually mum mum/dad/carer but I do sometimes
+Always my mum / dad / carer
+Usually me, but my mum / dad / carer do sometimes
+Usually mum mum / dad / carer but I do sometimes
 Other ? (Please write)??????????????????????????????????????????..
 InsulinPump 87. How often do you change your canula? (Tick one)
 Every day
@@ -933,9 +910,8 @@ InsulinPump 89. What might stop you from wearing your pump (Tick all that apply)
 I take it off when I'm doing sport 
 I forget to put it on sometimes, e.g. after 
 sport
-I take it off to shower/ go in the 
-bath
-I take it off because it?s uncomfortable
+I take it off to shower / go in the bath
+I take it off because it's uncomfortable
 I do want people to see it
 I ca be bothered
 Other ? (Please write)???????????????????????????????????????????? 
@@ -949,9 +925,8 @@ My diabetes does stop me from doing anything
 I ca always do what I want, but I manage
 My diabetes stops me from doing lots of things
 GROUP:ILLNESS
-Illness 92. What would you do if you were ill with an infection (e.g. sickness/flu) and it 
-made your blood glucose high? (Tick all that apply)
-My mum/dad/carer would look after 
+Illness 92. What would you do if you were ill with an infection (e.g. sickness / flu) and it made your blood glucose high? (Tick all that apply)
+My mum / dad / carer would look after 
 my diabetes 
 Contact my nurse or doctor 
 I would:
@@ -966,16 +941,14 @@ Re-program my pump
 Take less insulin
 I am not sure what I would do 
 Something else ? (Please write)??????????????????????????????????????? 
-OutForTheDay 93. You are going on a day trip with your friends. Which of the following would 
-you ALWAYS take with you? (Tick all that apply)
+OutForTheDay 93. You are going on a day trip with your friends. Which of the following would you ALWAYS take with you? (Tick all that apply)
 Insulin
-Food to treat hypos (e.g. Lucozade/glucose tablets/banana/biscuit) 
+Food to treat hypos (e.g. Lucozade / glucose tablets / banana / biscuit) 
 Diabetes ID card or wear ID jewellery
 Blood glucose testing equipment
 None of the above                                                                                   ?
 Something else ? (Please write)?????????????????????????????. 
-StayOver 94. You are staying over at your friend?s house. Which of the following would you 
-do? (Tick all that apply)
+StayOver 94. You are staying over at your friend?s house. Which of the following would you do? (Tick all that apply)
 Make sure my friend knows about my diabetes
 Make sure my friend?s parents know about diabetes
 Take snacks in case I needed them 
@@ -1014,8 +987,8 @@ Never
 Go to Question 99      
 Foot 98. Where do you go to have your feet examined? (Tick all that apply)
 The diabetes clinic
-GP/Practice Nurse
-Podiatrist/Chiropodist
+GP / Practice Nurse
+Podiatrist / Chiropodist
 I do know
 Somewhere else ? (Please write)???????????????????????????????.. 
 Smoking 99. Do you smoke?
@@ -1046,7 +1019,7 @@ Go to Question 104
 No
 Go to question 111
 Alchohol 104. What type of alcohol do you drink? (Tick all that apply)
-Beer/lager
+Beer / lager
 Cider
 Alcopops
 Wine
@@ -1091,7 +1064,7 @@ diabetes
 I would not go to the party 
 Other ? (Please write)??????????????????????????????????????????.
 Parties 112. Which statement best describes you? (Tick one)
-I do have a problem with diabetes, it?s just a part of my life 
+I do have a problem with diabetes, it's just a part of my life 
 I sometimes wish I did have diabetes, but I just get on with it 
 because I have to 
 I hate having diabetes 
@@ -1100,40 +1073,40 @@ My diabetes doesn't stop me from doing anything
 I ca always do what I want, but I manage
 My diabetes stops me from doing lots of things
 Living 114. Which of the following people do you feel support you with managing your diabetes?
-Parent(s)/ carer(s)/ guardian(s)
-Brother(s)/ sister(s)
-Auntie(s)/ uncle(s)
+Parent(s) / carer(s) / guardian(s)
+Brother(s) / sister(s)
+Auntie(s) / uncle(s)
 Grandparent(s)
 Cousin(s)
-Au pair/ nanny
+Au pair / nanny
 Friends
 Teachers / employers
 Diabetes nurse
 Diabetes consultant (doctor)
 Diabetes dietician
 Nobody
-Counsellor/ psychologist
+Counsellor / psychologist
 Someone else  ? (Please write)?????????????????????????????????????. 
 Living 115 .Which of the following people do you feel understand your diabetes?
-Parent(s)/ carer(s)/ guardian(s)
-Brother(s)/ sister(s)
-Auntie(s)/ uncle(s)
+Parent(s) / carer(s) / guardian(s)
+Brother(s) / sister(s)
+Auntie(s) / uncle(s)
 Grandparent(s)
 Cousin(s)
-Au pair/ nanny
+Au pair / nanny
 Friends
 Teachers / employers
 Diabetes nurse
 Diabetes consultant (doctor)
 Diabetes dietician
 Nobody
-Counsellor/ psychologist
+Counsellor / psychologist
 Someone else  ? (Please write)?????????????????????????????????????.. 
 Living 116. Rate how you feel about your life at the moment in relation to..... 
 Very happy
 Things could be better
 Unhappy
-School/ college/ work
+School / college / work
 Friends
 Family
 Well-being
