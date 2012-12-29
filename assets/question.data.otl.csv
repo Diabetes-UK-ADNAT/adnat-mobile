@@ -44,7 +44,7 @@ null,Carbs,42,What helps you to work out the carbohydrate content in your food?,
 null,Carbs,43,What might stop you from working out the carbohydrate content correctly in the food you eat?,MC,null,No one helps me,I find it difficult,I do need to,I do have time,I have been taught how to do it,I know how to do it but I ca be bothered,It does say / isn't clear on the packaging,Anticipating that I will eat more than I actually do,Not having a book to help me,Eating out in cafes / restaurants,Nothing,I always work out the carbohydrates in my food,TEXT_OTHER
 null,Carbs,44,What's important to you when choosing what you eat?,MCV,null,Very important,Sometimes important,Not important,Carbohydrate content,Protein content,Fat content,Vitamins and mineral content
 null,Weight,45,Are you happy with your weight?,SC,null,Happy and have never tried to gain or lose weight,Happy and have tried to gain or lose weight,Not happy,Prefer not to say 
-null,Weight,46,"If you have tried to gain or lose weight, what did you do?",TEXT
+null,Weight,46,"If you have tried to gain or lose weight, what did you do?",TEXT,null
 null,Weight,47,Would you like help / advice on how to lose or gain weight safely?,SC,null,Yes,No
 null,Weight,48,"Now you have answered the questions about eating, how healthy do you think your diet is?",SC,null,Very healthy,It could be healthier,Not very healthy 
 null,Testing,49,Do you think you test your blood glucose?,SC,null,Just enough,Too much,Too little
@@ -61,18 +61,18 @@ null,Managing,59,How do you feel when your blood glucose is low?,MC,null,I just 
 null,Managing,60,What makes you hypo / low?,MC,null,Physical activity / exercise,Being stressed / excited,The weather,Injecting too much insulin,Drinking alcohol,"Do know, it just happens",Missing a meal / not eating enough carbohydrate,TEXT_OTHER
 null,Managing,61,What do you do if you are hypo / low?,MC,null,Have something to eat / drink that contains carbohydrate,Have a rest until my levels go back up,Alter my insulin dose (give less insulin),"Nothing, just carry on with what I was doing ",Do some exercise,Tell someone,TEXT_OTHER
 null,Managing,62,Have you been unconscious from a hypo in the last 12 months?,SC,null,Yes,No,Not sure
-62.1,Managing,63,Did you require assistance from a medical person such as a paramedic or a doctor or a nurse or from your mum / dad / carer?,SC,null,Yes,No,Not sure
-62.1,Managing,64,Have you ever been admitted to hospital for a hypo?,SC,null,Yes,No,Not sure
-"62.1,62.2",Managing,65,How did that make you feel?,TEXT
-62.1,Managing,66,How often do you have high blood glucose (more than 10 mmols/l)?,SC,null,Often,Every now and again,Rarely / Never
-62.1,Managing,67,Do you know if your blood glucose is going high without testing your blood?,SC,null,Yes,No,Sometimes,Not sure,I can't tell but others notice the change in me
+"62.1",Managing,63,Did you require assistance from a medical person such as a paramedic or a doctor or a nurse or from your mum / dad / carer?,SC,null,Yes,No,Not sure
+"62.1",Managing,64,Have you ever been admitted to hospital for a hypo?,SC,null,Yes,No,Not sure
+"62.1,62.2",Managing,65,How did that make you feel?,TEXT,null
+"62.1",Managing,66,How often do you have high blood glucose (more than 10 mmols/l)?,SC,null,Often,Every now and again,Rarely / Never
+"62.1",Managing,67,Do you know if your blood glucose is going high without testing your blood?,SC,null,Yes,No,Sometimes,Not sure,I can't tell but others notice the change in me
 null,Managing,68,How do you feel when your blood glucose is high?,MC,null,Really thirsty / dehydrated,I go to the toilet a lot more than usual,Really hot,Do feel hungry,Sick,I start throwing up,Faint,I can't sleep,I get a headache,Stiff and 'crampy',I can't concentrate,I do feel anything,Angry,I have no energy and can't be bothered doing anything,TEXT_OTHER
 null,Managing,69,What makes your blood glucose high?,MC,null,Physical activity,Eating too much,Eating the wrong foods,Physical activity,Not enough insulin,Forgetting an injection,Forgetting to give insulin through my pump,The weather / temperature,"Don't know, it just happens",TEXT_OTHER
 null,Managing,70,What would you do if you tested your blood and it was high?,MC,null,Do some exercise,Inject some insulin,Adjust the insulin in my pump to give more insulin,Have something to eat,Have a rest,Tell someone,"Nothing, just carry on with what I was doing",TEXT_OTHER
 null,Managing,71,Have you had diabetic ketoacidosis in the last 12 months (not including at diagnosis)?,SC,"What is ketoacidosis? Ketoacidosis occurs when there are very high levels of ketones (acid) in the blood. They appear in the urine when your body doesn't have enough insulin.",Yes,No,Not sure,
-71.1,Managing,72,Did you require assistance from a medical person such as a paramedic or a Doctor or a Nurse or from your mum / dad / carer?,SC,null,Yes,No,Not sure
-71.1,Managing,73,Were you admitted to hospital?,SC,null,Yes,No,Not sure
-"71.1,71.2",Managing,74,How did that make you feel?,TEXT
+"71.1",Managing,72,Did you require assistance from a medical person such as a paramedic or a Doctor or a Nurse or from your mum / dad / carer?,SC,null,Yes,No,Not sure
+"71.1",Managing,73,Were you admitted to hospital?,SC,null,Yes,No,Not sure
+"71.1,71.2",Managing,74,How did that make you feel?,TEXT,null
 null,Managing,75,What was your HbA1c test result when you were last in the clinic?,SC,"What is HbA1c? As well as the day-to-day blood glucose testing, there is another test that monitors your diabetes management.  The HbA1c test (usually done from a fingertip blood test either at the clinic or just before your appointment) measures your diabetes control over the last two to three months. The recommended level is generally 7.5% but targets are individual and your paediatric diabetes team may suggest a different target for you. The measurement units for HbA1c have recently changed from percentage (7.5%) to mmol/mol (58mmol/l). The test and its meaning are the same, but the numbers are different. The change has been made so that HbA1c around the world is reported in the same way.",4.0%-7.5% (or 20-58mmol/l),7.6%-9.0% (or 60-75mmol/l),9.1% or higher ( or 76 mmol/l or higher),I don't know,
 null,Managing,76,What would you like your HbA1c to be?,SC,null,4.0%-7.5% (or 20- 58mmol/l),7.6%-9.0% (or 60-75mmol/l),9.1% or higher ( or 76 mmol/l or higher),I don't know    
 null,Managing,77,"Now you have answered the questions about managing your blood glucose, how do you feel about your blood glucose control in general?",SC,null,Very happy,It is improving,Could do better
@@ -80,17 +80,17 @@ null,Medication,78,How do you feel about injecting or using your insulin pump?,S
 null,Medication,79,Who usually sets up (prepares) your insulin injections or changes the set on your pump?,SC,null,Always me,Always my mum / dad / carer,"Usually me, but my mum / dad / carer do some",Usually my mum / dad / carer but I do some,TEXT_OTHER
 null,Medication,80,What motivates you to do your injections or to give insulin through your pump?,MC,null,My mum / dad / carer reminding me,My mum / dad / carer setting up the needles for me it's just part of my daily life,Knowing that it helps me to control my diabetes,I feel a lot happier when I've done my insulin,I do want to feel ill,I know that I have to do it,Nothing,TEXT_OTHER
 null,Insulin,810,Do you use an insulin pump?,SC,null,Yes,No
-810.1,NDI,81,"Including your background insulin if applicable (basal), how many times do you inject insulin per day?",SC,null,Once,Twice,3 times,4 times,5 times,6 times or more,Not sure
-810.1,NDI,82,Which statement best describes you?,SC,null,I never miss an insulin injection,I sometimes miss an insulin injection,I often miss my insulin injections
-810.1,NDI,83,What might stop you from doing an injection?,MC,null,I just forget sometimes,I do like needles,It hurts,I do have any insulin left,I do want my blood glucose to go low,I ca be bothered,I do want to leave my friends,I'm not at home,If I'm ill,My weight,I hate having to inject with every single thing I eat,I do want to do it in school,I do want to inject in front of other people,Nothing,TEXT_OTHER
-810.0,InsulinPump,84,How many times (approximately) do you give insulin through your pump per day?,SC,null,Once,Twice,3 times,4 times,5 times,6 times or more
-810.0,InsulinPump,85,How often do you change your set?,SC,null,Every day,Every other day,Every three days,Every four days,Every five days,Every six days,Once a week,TEXT_OTHER
-810.0,InsulinPump,86,Who inserts your canula?,SC,null,Always me,Always my mum / dad / carer,"Usually me, but my mum / dad / carer do sometimes",Usually mum mum / dad / carer but I do sometimes,TEXT_OTHER
-810.0,InsulinPump,87,How often do you change your canula?,SC,null,Every day,Every other day,Every 3 days,Every 4 days,Every 5 days,Every 6 days,Once a week,TEXT_OTHER
-810.0,InsulinPump,88,Do you use set programs for insulin doses on your pump?,SC,null,"Yes, for several different activities","Yes, now and again",No,TEXT_OTHER
-810.0,InsulinPump,89,What might stop you from wearing your pump?,MC,null,I take it off when I'm doing sport,"I forget to put it on sometimes, e.g. after sport",I take it off to shower / go in the bath,I take it off because it's uncomfortable,I do want people to see it,I can't be bothered,TEXT_OTHER
-810.1,NDI,90,"Now that you have answered the questions about your insulin, how do you feel about injecting?",SC,null,I do mind it most of the time,I do like it some of the time,I hate it all of the time
-810.0,InsulinPump,901,"Now that you have answered the questions about your insulin pump, how do you feel about using your insulin pump?",SC,null,I do mind it most of the time,I do like it some of the time,I hate it all of the time
+"810.1",NDI,81,"Including your background insulin if applicable (basal), how many times do you inject insulin per day?",SC,null,Once,Twice,3 times,4 times,5 times,6 times or more,Not sure
+"810.1",NDI,82,Which statement best describes you?,SC,null,I never miss an insulin injection,I sometimes miss an insulin injection,I often miss my insulin injections
+"810.1",NDI,83,What might stop you from doing an injection?,MC,null,I just forget sometimes,I do like needles,It hurts,I do have any insulin left,I do want my blood glucose to go low,I ca be bothered,I do want to leave my friends,I'm not at home,If I'm ill,My weight,I hate having to inject with every single thing I eat,I do want to do it in school,I do want to inject in front of other people,Nothing,TEXT_OTHER
+"810.0",InsulinPump,84,How many times (approximately) do you give insulin through your pump per day?,SC,null,Once,Twice,3 times,4 times,5 times,6 times or more
+"810.0",InsulinPump,85,How often do you change your set?,SC,null,Every day,Every other day,Every three days,Every four days,Every five days,Every six days,Once a week,TEXT_OTHER
+"810.0",InsulinPump,86,Who inserts your canula?,SC,null,Always me,Always my mum / dad / carer,"Usually me, but my mum / dad / carer do sometimes",Usually mum mum / dad / carer but I do sometimes,TEXT_OTHER
+"810.0",InsulinPump,87,How often do you change your canula?,SC,null,Every day,Every other day,Every 3 days,Every 4 days,Every 5 days,Every 6 days,Once a week,TEXT_OTHER
+"810.0",InsulinPump,88,Do you use set programs for insulin doses on your pump?,SC,null,"Yes, for several different activities","Yes, now and again",No,TEXT_OTHER
+"810.0",InsulinPump,89,What might stop you from wearing your pump?,MC,null,I take it off when I'm doing sport,"I forget to put it on sometimes, e.g. after sport",I take it off to shower / go in the bath,I take it off because it's uncomfortable,I do want people to see it,I can't be bothered,TEXT_OTHER
+"810.1",NDI,90,"Now that you have answered the questions about your insulin, how do you feel about injecting?",SC,null,I do mind it most of the time,I do like it some of the time,I hate it all of the time
+"810.0",InsulinPump,901,"Now that you have answered the questions about your insulin pump, how do you feel about using your insulin pump?",SC,null,I do mind it most of the time,I do like it some of the time,I hate it all of the time
 null,Living,91,How does diabetes affect your life?,SC,null,"My diabetes does stop me from doing anything","I can't always do what I want, but I manage","My diabetes stops me from doing lots of things"
 null,Illness,92,What would you do if you were ill with an infection (e.g. sickness / flu) and it made your blood glucose high?,MC,null,My mum / dad / carer would look after my diabetes,Contact my nurse or doctor,Test my wee for ketones,Test my blood glucose more than usual,Take more insulin if needed,Drink lots of water,Just carry on as normal,Eat more,Eat less,Re-program my pump,Take less insulin,I am not sure what I would do,TEXT_OTHER
 null,OutForTheDay,93,You are going on a day trip with your friends. Which of the following would you ALWAYS take with you?,MC,null,Insulin,Food to treat hypos (e.g. Lucozade / glucose tablets / banana / biscuit),Diabetes ID card or wear ID jewellery,Blood glucose testing equipment,None of the above,TEXT_OTHER
@@ -98,19 +98,19 @@ null,StayOver,94,You are staying over at your friend's house. Which of the follo
 null,Eye,95,Have you had a diabetes eye examination?,SC,What is a diabetic eye examination? This is where your eyes are checked using a special camera for early treatable signs of any problems that can arise because of having diabetes.,Within the last 12 months,12 months-2 years ago,More than 2 years ago,Never,Can't remember,I don't know,
 "95.3,95.4,95.5",Eye,96,Where do you go to have your eyes examined?,MC,null,Diabetes clinic,Mobile unit,Opticians,GP practice,I do know,TEXT_OTHER
 null,Foot,97,Have you had a diabetic foot examination?,SC,What is a diabetic foot examination? This is where your feet are checked for early treatable signs of any problems that can arise because of having diabetes.,Within the last 12 months,12 months- 2 years ago,More than 2 years ago,Never
-97.3,Foot,98,Where do you go to have your feet examined?,MC,null,The diabetes clinic,GP / Practice Nurse,Podiatrist / Chiropodist,I do know,TEXT_OTHER
+"97.3",Foot,98,Where do you go to have your feet examined?,MC,null,The diabetes clinic,GP / Practice Nurse,Podiatrist / Chiropodist,I do know,TEXT_OTHER
 null,Smoking,99,Do you smoke?,SC,null,Yes,No
-99.1,Smoking,100,How many cigarettes do you smoke in a usual day?,SC,null,"I smoke occasionally, not every day",1-5,6-10,11-15,16-20,More than 20
-99.1,Smoking,101,Why do you smoke?,MC,null,I enjoy it,It stops me feeling stressed,All my friends smoke,I do want to smoke but I am addicted,I do know,TEXT_OTHER
-99.1,Smoking,102,Would you like help to give up smoking?,SC,null,Yes,No
+"99.1",Smoking,100,How many cigarettes do you smoke in a usual day?,SC,null,"I smoke occasionally, not every day",1-5,6-10,11-15,16-20,More than 20
+"99.1",Smoking,101,Why do you smoke?,MC,null,I enjoy it,It stops me feeling stressed,All my friends smoke,I do want to smoke but I am addicted,I do know,TEXT_OTHER
+"99.1",Smoking,102,Would you like help to give up smoking?,SC,null,Yes,No
 null,Alchohol,103,Do you drink alcohol regularly?,SC,null,Yes,No
-103.1,Alchohol,104,What type of alcohol do you drink?,MC,null,Beer / lager,Cider,Alcopops,Wine,Spirits (e.g. vodka, whisky, gin),TEXT_OTHER
-103.1,Alchohol,105,How many times do you drink alcohol in a typical week?,SC,null,Less than once,Once or twice,3-4 times,5-6 times,Every day
-103.1,Alchohol,106,How much do you usually drink in one sitting?,TEXT
-103.1,Alchohol,107,Why do you drink alcohol?,MC,null,I enjoy it,It stops me feeling stressed,All my friends drink,I drink it with my family,It tastes nice,To socialise with friends,I can't do without it,TEXT_OTHER
-103.1,Alchohol,108,Do you think you drink too much alcohol?,SC,null,Yes,No,I'm not sure
-103.1,Alchohol,109,Do you know how to manage your diabetes when drinking alcohol?,SC,null,Yes,No,I'm not sure
-103.1,Alchohol,110,Would you like help with your alcohol drinking?,SC,null,Yes,No,I'm not sure
+"103.1",Alchohol,104,What type of alcohol do you drink?,MC,null,Beer / lager,Cider,Alcopops,Wine,Spirits (e.g. vodka, whisky, gin),TEXT_OTHER
+"103.1",Alchohol,105,How many times do you drink alcohol in a typical week?,SC,null,Less than once,Once or twice,3-4 times,5-6 times,Every day
+"103.1",Alchohol,106,How much do you usually drink in one sitting?,TEXT,null
+"103.1",Alchohol,107,Why do you drink alcohol?,MC,null,I enjoy it,It stops me feeling stressed,All my friends drink,I drink it with my family,It tastes nice,To socialise with friends,I can't do without it,TEXT_OTHER
+"103.1",Alchohol,108,Do you think you drink too much alcohol?,SC,null,Yes,No,I'm not sure
+"103.1",Alchohol,109,Do you know how to manage your diabetes when drinking alcohol?,SC,null,Yes,No,I'm not sure
+"103.1",Alchohol,110,Would you like help with your alcohol drinking?,SC,null,Yes,No,I'm not sure
 null,Parties,111,You are going to a party one Friday night with your friends and you know that they will be drinking alcohol. Which statement best describes what you would do?,SC,null,"I would go to the party but I would drink any alcohol","I would go to the party and have a drink but I would monitor my blood glucose levels to make sure I was ok ","I would go to the party, drink the same as my friends and not worry about my diabetes ","I would not go to the party ",TEXT_OTHER
 null,Parties,112,Which statement best describes you?,SC,null,"I do have a problem with diabetes, it's just a part of my life ","I sometimes wish I did have diabetes, but I just get on with it because I have to ","I hate having diabetes "
 null,Living,113,"Now you have answered the questions about living with diabetes, how does diabetes affect your life?",SC,null,"My diabetes doesn't stop me from doing anything","I ca always do what I want, but I manage","My diabetes stops me from doing lots of things"
