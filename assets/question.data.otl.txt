@@ -1,0 +1,1164 @@
+Adolescent Diabetes Needs Assessment Tool 
+GROUP:Diabetes Profile
+GROUP:FIRST OF ALL - ABOUT YOU
+1. How old are you? (Tick one)
+12
+13
+14
+15
+16
+17
+18
+2. Are you male or female? (Tick one)
+Male
+Female
+3. What age were you diagnosed with diabetes? (Tick one)
+Under the age of 1
+Age 1-5
+Age 6-10
+Age 11-15
+Age 15 +
+4. Who lives with you in your home? (Tick all that apply)
+Mum  
+Dad
+Stepmum
+Stepdad
+Carer
+Guardian
+Sister(s) Number
+Brother(s) Number
+Step-sister(s)
+Step-
+brother(s)
+Grand-mother(s)
+Grand-father(s)
+Number
+??
+Number
+??
+Number
+??
+Number
+??
+Aunty(ies)
+Uncle(s)
+Cousin(s)
+Au pair/ Nanny
+Number
+??
+Number
+??
+Number
+??
+Lodger(s)
+Number
+??
+Other ? (Please write below) ???????????????????????????
+5. How tall are you? (Please write below)
+?..
+feet and
+?..
+inches
+OR
+?..
+metres and
+?..
+centimetres
+Do know
+6. How much do you weigh? (Please write below)
+?..
+stone 
+?..
+pounds
+OR
+?..
+kilograms
+Do know
+7. Which insulin regime do you use? (Tick one)
+I take a set amount of insulin twice a day (at breakfast and tea time) (Twice daily)  
+I take one injection at a similar time every day which lasts for up to 24 hours,    
+plus I inject every time I eat with fast-acting insulin (Multiple injections/basal bolus) 
+I take one injection which lasts for 24 hours, plus a mixture of short acting insulin and 
+long and short acting (mixed) insulin throughout the day (Combined)  
+I have an insulin pump 
+I do know 
+8. How long have you been on this regime?
+Less than 12 months
+Between 1 year and 3 years
+Between 3 years and 5 years
+Over 5 years
+9. How do you feel about your regime?
+It?s the best one for me      
+I'm not sure 
+I would like to change to another regime 
+10. How do you feel about your diabetes at the moment?
+OK
+Things could be better
+Unhappy
+GROUP:PHYSICAL ACTIVITY
+11. How active are you? (Tick one)
+Very active
+I do some, but I could do more
+Not active at all
+12. Do you do any of the following pulse-raising sports or physical activities? (Tick 
+all that apply)
+Football
+Tennis
+Rounders
+Netball
+Rugby
+Badminton
+Squash
+Swimming
+Athletics
+Running/ 
+jogging
+Aerobics/ aqua 
+aerobics
+Martial arts
+Yoga
+Rowing
+Cycling
+Exercise DVD
+Go to the gym  
+Home gym/ exercise equipment
+Hockey
+Gymnastics
+Baseball
+Basketball
+Cricket
+Circuit training  
+Dancing
+Trampolining
+None of the above
+Other ? (Please write) ?????????????????????????????????????????????
+13. Are you active in any other ways, such as? (Tick all that apply)
+P.E. in school
+House work
+Walking the dog   
+Walking to/ 
+from school
+Walking to/ 
+from bus stop  
+Walking to/ from train station  
+Riding bike to/ 
+from school
+Riding bike to/ 
+from bus stop  
+Riding bike to/ from train 
+station  
+Walking with 
+friends/ family
+Bike rides with 
+friends/family      
+Shopping            
+Care of animals 
+(e.g. horses)
+Care of siblings/ 
+children
+Trampolining in garden
+Gardening
+Playing on active games console e.g. Nintendo Wii
+Active job e.g. Waitressing/ labouring
+Drama
+None of the above
+Other ? (Please write) ?????????????????????????????????????????
+14. Where do you do exercise or physical activity? (Tick all that apply)
+In school               
+After-school club                 
+Club outside of school 
+At work         
+At home 
+Other ? (Please write) ???????????????????????????????????????
+15. Who do you exercise with? (Tick all that apply)
+With friends      
+With family 
+On my own   
+With other club members
+Other ? (Please write) ??????????????????????????????
+16. How many hours of pulse-raising exercise or physical activity did you do Last week? (Tick one)
+Less than 1 hour 
+1-2 hours 
+3-4 hours 
+5-6 hours 
+7-8 hours 
+More than 8 hours 
+17. Why do you do exercise or physical activity? (Tick all that apply)
+To keep myself fit  
+It makes me feel good  
+To stay healthy
+I am good at it
+I enjoy it
+To make/ spend time with 
+friends
+It keeps my blood 
+sugars low
+So that I can eat more
+I do need as much 
+insulin
+It helps me to lose 
+weight
+I have to do it in school
+To avoid boredom/ it?s 
+something to do  
+It?s the most practical form of transport (e.g. walking back from train/bus station or 
+school)
+I do do any 
+exercise
+Other ? (Please write below) 
+???????????????????????????????????????
+18. What stops or prevents you from starting to do exercise or physical activity? 
+(Tick all that apply)
+Nothing 
+ ? 
+Being ill eg infection
+I am not very good at it
+I do like/ enjoy exercise or sport
+My weight
+If my blood glucose is low
+It is difficult to manage my 
+diabetes when I do exercise
+It is difficult to do exercise with an insulin pump
+I would rather watch TV/ 
+play computer games
+I do have the opportunity to do the sports I like 
+(e.g. swimming at school) 
+I do have time
+Other ? (Please write) ??????????????????????????????????????????????
+19. Now you have answered the questions about being active, how do you rate how 
+active you are? (Tick one)
+Very active
+I do some, but I could do more
+Not active at all
+GROUP:MANAGING YOUR BLOOD GLUCOSE WHEN BEING ACTIVE
+20. Which statement best describes you? (Tick one)
+=
+I ca manage my blood glucose levels whilst exercising or doing 
+physical activity 
+=
+I can usually manage my blood glucose levels whilst exercising or doing 
+physical activity but sometimes I have trouble
+=
+I can manage my blood glucose levels whilst exercising or doing physical 
+activity
+21. What makes it difficult to manage your blood glucose levels when exercising or 
+physical activity? (Tick all that apply)
+I do find it difficult 
+Exercise makes my diabetes control worse   
+I am frightened of getting a hypo 
+I?d need to take more insulin
+I?d need to eat more 
+If my blood sugar is low then I ca exercise 
+It is difficult with my pump 
+22. What usually happens to your blood glucose levels when you do exercise or 
+physical activity? (Tick one) 
+They usually go higher 
+They stay the same 
+I do know 
+They usually go lower 
+They vary 
+I end up having a hypo                    
+23. When doing exercise or physical activity, my blood glucose levels depend on ? 
+(Tick all that apply)
+What type of exercise I am doing
+How much insulin I have taken
+How much I have eaten  
+How much activity I have already done
+Time of day
+Other ? (Please write) ??????????????????????????????????????????????
+24. What would you do if your blood glucose levels went higher during exercise or 
+physical activity? (Tick all that apply) 
+Do nothing 
+Check my blood glucose levels
+Take more insulin
+Have something to eat or drink containing carbohydrate                            
+Check my blood glucose levels  afterwards to keep an eye on them
+Other ? (Please write ?????????????????????????????????????.
+25. What would you do if your blood glucose levels went low during 
+exercise or physical activity? (Tick all that apply) 
+Do nothing 
+Check my blood glucose levels
+Wait for blood glucose levels to come back up then  carry on
+Have something to eat/drink containing carbohydrate
+Check my blood glucose levels afterwards to keep an eye on them
+Take less insulin
+Other ? (Please write) ????????????????????????????????????
+26. Which of the following would you do BEFORE exercise and/or physical activity? 
+(Tick all that apply) 
+Take more insulin
+Take less insulin
+Test my blood glucose levels
+Take off my insulin pump
+Adjust the settings on my pump
+Depending on my blood glucose level, eat/drink 
+something  containing carbohydrate
+None of the above
+Other ? (Please write) ?????????????????????????????????????????????
+27. Which of the following would you do AFTER exercise and/or taking part in 
+physical activity? (Tick all that apply) 
+Take more insulin
+Take less insulin
+Test my blood glucose levels
+Take off my insulin pump
+Adjust the settings on my pump
+Eat/ drink something containing carbohydrate
+Watch out for my blood glucose levels falling later in the day
+None of the above 
+Other ? (Please write) ??????????????????????????????????????????????....
+28. Now you have answered the questions about managing your blood glucose when 
+you are being active, which statement best describes you? (Tick one)
+=
+I ca manage my blood glucose levels whilst exercising or doing 
+physical activity 
+=
+I can usually manage my blood glucose levels whilst exercising or doing 
+physical activity but sometimes I have trouble
+=
+I can manage my blood glucose levels whilst exercising or doing physical 
+activity
+GROUP:EATING
+29. How healthy do you think your diet is?
+Very healthy
+It could be healthier
+Not very healthy 
+30. What do you usually have for breakfast? (Tick all that apply)
+I do have breakfast   ?    Go to Question 31
+GROUP:FOOD
+Cereal
+Porridge
+Fruit
+Yoghurt
+Eggs
+Bacon
+Baked beans
+Mushrooms
+Sausage
+Hash browns
+Tomatoes
+Cereal bar
+Bagel
+Toasted teacake  
+Crepes
+Pancakes
+Chapatti
+English breakfast muffin  
+Sweet muffin (cake)
+Crumpets   
+Potato cakes
+Cheese and cold meat  
+Toast
+Something else ? (Please write)?????????????????????????
+GROUP:DRINKS
+Milk
+Fresh fruit juice
+Tea
+Coffee
+Water
+Fruit squash
+Fizzy drink
+Flavoured water
+Something else ? (Please write)???????????????????????????????????
+31. What do you usually eat for lunch? (Tick all that apply)
+I do eat lunch   ?      Go to Question 32
+GROUP:FOOD
+Sandwich/ Panini
+Salad
+Soup
+Fish
+Beef
+Lamb
+Chicken
+Turkey
+Burger
+Pie/pasty
+Pizza
+Chips
+Potato/es
+Pasta
+Rice
+Curry
+Baked beans
+Vegetables
+Pot snack (pasta or noodles)
+Sushi  
+Something else ? (Please write below)
+???????????????????????????????..
+GROUP:SNACKS/DESERT WITH LUNCH
+Fruit
+Crisps
+Cereal bar
+Chocolate bar
+Yoghurt
+Sweets
+Cake
+Biscuit
+Something else ? (Please write)??????????????????????????????..
+GROUP:DRINKS
+Milk
+Fresh fruit juice
+Tea
+Coffee
+Water
+Fruit squash
+Fizzy drink
+Flavoured water
+Something else ? (Please write)??????????????????????????????????? 
+32. What do you usually eat for tea? (Tick all that apply)
+I do eat tea
+Go to Question 33
+GROUP:FOOD
+Fish
+Turkey
+Meat burger
+Pork
+Lamb
+Veggie Burger
+Chicken
+Beef
+Pie/Pasty
+Sausages
+Fishcake
+Boiled potato
+Chips
+Jacket potato
+Mashed potato
+Rice
+Pasta
+Cous cous
+Vegetables
+Baked beans
+Noodles
+Pizza
+Curry
+Something else ?  (Please write)?????????????????????????????..
+GROUP:DESSERT/ PUDDING
+Yogurt
+Fruit
+Cake(s)
+Ice cream
+Biscuit/ cookie
+Muffin
+Crumble
+Pie
+Nothing
+Ice lolly
+Something else ? (Please write)????????????????????????????
+GROUP:DRINKS WITH TEA
+Milk
+Fresh fruit juice
+Tea
+Coffee
+Water
+Fruit squash
+Fizzy drink
+Flavoured water
+Something else ? (Please write)???????????????????????????????????
+33. What do you usually eat for a snack?
+I do have snacks
+Fruit
+Salad
+Yoghurt
+Toast
+Cereal
+Biscuit
+Sandwich
+Crisps
+Cereal bar
+Chocolate bar
+Sweets
+Cake
+Something else ? (Please write)???????????????????????????????????
+34. Do you eat fruit and/or vegetables? (Tick one)
+Yes usually every day        
+Sometimes but not every day
+No or very rarely      
+35. How many times a week do you eat treats such as sweets, chocolate, fast 
+food, takeaways? (Tick one)
+Every day 
+5-6 
+3-4 
+1-2 
+Less than once per week 
+36. Which statement best describes you? (Tick one)
+I eat three meals every day (breakfast, lunch and dinner)   
+I often miss breakfast, but eat lunch and dinner   
+I often miss lunch, but eat breakfast and dinner   
+I often miss dinner, but eat breakfast and lunch   
+I just eat when I feel like it   
+My meals vary depending on what I am doing that day  
+37. Who has the most say about what you eat? (Please tick)
+A lot
+Some 
+A little
+None 
+Me
+My mum/dad/carer/guardian
+My friends
+School
+Other ? (Please write)??????????????????????????????????.
+GROUP:MAKING FOOD CHOICES
+38. Which statement best describes you? (Tick one)
+I usually work out what I'm going to eat during the day and stick to 
+that, so that I can take the right amount of insulin 
+I eat whatever I like and my blood glucose is well controlled  
+Sometimes I have to eat when I'm not hungry  
+I tend to eat the same kinds of food all the time because it makes it 
+easier to manage my diabetes  
+I eat whatever I like and my blood glucose is not well controlled 
+I do always eat when I'm supposed to and I have hypos	
+Other ? (Please write)??????????????????????????????????.
+GROUP:TREATING HYPOS
+39. What would you normally eat and/or drink to treat a hypo? (Tick all that 
+apply)
+Fruit juice
+Glucose tablets
+Glucose drink e.g. Lucozade
+GlucoGel/Hypostop
+Milk
+Fruit
+Cereal bar
+Crisps
+Chocolate
+Biscuit
+Toast
+Tea with sugar           
+Nothing  
+Something else (Please write)????????????????????????????????????. 
+40. How often do you have an evening snack? (Tick one) 
+Every night
+Never
+Occasionally
+Other ? (Please write)???????????????????????????????
+GROUP:CARBOHYDRATES
+41. Which statement most applies to you?  (Tick one)
+I usually  calculate carbohydrates in the food I eat and work out my 
+insulin accordingly 
+I never calculate carbohydrates in the food I eat before deciding how 
+much insulin to take 
+I'm not sure what carbohydrates are 
+42. What helps you to work out the carbohydrate content in your food? (Tick all 
+that apply)
+Attending a carbohydrate counting course
+Carbohydrate counting book
+Weighing scales
+Labelling on food packaging
+Making a list of the amount of carbohydrate in certain foods/meals so that I know 
+what it is for next time
+Remembering how much carbohydrate is in certain foods
+Someone helps me to work it out
+I work it out for myself
+I guess
+I do think about carbohydrates at all
+Other ? (Please write)????????????????????????????????????????????..
+43. What might stop you from working out the carbohydrate content correctly in 
+the food you eat? (Tick all that apply)
+No one helps me
+I find it difficult
+I do need to  
+I do have time
+I have been taught how to do it
+I know how to do it but I ca be bothered
+It does say/ isn't clear on the packaging
+Anticipating that I will eat more than I actually do
+Not having a book to help me
+Eating out in cafes/restaurants
+Nothing, I always work out the carbohydrates in my food
+Other ? (Please write)????????????????????????????????????..
+44. What?s important to you when choosing what you eat? 
+Very 
+important
+Sometimes 
+important
+Not 
+important
+Carbohydrate content 
+Protein content 
+Fat content
+Vitamins and mineral content
+GROUP:YOUR WEIGHT
+45. Are you happy with your weight? (Tick one)
+Happy and have never tried to gain or lose weight 
+Happy and have tried to gain or lose weight 
+Not happy 
+Prefer not to say 
+46. If you have tried to gain or lose weight, what did you do? (Please write below)
+????????????????????????????????????????????????????????????
+????????????????????????????????????????????????????????????
+????????????????????????????????????????????????????????????
+????????????????????????????????????????????????????????????
+47. Would you like help/advice on how to lose or gain weight safely? (Tick one)
+Yes
+No
+48. Now you have answered the questions about eating, how healthy do you think 
+your diet is? (Tick one)
+Very healthy
+It could be healthier
+Not very healthy 
+GROUP:MONITORING BLOOD GLUCOSE
+GROUP:TESTING YOUR BLOOD GLUCOSE
+49. Do you think you test your blood glucose?? (Tick one)
+Just enough 
+Too much
+Too little
+50. How often do you normally test your blood glucose in a day? (Tick one)
+I do usually test my blood at all
+It varies a lot depending upon where I am or what I am doing
+Once or twice
+3-5 times
+More than 5 times
+51. What motivates you to test your blood glucose? (Tick all that apply)
+Mum/dad/carer reminding me
+If I feel high/low
+I always do it before and/or after I have something to eat
+I want to know what my blood glucose levels are
+Doctors/nurses tell me to do it 
+I want to get a good HbA1c result
+Nothing would help me to test, I never do it
+Other ? (Please write)????????????????????????????????????????
+52. What puts you off testing your blood glucose? (Tick all that apply)
+Nothing, I always test when I need to
+ Ca be bothered
+ Feeling too tired
+ Other people watching
+ Having to stop when I'm in the middle of something
+ Being in school
+ Not wanting to take my testing equipment out with me
+ It hurts my fingers
+ If people remind me it makes me not want to do it  
+ Scared that the result will 
+be high
+ There?s no point in testing as I do do anything with the result
+Other ? (Please write)????????????????????????????????????..
+53. How would you describe your blood glucose test results? (Tick one)
+They are usually high 
+(more than 10 mmols/l)
+They are usually low 
+(less than 4 mmols/l)
+They are generally within the 
+recommended levels (4-10 mmols/l)
+They always go up and down
+I'm not sure
+I do know because I don't usually test my blood
+54. What do you do with your blood glucose test results? (Tick all that apply)
+Record them in?
+Use them to work out how much?
+Diary/paper chart
+Insulin I should take
+Electronic device
+How much carbohydrates to eat
+My pump
+How much exercise to do
+My blood glucose monitor
+Nothing
+I do test my blood
+Other ? (Please write)????????????????????????????????????..
+55. Now that you have answered the questions about testing your blood glucose, 
+do you think you test your blood glucose? (Tick one)
+Just enough 
+Too much
+Too little
+GROUP:MANAGING YOUR BLOOD GLUCOSE
+56. How do you feel about your blood glucose control in general? (Tick one)
+Very happy
+It is improving
+Could do better
+LOWS?
+57. How often do you have hypos/low blood glucose (less than 4mmols/l) (Tick one)
+Often
+Every now and again   
+Rarely/Never
+58. Do you know when you are going hypo/low without testing your blood glucose? 
+(Tick one)
+Yes
+No
+Sometimes
+Not sure
+I ca tell but others notice the change in me
+59. How do you feel when your blood glucose is low? (Tick all that apply)
+I just want to sit 
+down
+I want to go to sleep
+I get a pain in my head
+I feel a bit shaky
+I feel hot and 
+sweaty
+I feel dizzy  
+Really hungry
+Nauseas/sick
+I ca concentrate
+Spaced out
+I go all quiet
+Irritable/ moody
+I start to laugh at random things and get on people?s nerves
+Sometimes I dream I'm having a hypo, then I wake up and I am having one
+I do feel anything
+Stomach pain       ?
+Something else ? (Please write)?????????????????????????????????........
+60. What makes you hypo/low? (Tick all that apply)
+Physical activity/exercise
+Being stressed/excited
+The weather
+Injecting too much insulin
+Drinking alcohol
+Do know, it just happens
+Missing a meal/ not eating enough carbohydrate
+Other ? (Please write)????????????????????????????????????..
+61. What do you do if you are hypo/low? (Tick all that apply)
+Have something to eat/drink that contains carbohydrate      
+Have a rest until my levels go back up
+Alter my insulin dose (give less insulin)
+Nothing, just carry on with what I was doing 
+Do some exercise
+Tell someone    
+Something else ?(Please write)?????????????????????????????????.
+62. Have you been unconscious from a hypo in the last 12 months?  (Tick one and 
+follow the instruction below)
+Yes
+Go to Question 63   
+ Not sure
+Go to Question 63   
+ No      
+Go to Question 68   
+63. Did you require assistance from a medical person such as a paramedic or a 
+doctor or a nurse or from your mum/dad/carer? (Tick one)
+Yes
+No
+Not sure
+64. Have you ever been admitted to hospital for a hypo? (Tick one)
+Yes
+No
+Not sure
+65. If you answered YES to Question 62, how did that make you feel? (Please 
+write below)
+?AND HIGHS
+66. How often do you have high blood glucose (more than 10 mmols/l)? (Tick one)
+Often
+Every now and again   
+Rarely/Never
+67. Do you know if your blood glucose is going high without testing your blood? 
+(Tick one)
+Yes
+No
+Sometimes
+Not sure
+I ca tell but others notice the change in me
+68. How do you feel when your blood glucose is high? (Tick all that apply)
+Really thirsty/ 
+dehydrated  
+I go to the toilet a lot more than usual
+Really hot
+Do feel hungry
+Sick
+I start throwing up
+Faint
+I ca sleep
+I get a headache
+Stiff and ?crampy?
+I ca concentrate
+I do feel anything    
+Angry
+I have no energy and ca be bothered doing anything
+Something else ? (Please write)??????????????????????????????????...
+69. What makes your blood glucose high? (Tick all that apply)
+Physical activity
+Eating too much  
+Eating the wrong foods
+Physical activity
+Not enough insulin
+Forgetting an injection
+Forgetting to give insulin through my pump
+The weather/ temperature
+Do know, it just happens 
+Something else ? (Please write)??????????????????????????????????
+70. What would you do if you tested your blood and it was high? (Tick all that 
+apply)
+Do some exercise
+Inject some insulin
+Adjust the insulin in my 
+pump to give more insulin
+Have something to eat
+Have a rest
+Tell someone    
+Nothing, just carry on with what I was doing
+Something else ? (Please write)??????????????????????????????????????.
+71. Have you had diabetic ketoacidosis in the last 12 months (not including at 
+diagnosis)? (Tick one)
+Yes 
+Go to Question 72   
+Not sure 
+Go to Question 72   
+No 
+Go to Question 75   
+What is ketoacidosis? Ketoacidosis occurs when there are very 
+high levels of ketones (acid) in the blood. They appear in the 
+urine when your body doesn't have enough insulin.
+72. Did you require assistance from a medical person such as a paramedic or a 
+Doctor or a Nurse or from your mum/dad/carer? (Tick one)
+Yes
+No
+Not sure
+73. Were you admitted to hospital? (Tick one)
+Yes
+No
+Not sure
+74. If you answered YES to Question 71, how did that make you feel? (Please 
+write below)
+HbA1c
+75. What was your HbA1c test result when you were last in the clinic? (Tick one) 
+4.0%-7.5%
+(or 20-58mmol/l)   
+7.6%-9.0%
+(or 60?75mmol/l)     
+9.1% or higher
+( or 76 mmol/l or 
+higher)      
+I do 
+know    
+What is HbA1c? As well as the day-to-day blood glucose testing, 
+there is another test that monitors your diabetes management. 
+The HbA1c test (usually done from a fingertip blood test either 
+at the clinic or just before your appointment) measures your 
+diabetes control over the last two to three months. The 
+recommended level is generally 7.5% but targets are individual 
+and your paediatric diabetes team may suggest a different 
+target for you. The measurement units for HbA1c have recently 
+changed from percentage (7.5%) to mmol/mol (58mmol/l). The 
+test and its meaning are the same, but the numbers are 
+different. The change has been made so that HbA1c around the 
+world is reported in the same way. 
+76. What would you like your HbA1c to be?
+4.0%-7.5%
+(or 20-
+58mmol/l)   
+7.6%-9.0%
+(or 60?
+75mmol/l)     
+9.1% or higher
+( or 76 mmol/l or 
+higher)      
+I do know    
+77. Now you have answered the questions about managing your blood glucose, how 
+do you feel about your blood glucose control in general? (Tick one)
+Very happy
+It is improving
+Could do better
+GROUP:MEDICATION TAKING
+78. How do you feel about injecting or using your insulin pump? (Tick one)
+= I do mind it most of the time
+= I do like it some of the time
+= I hate it all of the time
+79. Who usually sets up (prepares) your insulin injections or changes the set on 
+your pump? (Tick one)
+Always me
+Always my mum/dad/carer
+Usually me, but my mum/dad/carer do some
+Usually my mum/dad/carer but I do some
+ Other ? (Please write)??????????????????????????????????????????.. 
+80. What motivates you to do your injections or to give insulin through your pump? 
+(Tick all that apply)
+My mum/dad/carer reminding me
+My mum/dad/carer setting up the needles for me
+It?s just part of my daily life
+Knowing that it helps me to control my diabetes
+I feel a lot happier when I?ve done my insulin
+I do want to feel ill
+I know that I have to do it
+Nothing
+Other ? (Please write)?????????????????????????????????????????.
+GROUP:ONLY ANSWER THE QUESTIONS IN THIS SECTION 
+(Questions 81,82 and 83 ) 
+IF YOU DO NOT USE AN INSULIN PUMP
+GROUP:INSULIN INJECTIONS
+81. Including your background insulin if applicable (basal), how many times do you 
+inject insulin per day? (Tick one)
+Once
+Twice
+3 times
+4 times
+5 times
+6 times or more
+Not sure
+82. Which statement best describes you? (Tick one)
+I never miss an insulin injection
+I sometimes miss an insulin injection
+I often miss my insulin injections
+83. What might stop you from doing an injection (Tick all that apply)
+I just forget sometimes
+I do like needles
+It hurts
+I do have any insulin left
+I do want my blood glucose to go low
+I ca be bothered
+I do want to leave my friends
+I'm not at home
+If I'm ill
+My weight
+I hate having to inject with every single 
+thing I eat
+I do want to do it in school
+I do want to inject in front of other 
+people
+Nothing
+Other ? (Please write)??????????????????????????????????????????? 
+GROUP:ONLY ANSWER THE QUESTIONS IN THIS SECTION 
+(Questions 84, 85, 86, 87 and 89)
+GROUP:IF YOU USE AN INSULIN PUMP
+GROUP:USING YOUR INSULIN PUMP
+84. How many times (approximately) do you give insulin through your pump per 
+day? (Tick one)
+Once
+Twice
+3 times
+4 times
+5 times
+6 times or more
+85. How often do you change your set? (Tick one)
+Every day
+Every other day
+Every three days
+Every four days
+Every five days
+Every six days
+Once a week
+Other ? (Please write)??????????????????????????????????????????
+86. Who inserts your canula? (Tick one)
+Always me
+Always my mum/dad/carer
+Usually me, but my mum/dad/carer do sometimes
+Usually mum mum/dad/carer but I do sometimes
+Other ? (Please write)??????????????????????????????????????????..
+87. How often do you change your canula? (Tick one)
+Every day
+Every other day
+Every 3 days
+Every 4 days
+Every 5 days
+Every 6 days
+Once a week
+Other ? (Please write)??????????????????????????????????????.. 
+88. Do you use set programs for insulin doses on your pump? (Tick one)
+Yes, for several different 
+activities
+Yes, now and again
+No
+Other ? (Please write)?????????????????????????????????????????. 
+89. What might stop you from wearing your pump (Tick all that apply)
+I take it off when I'm doing sport 
+I forget to put it on sometimes, e.g. after 
+sport
+I take it off to shower/ go in the 
+bath
+I take it off because it?s uncomfortable
+I do want people to see it
+I ca be bothered
+Other ? (Please write)???????????????????????????????????????????? 
+90. Now that you have answered the questions about your insulin pump, 
+how do you feel about injecting or using your insulin pump? (Tick one)
+= I do mind it most of the time
+= I do like it some of the time
+= I hate it all of the time
+GROUP:LIVING WITH DIABETES
+91. How does diabetes affect your life? (Tick one)
+My diabetes does stop me from doing anything
+I ca always do what I want, but I manage
+My diabetes stops me from doing lots of things
+GROUP:ILLNESS
+92. What would you do if you were ill with an infection (e.g. sickness/flu) and it 
+made your blood glucose high? (Tick all that apply)
+My mum/dad/carer would look after 
+my diabetes 
+Contact my nurse or doctor 
+I would:
+Test my wee for ketones 
+Test my blood glucose more than usual 
+Take more insulin if needed 
+Drink lots of water 
+Just carry on as normal 
+Eat more 
+Eat less        
+Re-program my pump 
+Take less insulin
+I am not sure what I would do 
+Something else ? (Please write)??????????????????????????????????????? 
+GROUP:GOING OUT FOR THE DAY
+93. You are going on a day trip with your friends. Which of the following would 
+you ALWAYS take with you? (Tick all that apply)
+Insulin
+Food to treat hypos (e.g. Lucozade/glucose tablets/banana/biscuit) 
+Diabetes ID card or wear ID jewellery
+Blood glucose testing equipment
+None of the above                                                                                   ?
+Something else ? (Please write)?????????????????????????????. 
+STAYING OVER AT A FRIEND?S HOUSE
+94. You are staying over at your friend?s house. Which of the following would you 
+do? (Tick all that apply)
+Make sure my friend knows about my diabetes
+Make sure my friend?s parents know about diabetes
+Take snacks in case I needed them 
+Take my blood glucose meter with me 
+Take my insulin equipment with me 
+None of the above 
+Something else  ? (Please write)?????????????????????.. 
+GROUP:EYE AND FOOT CARE
+95. Have you had a diabetes eye examination? (Tick one)
+What is a diabetic eye examination? This is where your eyes are 
+checked using a special camera for early treatable signs of any 
+problems that can arise because of having diabetes. 
+Within the last 12 months
+12 months-2 years ago
+More than 2 years ago
+Never
+Go to Question 97
+Ca remember
+Go to Question 97
+I do know
+Go to Question 97
+96. Where do you go to have your eyes examined?  (Tick all that apply)
+Diabetes clinic
+Mobile unit 
+Opticians
+GP practice 
+I do know 
+Somewhere else ? (Please write)?????????????????????????????.. 
+97. Have you had a diabetic foot examination?  (Tick one)
+  What is a diabetic foot examination? This is where your feet
+are checked for early treatable signs of any problems that can
+arise because of having diabetes.
+Within the last 12 months
+12 months- 2 years ago
+More than 2 years ago
+Never
+Go to Question 99      
+98. Where do you go to have your feet examined? (Tick all that apply)
+The diabetes clinic
+GP/Practice Nurse
+Podiatrist/Chiropodist
+I do know
+Somewhere else ? (Please write)???????????????????????????????.. 
+GROUP:SMOKING
+99. Do you smoke?
+Yes
+Go to Question 100          
+No
+Go to Question 103
+100. How many cigarettes do you smoke in a usual day?
+I smoke occasionally, not every day
+1-5
+6-10
+11-15
+16-20
+More than 20
+101. Why do you smoke? (Tick all that apply)
+I enjoy it
+It stops me feeling stressed
+All my friends smoke
+I do want to smoke but I am addicted
+I do know
+Other ? (Please write)???????????????????????????????????????.. 
+102. Would you like help to give up smoking? 
+Yes
+No
+GROUP:DRINKING ALCOHOL
+103. Do you drink alcohol regularly? 
+Yes
+Go to Question 104
+No
+Go to question 111
+104. What type of alcohol do you drink? (Tick all that apply)
+Beer/lager
+Cider
+Alcopops
+Wine
+Spirits (e.g. vodka, whisky, gin)
+Other ? (Please write)????????????????????????????????????????.. 
+105. How many times do you drink alcohol in a typical week? (Tick one)
+Less than once 
+ Once or twice
+ 3-4 times 
+5-6 times
+Every day
+106. How much do you usually drink in one sitting? (Please write below)
+107. Why do you drink alcohol? (Tick all that apply)
+I enjoy it
+It stops me feeling stressed
+All my friends drink
+I drink it with my family
+It tastes nice
+To socialise with friends
+I ca do without it 
+Other ? (Please write)?????????????????????????????????????????. 
+108. Do you think you drink too much alcohol? (Tick one)
+Yes
+No
+I'm not sure
+109. Do you know how to manage your diabetes when drinking alcohol? (Tick one)
+Yes
+No
+I'm not sure
+110. Would you like help with your alcohol drinking? (Tick one)
+Yes
+No
+I'm not sure
+GROUP:GOING TO PARTIES
+111. You are going to a party one Friday night with your friends and you know 
+that they will be drinking alcohol. Which statement best describes what you would 
+do? (Tick one)
+I would go to the party but I would drink any alcohol
+I would go to the party and have a drink but I would monitor my blood glucose 
+levels to make sure I was ok 
+I would go to the party, drink the same as my friends and not worry about my 
+diabetes 
+I would not go to the party 
+Other ? (Please write)??????????????????????????????????????????.
+112. Which statement best describes you? (Tick one)
+I do have a problem with diabetes, it?s just a part of my life 
+I sometimes wish I did have diabetes, but I just get on with it 
+because I have to 
+I hate having diabetes 
+113. Now you have answered the questions about living with diabetes, how does diabetes affect your life? (Tick one)
+My diabetes doesn't stop me from doing anything
+I ca always do what I want, but I manage
+My diabetes stops me from doing lots of things
+114. Which of the following people do you feel support you with managing your diabetes?
+Parent(s)/ carer(s)/ guardian(s)
+Brother(s)/ sister(s)
+Auntie(s)/ uncle(s)
+Grandparent(s)
+Cousin(s)
+Au pair/ nanny
+Friends
+Teachers / employers
+Diabetes nurse
+Diabetes consultant (doctor)
+Diabetes dietician
+Nobody
+Counsellor/ psychologist
+Someone else  ? (Please write)?????????????????????????????????????. 
+115 .Which of the following people do you feel understand your diabetes?
+Parent(s)/ carer(s)/ guardian(s)
+Brother(s)/ sister(s)
+Auntie(s)/ uncle(s)
+Grandparent(s)
+Cousin(s)
+Au pair/ nanny
+Friends
+Teachers / employers
+Diabetes nurse
+Diabetes consultant (doctor)
+Diabetes dietician
+Nobody
+Counsellor/ psychologist
+Someone else  ? (Please write)?????????????????????????????????????.. 
+116. Rate how you feel about your life at the moment in relation to..... 
+Very happy
+Things could be better
+Unhappy
+School/ college/ work
+Friends
+Family
+Well-being
+My future
+117. And to finish......now you have answered all the questions, how do you feel about your diabetes at the moment?
+OK
+Things could be better
+Unhappy
