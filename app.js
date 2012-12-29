@@ -24,7 +24,6 @@ Ext.application({
 		'Contact', 
 		'Results', 
 		'Question', 
-		'QuestionCard', 
 	],
 
 	controllers: [
