@@ -41,18 +41,22 @@ function buildQuestion(q) {
 					'labelWidth: "66%",	 ' ,
 					'labelWrap: true,	 ' ,
 					'labelAlign: "left",	 ' ,
+					'<tpl if="parent.type == &quot;SC&quot;">',
 					'listeners: { ',
 						'check: function(button) { ',
 							'Ext.get("{parent.name}").setHtml("' ,
 								"<div id='{parent.name}' class='centered'>",
-									"<img src='../resources/images/tl-{color}.png'/>",
+									//"<img src='../resources/images/tl-{color}.png'/>",
+									"<img src='../resources/images/tl-red.png'/>",
 								"</div>" ,
 							'"); ',
 						'}',
 					'}, ' ,
+					'</tpl>',
 				'}, ' ,
 				'</tpl>',
 			'], }, ' , 
+			'<tpl if="type == &quot;SC&quot;">',
 			// stoplight
 			"{ html: '",
 			'<div>&nbsp;</div>',
@@ -61,10 +65,11 @@ function buildQuestion(q) {
 			'</div>',
 			'<div>&nbsp;</div>',
 			"'}, ",
+			'</tpl>',
 		'] }'  
 	);
 	tpl.compile();
-	var response = tpl.apply({name:Date.now(), options:q.get('options')});  
+	var response = tpl.apply({name:Date.now(), options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	//console.log(response);
 	return response;
 }	

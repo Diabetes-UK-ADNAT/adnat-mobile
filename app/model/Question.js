@@ -28,6 +28,11 @@ Ext.define('adnat.model.Question', {
                 name: 'options',
                 type: 'auto', 
             },
+            {
+				id: 6,
+                name: 'required',
+                type: 'int', 
+            },
         ],
     }
 });
