@@ -24,6 +24,8 @@ Ext.define('adnat.controller.QuestionController', {
             callback: this.onQuestionsStoreLoad,
             scope: this
         });
+        this.on('swipe', this.onSwipe);
+        this.getQuestion().on('swipe', this.onSwipe);
     },
 	onQuestionsStoreLoad : function() {
 		//console.log('onQuestionsStoreLoad');
@@ -31,7 +33,13 @@ Ext.define('adnat.controller.QuestionController', {
 		//s.info();
 		this.showQuestion(0,0);
     },
-
+    onSwipe: function (event) {
+		 if (event.direction == 'right') {
+			 this.nextPage();
+		 } else if (event.direction == 'left') {
+			 this.prevPage();
+		 }
+    },
 	showQuestion: function(newO,direction) {
 		var q = getNextQuestion(newO, direction);
 		setTitle(this,q);
@@ -48,7 +56,7 @@ Ext.define('adnat.controller.QuestionController', {
 			q.set('q', q.get('id'));
 			this.getQuestion().setRecord(q);
 		}
-		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,true)
+		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,false)
 	},
 
     prevPage: function(){

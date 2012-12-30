@@ -16,6 +16,14 @@ Ext.define("adnat.view.Question", {
 		iconCls: 'compose',
 		styleHtmlContent: true,
 		scrollable: true,
+		listeners: {
+			swipe: {
+				fn: function(event) {
+					adnat.app.getController('QuestionController').onSwipe(event);
+				},
+				element: 'innerElement',
+			},
+		},
 		items: [
 			{
 				docked: 'top',
