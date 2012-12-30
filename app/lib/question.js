@@ -39,6 +39,8 @@ function buildQuestion(q) {
 					'label: "{text}", ' ,
 					'value: "{value}", ' ,
 					'labelWidth: "66%",	 ' ,
+					'labelWrap: true,	 ' ,
+					'labelAlign: "left",	 ' ,
 					'listeners: { ',
 						'check: function(button) { ',
 							'Ext.get("{parent.name}").setHtml("' ,

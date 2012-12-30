@@ -48,6 +48,7 @@ Ext.define('adnat.controller.QuestionController', {
 			q.set('q', q.get('id'));
 			this.getQuestion().setRecord(q);
 		}
+		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,true)
 	},
 
     prevPage: function(){
