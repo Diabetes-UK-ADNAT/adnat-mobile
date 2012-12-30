@@ -42,6 +42,7 @@ Ext.define('adnat.controller.QuestionController', {
     },
 	showQuestion: function(newO,direction) {
 		var q = getNextQuestion(newO, direction);
+		console.log(q);
 		setTitle(this,q);
 		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
