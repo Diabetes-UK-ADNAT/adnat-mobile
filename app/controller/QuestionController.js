@@ -54,7 +54,7 @@ Ext.define('adnat.controller.QuestionController', {
     prevPage: function(){
 		// fixme validate 
 		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
-		saveResponse(r);
+		Ext.getStore('Responses').saveResponse(r);
 		this.showQuestion( r.get('ordinal') - 1, -1 ); 
         /*
 		 * var errors = r.validate();
@@ -72,7 +72,10 @@ Ext.define('adnat.controller.QuestionController', {
 	nextPage: function(){
 		// fixme validate 
 		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
-		saveResponse(r);
+		Ext.getStore('Responses').saveResponse(r);
 		this.showQuestion( r.get('ordinal') + 1, 1 ); 
+		//
+		//put on util page / for logout also
+		//Ext.getStore('Responses').deleteAllRecords();
 	},
 });

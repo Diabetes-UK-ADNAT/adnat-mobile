@@ -15,5 +15,19 @@ Ext.define('adnat.store.Responses', {
 		for (var i=0; i<a.length; i++) {
 			console.log(a[i]);
 		}
-	}
+	},
+	saveResponse : function (r) {
+		//var s = Ext.getStore('Responses');
+		var find = this.find('q', r.get('q'));
+		if (find != -1) {
+			this.removeAt(find);
+			this.sync();
+		}
+		r.save();
+		this.sync();
+	},
+	deleteAllRecords : function() {
+		this.removeAll();
+		this.sync();
+	},
 });

@@ -6,11 +6,13 @@ function setTitle(component,q) {
 	html = tpl.apply( {t: q.get('text') } );
 	component.getTitle().setHtml(html);
 }
+
 function setQuestion(c, q) {
 	c.removeAll();
 	var response = buildQuestion(q);
 	c.add(Ext.decode(response).data);
 }
+
 function getNextQuestion(newO, direction) {
 	// direction = 0 for direct, -1 for prev, 1 for next
 	var s = Ext.getStore('Questions');
@@ -46,7 +48,7 @@ function buildQuestion(q) {
 						'check: function(button) { ',
 							'Ext.get("{parent.name}").setHtml("' ,
 								"<div id='{parent.name}' class='centered'>",
-									//"<img src='../resources/images/tl-{color}.png'/>",
+									//fixme "<img src='../resources/images/tl-{color}.png'/>",
 									"<img src='../resources/images/tl-red.png'/>",
 								"</div>" ,
 							'"); ',
@@ -69,18 +71,8 @@ function buildQuestion(q) {
 		'] }'  
 	);
 	tpl.compile();
-	var response = tpl.apply({name:Date.now(), options:q.get('options'), required:q.get('required'), type:q.get('type')});  
-	//console.log(response);
-	return response;
+	var html = tpl.apply({name:Date.now(), options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+	//console.log(html);
+	return html;
 }	
 
-function saveResponse(r) {
-	var s = Ext.getStore('Responses');
-	var find = s.find('q', r.get('q'));
-	if (find != -1) {
-		s.removeAt(find);
-		s.sync();
-	}
-	r.save();
-	s.sync();
-}
