@@ -35,9 +35,9 @@ Ext.define('adnat.controller.QuestionController', {
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {
-			 this.nextPage();
-		 } else if (event.direction == 'left') {
 			 this.prevPage();
+		 } else if (event.direction == 'left') {
+			 this.nextPage();
 		 }
     },
 	showQuestion: function(newO,direction) {
