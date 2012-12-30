@@ -43,6 +43,7 @@ function buildQuestion(q) {
 					'labelWidth: "66%",	 ' ,
 					'labelWrap: true,	 ' ,
 					'labelAlign: "left",	 ' ,
+					'style: "font-size: 1.2em;", ',
 					'<tpl if="parent.type == &quot;SC&quot;">',
 					'listeners: { ',
 						'check: function(button) { ',
