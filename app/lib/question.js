@@ -40,36 +40,40 @@ function skipQuestions(q, direction) {
 	skipItems.forEach(logArrayElements);
 	newQ = q;
 	skipItems.forEach(function(element) {
-		if ( newQ = skipQuestionsItem(newQ, element, direction) ) {
-			log('newQ ' + newQ.get('id'));
-		}
+		newQ = skipQuestionsItem(newQ, element, direction);
+		log('newQ ' + newQ.get('id'));
 	});
 	return newQ;
 }
 
 function skipQuestionsItem(q, element, direction) {
 	var item = element.split('.');
-	// need this q var to update
 	if ( isResponseEqualSkip(q,item[0], item[1]) ) { 
 		log('skipped ' + q.get('id'));
-		// save empty response for skipped q
+		// fixme save empty response for skipped q
 		q = getNextQuestion(q.get('ordinal') + direction, direction);
 	}
 	return q;
 }
 
 function isResponseEqualSkip(q,skipQ, skipR) {
-	log('skipQ ' + skipQ );
-	log('skipR ' + skipR );
-	// skip this question id
-	log( 'skip it? q ' + q.get('id') );
-	log( 'skip it? o ' + q.get('ordinal') );
-	// make sure the skipped q has a response of null
-	// saveResponse()
-	//  getNextQuestion(newO, direction) 
-	return (
-		(skipQ == 62 && skipR == 1)	
-			);
+	log('skipQ ' + skipQ + ',skipR ' + skipR + ', skip it? q ' + q.get('id') + ',skip it? o ' + q.get('ordinal') );
+	// fixme lookup the actual response and check the values
+	var s = Ext.getStore('Responses');
+	s.load();
+	var r = s.findRecord('q', skipQ);
+	if ( r != null ) {
+		log(r);
+		var options = r.get('options');
+		if (options instanceof Array) {
+			return ( options != null && options.indexOf(skipR) > -1 );
+		} else {
+			return ( options != null && options == skipR );
+		}
+	}
+	return false;
+	// test multi skip on q 65 return ( skipQ == 62 && skipR == 1 ); 
+	//return ( skipQ == 62 && skipR == 1 ); 
 }
 
 
