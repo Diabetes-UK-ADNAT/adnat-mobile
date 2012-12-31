@@ -25,12 +25,9 @@ function getNextQuestion(newO, direction) {
 		newO = 0;
 	}
 	var q = s.getAt(newO);
-	// skip?
-	log(q.get('skip'));
 	if ( q.get('skip') != null ) {
 		q = skipQuestions(q, direction);
 	}
-	//
 	return q;
 }
 
@@ -50,30 +47,38 @@ function skipQuestionsItem(q, element, direction) {
 	var item = element.split('.');
 	if ( isResponseEqualSkip(q,item[0], item[1]) ) { 
 		log('skipped ' + q.get('id'));
-		// fixme save empty response for skipped q
+		saveEmptyResponse(q);
 		q = getNextQuestion(q.get('ordinal') + direction, direction);
 	}
 	return q;
 }
 
+function saveEmptyResponse(q) {
+	r = Ext.create('adnat.model.Response', {
+		q:q.get('id'),
+		options: null,
+		ordinal:q.get('ordinal'),
+		other: null,
+	});
+	Ext.getStore('Responses').saveResponse(r);
+}
+
 function isResponseEqualSkip(q,skipQ, skipR) {
 	log('skipQ ' + skipQ + ',skipR ' + skipR + ', skip it? q ' + q.get('id') + ',skip it? o ' + q.get('ordinal') );
-	// fixme lookup the actual response and check the values
 	var s = Ext.getStore('Responses');
-	s.load();
+	s.load(); //fixme needed?
 	var r = s.findRecord('q', skipQ);
 	if ( r != null ) {
 		log(r);
 		var options = r.get('options');
 		if (options instanceof Array) {
+			// fixme test these
 			return ( options != null && options.indexOf(skipR) > -1 );
 		} else {
 			return ( options != null && options == skipR );
 		}
 	}
 	return false;
-	// test multi skip on q 65 return ( skipQ == 62 && skipR == 1 ); 
-	//return ( skipQ == 62 && skipR == 1 ); 
 }
 
 
