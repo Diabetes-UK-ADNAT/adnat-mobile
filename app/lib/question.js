@@ -36,7 +36,7 @@ function buildQuestion(q) {
 			'{ xtype: "fieldset", items: [ ',
 				'<tpl for="options">',     
 				'<tpl if="this.isGroup(text)">',
-					"{ xtype: 'label', name:'{name}', style: 'font-size: 1.2em;width: 30% !important;', cls:'x-form-labelDISAPPEARS', html:'{[this.formatGroup(values.text)]}',}, ",
+					"{ xtype: 'label', name:'{name}', style: 'padding: 0.2em;background: #eee;font-weight:bold;font-size: 1.2em;width: 30% !important;', cls:'x-form-labelDISAPPEARS', html:'{[this.formatGroup(values.text)]}',}, ",
 				'<tpl elseif="text != &quot;TEXT_OTHER&quot;">',
 				'{ ' ,
 					'<tpl if="parent.type == &quot;SC&quot;">',
@@ -99,7 +99,6 @@ function buildQuestion(q) {
 		'] }',
 	    {
         // XTemplate configuration:
-				//pathname.substring(0, 6) == "/sub/1"
         disableFormats: true,
         isGroup: function(text){
            return text.substring(0, 6) == "GROUP:";
