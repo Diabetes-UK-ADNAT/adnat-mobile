@@ -28,10 +28,11 @@ Ext.define('adnat.controller.QuestionController', {
         this.getQuestion().on('swipe', this.onSwipe);
     },
 	onQuestionsStoreLoad : function() {
-		//console.log('onQuestionsStoreLoad');
+		//log('onQuestionsStoreLoad');
         var s = Ext.getStore('Questions');
 		//s.info();
 		this.showQuestion(0,0);
+		this.showQuestion(61,0);
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {
@@ -42,7 +43,7 @@ Ext.define('adnat.controller.QuestionController', {
     },
 	showQuestion: function(newO,direction) {
 		var q = getNextQuestion(newO, direction);
-		console.log(q);
+		log(q);
 		setTitle(this,q);
 		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
@@ -71,9 +72,9 @@ Ext.define('adnat.controller.QuestionController', {
 		 * var errors = r.validate();
         if (!errors.isValid()) {
             Ext.Msg.alert('validation');
-			console.log('m valid? ', errors.isValid()); // returns 'false' as there were validation errors
-			console.log('All Errors:', errors.items); // returns the array of all errors found on this model instance
-			console.log('Field One Errors:', errors.getByField('fieldone')); // returns the errors for the age field
+			log('m valid? ', errors.isValid()); // returns 'false' as there were validation errors
+			log('All Errors:', errors.items); // returns the array of all errors found on this model instance
+			log('Field One Errors:', errors.getByField('fieldone')); // returns the errors for the age field
             r.reject();
             return;
         }

@@ -16,14 +16,52 @@ function setQuestion(c, q) {
 function getNextQuestion(newO, direction) {
 	// direction = 0 for direct, -1 for prev, 1 for next
 	var s = Ext.getStore('Questions');
+	// wrap around for now; go to welcome / summary
 	if ( newO < 0 ) {
+		// summary
 		newO = s.getCount() - 1;
 	} else if ( newO > s.getCount() - 1) {
+		// start (clear/etc)
 		newO = 0;
 	}
 	var q = s.getAt(newO);
+	// skip?
+	log(q.get('skip'));
+	if ( q.get('skip') != null ) {
+		q = skipQuestions(q, direction);
+	}
+	//
 	return q;
 }
+
+function skipQuestions(q, direction) {
+	log('skipQuestion direction: ' + direction + ' q: ' + q.get('skip').split(',')[0] );
+	var skipItems = q.get('skip').split(',');
+	skipItems.forEach(logArrayElements);
+	skipItems.forEach(function(element) {
+		if ( newQ = skipQuestionsItem(q, element, direction) ) {
+			log('skipped ' + q.get('id'));
+			log('newQ ' + newQ.get('id'));
+		}
+	});
+	return newQ;
+}
+function skipQuestionsItem(q, element, direction) {
+	var item = element.split('.');
+	// if this question id
+	log( item[0] );
+	// has this answer
+	log( item[1] );
+	// skip this question id
+	log( 'skipped q ' + q.get('id') );
+	log( 'skipped o ' + q.get('ordinal') );
+	// make sure the skipped q has a response of null
+	// saveResponse()
+	//  getNextQuestion(newO, direction) 
+	var newQ = getNextQuestion(q.get('ordinal') + direction, direction);
+	return newQ;
+}
+
 
 function buildQuestion(q) {
 	//fixme switch on question types here
@@ -123,7 +161,7 @@ function buildQuestion(q) {
 	);
 	tpl.compile();
 	var html = tpl.apply({name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
-	//console.log(html);
+	//log(html);
 	return html;
 }	
 

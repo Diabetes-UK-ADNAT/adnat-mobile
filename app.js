@@ -59,6 +59,9 @@ Ext.application({
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('adnat.view.Main'));
+
+		// fixme go to questions
+		Ext.getCmp('mainTabPanel').setActiveItem(1);
     },
 
     onUpdated: function() {
