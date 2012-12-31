@@ -38,28 +38,38 @@ function skipQuestions(q, direction) {
 	log('skipQuestion direction: ' + direction + ' q: ' + q.get('skip').split(',')[0] );
 	var skipItems = q.get('skip').split(',');
 	skipItems.forEach(logArrayElements);
+	newQ = q;
 	skipItems.forEach(function(element) {
-		if ( newQ = skipQuestionsItem(q, element, direction) ) {
-			log('skipped ' + q.get('id'));
+		if ( newQ = skipQuestionsItem(newQ, element, direction) ) {
 			log('newQ ' + newQ.get('id'));
 		}
 	});
 	return newQ;
 }
+
 function skipQuestionsItem(q, element, direction) {
 	var item = element.split('.');
-	// if this question id
-	log( item[0] );
-	// has this answer
-	log( item[1] );
+	// need this q var to update
+	if ( isResponseEqualSkip(q,item[0], item[1]) ) { 
+		log('skipped ' + q.get('id'));
+		// save empty response for skipped q
+		q = getNextQuestion(q.get('ordinal') + direction, direction);
+	}
+	return q;
+}
+
+function isResponseEqualSkip(q,skipQ, skipR) {
+	log('skipQ ' + skipQ );
+	log('skipR ' + skipR );
 	// skip this question id
-	log( 'skipped q ' + q.get('id') );
-	log( 'skipped o ' + q.get('ordinal') );
+	log( 'skip it? q ' + q.get('id') );
+	log( 'skip it? o ' + q.get('ordinal') );
 	// make sure the skipped q has a response of null
 	// saveResponse()
 	//  getNextQuestion(newO, direction) 
-	var newQ = getNextQuestion(q.get('ordinal') + direction, direction);
-	return newQ;
+	return (
+		(skipQ == 62 && skipR == 1)	
+			);
 }
 
 
