@@ -26,13 +26,6 @@ Ext.define("adnat.view.Question", {
 		},
 		items: [
 			{
-				id: 'progress',
-				padding: '0.0em',
-				margin: '0em',
-				border: '0px',
-				html: null,
-			},
-			{
 				docked: 'top',
 				xtype: 'titlebar',
 				title: 'ADNAT'
