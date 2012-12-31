@@ -26,6 +26,13 @@ Ext.define("adnat.view.Question", {
 		},
 		items: [
 			{
+				id: 'progress',
+				padding: '0.0em',
+				margin: '0em',
+				border: '0px',
+				html: null,
+			},
+			{
 				docked: 'top',
 				xtype: 'titlebar',
 				title: 'ADNAT'
@@ -33,7 +40,7 @@ Ext.define("adnat.view.Question", {
 			{
 				id: 'title',
 				padding: '1.2em',
-				html: "this is the question text here",
+				html: null,
 			},
 			{
 				xtype: 'fieldset',

@@ -7,6 +7,17 @@ function setTitle(component,q) {
 	component.getTitle().setHtml(html);
 }
 
+function setProgress(component) {
+	var tpl = new Ext.XTemplate([
+		'<progress style="width:100%;" id={name} max="100" value="{progress}">',
+		  '<strong>Progress: {progress}% done.</strong>',
+		'</progress>',
+	]);
+	tpl.compile();
+	html = tpl.apply( {progress: calcProgress()} );
+	component.getProgress().setHtml(html);
+}
+
 function setQuestion(c, q) {
 	c.removeAll();
 	var response = buildQuestion(q);
@@ -81,6 +92,18 @@ function isResponseEqualSkip(q,skipQ, skipR) {
 	return false;
 }
 
+function calcProgress() {
+	var totalResponses = Ext.getStore('Responses').load().getTotalCount();
+	var totalQuestions = Ext.getStore('Questions').load().getTotalCount();
+
+	percentComplete = totalResponses / totalQuestions;
+	percentComplete = Math.round(Number(percentComplete * 100));
+	percentComplete = Math.max(percentComplete,0);
+	percentComplete = Math.min(percentComplete,100);
+
+	log(percentComplete + '% complete');
+	return percentComplete;
+}	
 
 function buildQuestion(q) {
 	//fixme switch on question types here
@@ -166,6 +189,12 @@ function buildQuestion(q) {
 				'{info}',
 			'</div>',
 			"'}, ",
+			// progress displays correctly here
+			"{ html: '",
+			'<progress style="width:100%;" id={name} max="100" value="{progress}">',
+			  '<strong>Progress: {progress}% done.</strong>',
+			'</progress>',
+			"'}, ",
 		'] }',
 	    {
         // XTemplate configuration:
@@ -179,7 +208,7 @@ function buildQuestion(q) {
     }	
 	);
 	tpl.compile();
-	var html = tpl.apply({name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+	var html = tpl.apply({progress: calcProgress(), name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	//log(html);
 	return html;
 }	

@@ -6,6 +6,7 @@ Ext.define('adnat.controller.QuestionController', {
         refs: {
 			question: '#questionPanel',
 			title: '#title',
+			progress: '#progress',
 			questionComponent: '#questionComponent',
 			prevButton: '#prevButton',
 			nextButton: '#nextButton',
@@ -45,6 +46,7 @@ Ext.define('adnat.controller.QuestionController', {
 		var q = getNextQuestion(newO, direction);
 		log(q);
 		setTitle(this,q);
+		// fixme does not display progress here, even though numbers are set; setProgress(this);
 		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
 		var s = Ext.getStore('Responses');
