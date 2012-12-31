@@ -166,6 +166,12 @@ function buildQuestion(q) {
 							"label:'Other',}, ",
 					'</tpl>',
 				'</tpl>',
+				// TEXT
+				'<tpl if="type == &quot;TEXT&quot;">',
+					"{ xtype: 'textareafield', id:'{name}', name: 'other', ",
+						'style: "font-size: 1.2em;", ',
+						"label:null,}, ",
+				'</tpl>',
 			'], }, ' , 
 			// stoplight
 			'<tpl if="type == &quot;SC-SL&quot;">',

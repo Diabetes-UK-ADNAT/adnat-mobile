@@ -33,7 +33,7 @@ Ext.define('adnat.controller.QuestionController', {
         var s = Ext.getStore('Questions');
 		//s.info();
 		this.showQuestion(0,0);
-		this.showQuestion(61,0);
+		this.showQuestion(73,0);
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {
