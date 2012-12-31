@@ -35,6 +35,9 @@ function buildQuestion(q) {
 			// options fieldset
 			'{ xtype: "fieldset", items: [ ',
 				'<tpl for="options">',     
+				'<tpl if="this.isGroup(text)">',
+					"{ xtype: 'label', name:'{name}', style: 'font-size: 1.2em;width: 30% !important;', cls:'x-form-labelDISAPPEARS', html:'{[this.formatGroup(values.text)]}',}, ",
+				'<tpl elseif="text != &quot;TEXT_OTHER&quot;">',
 				'{ ' ,
 					'<tpl if="parent.type == &quot;SC&quot;">',
 					'xtype: "radiofield", ' ,
@@ -74,9 +77,17 @@ function buildQuestion(q) {
 					'</tpl>',
 				'}, ' ,
 				'</tpl>',
+				'</tpl>',
+				'<tpl for="options">',     
+					'<tpl if="text == &quot;TEXT_OTHER&quot;">',
+						"{ xtype: 'textfield', name: '{name}', ",
+							'style: "font-size: 1.2em;", ',
+							"label:'Other',}, ",
+					'</tpl>',
+				'</tpl>',
 			'], }, ' , 
-			'<tpl if="type == &quot;SC-SL&quot;">',
 			// stoplight
+			'<tpl if="type == &quot;SC-SL&quot;">',
 			"{ html: '",
 			'<div>&nbsp;</div>',
 			'<div id="{name}" class="centered">',
@@ -85,7 +96,18 @@ function buildQuestion(q) {
 			'<div>&nbsp;</div>',
 			"'}, ",
 			'</tpl>',
-		'] }'  
+		'] }',
+	    {
+        // XTemplate configuration:
+				//pathname.substring(0, 6) == "/sub/1"
+        disableFormats: true,
+        isGroup: function(text){
+           return text.substring(0, 6) == "GROUP:";
+        },
+        formatGroup: function(text){
+           return text.substring(6, text.length);
+        },
+    }	
 	);
 	tpl.compile();
 	var html = tpl.apply({name:Date.now(), options:q.get('options'), required:q.get('required'), type:q.get('type')});  
