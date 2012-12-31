@@ -78,9 +78,10 @@ function buildQuestion(q) {
 				'}, ' ,
 				'</tpl>',
 				'</tpl>',
+				// TEXT_OTHER
 				'<tpl for="options">',     
 					'<tpl if="text == &quot;TEXT_OTHER&quot;">',
-						"{ xtype: 'textfield', name: '{name}', ",
+						"{ xtype: 'textfield', id:'{name}', name: 'other', ",
 							'style: "font-size: 1.2em;", ',
 							"label:'Other',}, ",
 					'</tpl>',
@@ -96,6 +97,18 @@ function buildQuestion(q) {
 			'<div>&nbsp;</div>',
 			"'}, ",
 			'</tpl>',
+			// category
+			"{ html: '",
+			'<div id="{name}" class="centered">',
+				'{category}',
+			'</div>',
+			"'}, ",
+			// info
+			"{ html: '",
+			'<div id="{name}" class="centered">',
+				'{info}',
+			'</div>',
+			"'}, ",
 		'] }',
 	    {
         // XTemplate configuration:
@@ -109,7 +122,7 @@ function buildQuestion(q) {
     }	
 	);
 	tpl.compile();
-	var html = tpl.apply({name:Date.now(), options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+	var html = tpl.apply({name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	//console.log(html);
 	return html;
 }	

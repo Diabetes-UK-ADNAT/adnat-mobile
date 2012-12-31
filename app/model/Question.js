@@ -33,6 +33,16 @@ Ext.define('adnat.model.Question', {
                 name: 'required',
                 type: 'int', 
             },
+            {
+				id: 7,
+                name: 'category',
+                type: 'string', 
+            },
+            {
+				id: 8,
+                name: 'info',
+                type: 'string', 
+            },
         ],
     }
 });

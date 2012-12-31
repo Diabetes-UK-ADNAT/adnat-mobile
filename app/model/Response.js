@@ -23,6 +23,11 @@ Ext.define('adnat.model.Response', {
                 type: 'int', 
 				persist: false,
             },
+            {
+				id: 4,
+                name: 'other',
+                type: 'auto', 
+            },
         ],
         proxy: {
             type: 'localstorage',

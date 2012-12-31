@@ -32,7 +32,6 @@ Ext.define('adnat.controller.QuestionController', {
         var s = Ext.getStore('Questions');
 		//s.info();
 		this.showQuestion(0,0);
-		this.showQuestion(30,0);
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {
@@ -47,12 +46,14 @@ Ext.define('adnat.controller.QuestionController', {
 		setTitle(this,q);
 		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
-		// fixme ordinal == break if new version of questions
 		var s = Ext.getStore('Responses');
 		s.load();
+		//s.deleteAllRecords();
 		var r = s.findRecord('q', q.get('id'));
 		if ( r != null ) {
 			r.set('ordinal', q.get('ordinal'));
+			r.set('category', q.get('category'));
+			r.set('info', q.get('info'));
 			this.getQuestion().setRecord(r);
 		} else {
 			q.set('q', q.get('id'));
