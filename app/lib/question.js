@@ -112,6 +112,14 @@ function buildQuestion(q) {
 			// fields
 			'{ xtype: "hiddenfield", name: "q", suborgetsdropped: "{name}"}, ' ,
 			'{ xtype: "hiddenfield", name: "ordinal", suborgetsdropped: "{name}"}, ' ,
+			// info
+			'<tpl if="info != null">',
+			'{ html: "',
+			"<div id='{name}' class='info'>",
+				"{info}",
+			"</div>",
+			'"}, ',
+			'</tpl>',
 			// options fieldset
 			'{ xtype: "fieldset", items: [ ',
 				'<tpl for="options">',     
@@ -183,23 +191,17 @@ function buildQuestion(q) {
 			'<div>&nbsp;</div>',
 			"'}, ",
 			'</tpl>',
-			// category
-			"{ html: '",
-			'<div id="{name}" class="centered">',
-				'{category}',
-			'</div>',
-			"'}, ",
-			// info
-			"{ html: '",
-			'<div id="{name}" class="centered">',
-				'{info}',
-			'</div>',
-			"'}, ",
 			// progress displays correctly here
 			"{ html: '",
 			'<progress style="width:100%;" id={name} max="100" value="{progress}">',
 			  '<strong>Progress: {progress}% done.</strong>',
 			'</progress>',
+			"'}, ",
+			// category
+			"{ html: '",
+			'<div id="{name}" class="centered">',
+				'{category}',
+			'</div>',
 			"'}, ",
 		'] }',
 	    {

@@ -11163,6 +11163,12 @@ input[type="search"]::-webkit-search-cancel-button {
 	margin-right: auto;
 	xbackground-image: url(/resources/images/tl-none.png);
   }
+  .info {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.7em;
+  }
   #results {
 	text-align: center;
 	margin-left: auto;
