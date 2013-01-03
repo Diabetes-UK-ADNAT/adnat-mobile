@@ -32,6 +32,7 @@ Ext.define("adnat.view.Question", {
 			},
 			{
 				id: 'progressbar',
+				docked: 'top',
 				xtype: 'panel',
 				items: [
 					{
@@ -46,43 +47,59 @@ Ext.define("adnat.view.Question", {
 				],
 			},
 			{
-				id: 'title',
-				padding: '1.2em',
-				html: null,
-			},
-			{
-				xtype: 'fieldset',
-				id: 'questionComponent',
-				items: [
-					{xtype: 'textfield', name: 'text'},
-					{xtype: 'textfield', name: 'ordinal'},
-					{xtype: 'textfield', name: 'options'},
-				],
-			},
-			{			
-				layout: 'hbox',
-				align: 'center',
-				pack: 'center',
-				items: [
-				{xtype: 'spacer'},
-				{
-					xtype: 'button',
-					text: 'Prev',
-					id: 'prevButton',
-					ui: 'default',
-					disabled: false,
-					width: '100px',
+				xtype: 'panel',
+				docked: 'top',
+				//maxWidth: '768px',
+				padding: '1em',
+				listeners: {
+					swipe: {
+						fn: function(event) {
+							adnat.app.getController('QuestionController').onSwipe(event);
+						},
+						element: 'innerElement',
+					},
 				},
-				{xtype: 'spacer'},
+				items: [
 				{
-					xtype: 'button',
-					text: 'Next',
-					id: 'nextButton',
-					ui: 'confirm',
-					width: '100px',
+					id: 'title',
+					padding: '1.2em',
+					html: null,
 				},
-				{xtype: 'spacer'},
-				],
+				{
+					xtype: 'fieldset',
+					id: 'questionComponent',
+					items: [
+						{xtype: 'textfield', name: 'text'},
+						{xtype: 'textfield', name: 'ordinal'},
+						{xtype: 'textfield', name: 'options'},
+					],
+				},
+				{			
+					layout: 'hbox',
+					align: 'center',
+					pack: 'center',
+					items: [
+					{xtype: 'spacer'},
+					{
+						xtype: 'button',
+						text: 'Prev',
+						id: 'prevButton',
+						ui: 'default',
+						disabled: false,
+						width: '100px',
+					},
+					{xtype: 'spacer'},
+					{
+						xtype: 'button',
+						text: 'Next',
+						id: 'nextButton',
+						ui: 'confirm',
+						width: '100px',
+					},
+					{xtype: 'spacer'},
+					],
+				},
+			],
 			},
 		],
 		html: [
