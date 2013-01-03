@@ -77,13 +77,12 @@ function saveEmptyResponse(q) {
 function isResponseEqualSkip(q,skipQ, skipR) {
 	log('skipQ ' + skipQ + ',skipR ' + skipR + ', skip it? q ' + q.get('id') + ',skip it? o ' + q.get('ordinal') );
 	var s = Ext.getStore('Responses');
-	s.load(); //fixme needed?
-	var r = s.findRecord('q', skipQ);
+	s.load(); //is required to work
+	var r = s.findResponseRecord( skipQ );
 	if ( r != null ) {
 		log(r);
 		var options = r.get('options');
 		if (options instanceof Array) {
-			// fixme test these
 			return ( options != null && options.indexOf(skipR) > -1 );
 		} else {
 			return ( options != null && options == skipR );
@@ -101,7 +100,7 @@ function calcProgress() {
 	percentComplete = Math.max(percentComplete,0);
 	percentComplete = Math.min(percentComplete,100);
 
-	log(percentComplete + '% complete');
+	log(percentComplete + '% complete' + totalQuestions + ', ' + totalResponses);
 	return percentComplete;
 }	
 

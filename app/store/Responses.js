@@ -17,8 +17,7 @@ Ext.define('adnat.store.Responses', {
 		}
 	},
 	saveResponse : function (r) {
-		//var s = Ext.getStore('Responses');
-		var find = this.find('q', r.get('q'));
+		var find = this.findResponseIndex(r.get('q'));
 		if (find != -1) {
 			this.removeAt(find);
 			this.sync();
@@ -29,5 +28,11 @@ Ext.define('adnat.store.Responses', {
 	deleteAllRecords : function() {
 		this.removeAll();
 		this.sync();
+	},
+	findResponseIndex : function(questionId) {
+		return this.find('q', questionId, 0, false, false, true);
+	},
+	findResponseRecord : function(questionId) {
+		return this.findRecord('q', questionId, 0, false, false, true);
 	},
 });
