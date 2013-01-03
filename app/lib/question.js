@@ -187,12 +187,13 @@ function buildQuestion(q) {
 			'<div>&nbsp;</div>',
 			"'}, ",
 			'</tpl>',
-			// category
-			////"{ html: '",
-			////'<div id="{name}" class="centered">',
-				////'{category}',
-			////'</div>',
-			////"'}, ",
+			// info
+			"{ html: '",
+			'<div id="{name}" class="centered">',
+				'Category {category} Question #{q}',
+			'</div>',
+			'<div>&nbsp;</div>',
+			"'}, ",
 		'] }',
 	    {
         // XTemplate configuration:
@@ -206,7 +207,7 @@ function buildQuestion(q) {
     }	
 	);
 	tpl.compile();
-	var html = tpl.apply({name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+	var html = tpl.apply({q:q.get('ordinal')+1,name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	//log(html);
 	return html;
 }	

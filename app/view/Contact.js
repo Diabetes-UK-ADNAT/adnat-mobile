@@ -50,6 +50,15 @@ Ext.define("adnat.view.Contact", {
 				handler: function() {
 					//this.up('formpanel').submit();
 				}
+			},
+			{
+				xtype: 'button',
+				text: 'Clear Responses',
+				ui: 'confirm',
+				handler: function() {
+					Ext.getStore('Responses').deleteAllRecords();
+					location.reload();
+				}
 			}
 		],
 	}

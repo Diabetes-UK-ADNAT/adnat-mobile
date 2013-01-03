@@ -34,7 +34,8 @@ Ext.define('adnat.controller.QuestionController', {
         var s = Ext.getStore('Questions');
 		//s.info();
 		this.showQuestion(0,0);
-		//this.showQuestion(80,0);
+		// testing
+		this.showQuestion(80,0); 
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {
@@ -51,7 +52,6 @@ Ext.define('adnat.controller.QuestionController', {
 		setQuestion(this.getQuestionComponent(), q);
 		// find previous response if it exists and put on question
 		var s = Ext.getStore('Responses');
-		//s.deleteAllRecords();
 		var r = s.findResponseRecord(q.get('id'));
 		if ( r != null ) {
 			r.set('ordinal', q.get('ordinal'));
@@ -91,8 +91,5 @@ Ext.define('adnat.controller.QuestionController', {
 		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
 		Ext.getStore('Responses').saveResponse(r);
 		this.showQuestion( r.get('ordinal') + 1, 1 ); 
-		//
-		//put on util page / for logout also
-		//Ext.getStore('Responses').deleteAllRecords();
 	},
 });

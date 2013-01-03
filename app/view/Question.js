@@ -50,15 +50,6 @@ Ext.define("adnat.view.Question", {
 				xtype: 'panel',
 				//maxWidth: '768px',
 				padding: '1em',
-				//scrollable: true,
-				listeners: {
-					swipe: {
-						fn: function(event) {
-							adnat.app.getController('QuestionController').onSwipe(event);
-						},
-						element: 'innerElement',
-					},
-				},
 				items: [
 				{
 					id: 'title',
