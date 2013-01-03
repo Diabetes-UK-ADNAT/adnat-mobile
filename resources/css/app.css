@@ -11214,7 +11214,7 @@ input[type="search"]::-webkit-search-cancel-button {
     left:0;
     top:0;
     width:0px;
-    background-image:url("/resources/images/pggreen.png");
+    background-image:url("/resources/images/pgblue.png");
     height:14px;
     margin:0 0 0 0;
   }
