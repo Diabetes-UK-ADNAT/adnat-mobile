@@ -7,17 +7,6 @@ function setTitle(component,q) {
 	component.getTitle().setHtml(html);
 }
 
-function setProgress(component) {
-	var tpl = new Ext.XTemplate([
-		'<progress style="width:100%;" id={name} max="100" value="{progress}">',
-		  '<strong>Progress: {progress}% done.</strong>',
-		'</progress>',
-	]);
-	tpl.compile();
-	html = tpl.apply( {progress: calcProgress()} );
-	component.getProgress().setHtml(html);
-}
-
 function setQuestion(c, q) {
 	c.removeAll();
 	var response = buildQuestion(q);
@@ -91,6 +80,12 @@ function isResponseEqualSkip(q,skipQ, skipR) {
 	return false;
 }
 
+function setProgressBarHtml4(indicator) {
+	var percentComplete = calcProgress();
+	indicator.setStyle( 'width:' + percentComplete + '%;' );
+	//progressnum.setHtml( percentComplete + " %" );
+}
+
 function calcProgress() {
 	var totalResponses = Ext.getStore('Responses').load().getTotalCount();
 	var totalQuestions = Ext.getStore('Questions').load().getTotalCount();
@@ -100,7 +95,7 @@ function calcProgress() {
 	percentComplete = Math.max(percentComplete,0);
 	percentComplete = Math.min(percentComplete,100);
 
-	log(percentComplete + '% complete' + totalQuestions + ', ' + totalResponses);
+	log(percentComplete + '% complete ' + totalQuestions + ', ' + totalResponses);
 	return percentComplete;
 }	
 
@@ -190,18 +185,12 @@ function buildQuestion(q) {
 			'<div>&nbsp;</div>',
 			"'}, ",
 			'</tpl>',
-			// progress displays correctly here
-			"{ html: '",
-			'<progress style="width:100%;" id={name} max="100" value="{progress}">',
-			  '<strong>Progress: {progress}% done.</strong>',
-			'</progress>',
-			"'}, ",
 			// category
-			"{ html: '",
-			'<div id="{name}" class="centered">',
-				'{category}',
-			'</div>',
-			"'}, ",
+			////"{ html: '",
+			////'<div id="{name}" class="centered">',
+				////'{category}',
+			////'</div>',
+			////"'}, ",
 		'] }',
 	    {
         // XTemplate configuration:
@@ -215,7 +204,7 @@ function buildQuestion(q) {
     }	
 	);
 	tpl.compile();
-	var html = tpl.apply({progress: calcProgress(), name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+	var html = tpl.apply({name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	//log(html);
 	return html;
 }	

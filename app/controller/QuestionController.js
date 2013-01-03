@@ -6,10 +6,11 @@ Ext.define('adnat.controller.QuestionController', {
         refs: {
 			question: '#questionPanel',
 			title: '#title',
-			progress: '#progress',
 			questionComponent: '#questionComponent',
 			prevButton: '#prevButton',
 			nextButton: '#nextButton',
+			indicator: '#indicator',
+			//progressnum: '#progressnum',
         },
         control: {
 			prevButton: {
@@ -61,6 +62,9 @@ Ext.define('adnat.controller.QuestionController', {
 			q.set('q', q.get('id'));
 			this.getQuestion().setRecord(q);
 		}
+
+		//setProgressBarHtml4( this.getProgressnum(), this.getIndicator() );
+		setProgressBarHtml4( this.getIndicator() );
 		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,false)
 	},
 

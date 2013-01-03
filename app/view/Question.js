@@ -31,6 +31,21 @@ Ext.define("adnat.view.Question", {
 				title: 'ADNAT'
 			},
 			{
+				id: 'progressbar',
+				xtype: 'panel',
+				items: [
+					{
+						id: 'indicator',
+						html: null,
+					},
+					//{
+						//id: 'progressnum',
+						//padding: '1.0em',
+						//html: null,
+					//},
+				],
+			},
+			{
 				id: 'title',
 				padding: '1.2em',
 				html: null,

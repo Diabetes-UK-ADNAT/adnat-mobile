@@ -11140,11 +11140,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
   /***** app styles *****/
-  ximg.displayed {
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-  }
   .question {
 	padding: 0.2em;
 	font-size: 1.4em;
@@ -11161,7 +11156,6 @@ input[type="search"]::-webkit-search-cancel-button {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	xbackground-image: url(/resources/images/tl-none.png);
   }
   .info {
 	text-align: left;
@@ -11178,13 +11172,11 @@ input[type="search"]::-webkit-search-cancel-button {
 	margin-bottom: 10px;
   }
   #results div {
-	xbackground: red;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
   }
   #results p {
-	xbackground: red;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -11195,5 +11187,37 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
   /***** end app styles *****/
+
+  /***** start progress bar *****/
+  #questionPanel .x-form-inner {
+	/* this does whole form need better selector or another panel for 
+	 * other items
+	 * padding: 0 0 0 0px; */
+  }
+  #progressbar
+  {
+    position:relative;
+    width:100%;
+    padding:0 0 0 0;
+	margin: 0 0 0 0;
+    background-image:url("/resources/images/pggray.png");
+    height:14px;
+    border:1px solid #CCC;
+    -moz-border-radius:2px;
+    border-radius:2px;	
+  }
+  #indicator
+  {
+    position:absolute;
+    padding:0 0 0 0;
+	margin: 0 0 0 0;
+    left:0;
+    top:0;
+    width:0px;
+    background-image:url("/resources/images/pggreen.png");
+    height:14px;
+    margin:0 0 0 0;
+  }
+  /***** end progress bar *****/
 
 
