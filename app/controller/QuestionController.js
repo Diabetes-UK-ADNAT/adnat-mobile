@@ -26,16 +26,17 @@ Ext.define('adnat.controller.QuestionController', {
             callback: this.onQuestionsStoreLoad,
             scope: this
         });
-        this.on('swipe', this.onSwipe);
-        this.getQuestion().on('swipe', this.onSwipe);
     },
 	onQuestionsStoreLoad : function() {
 		//log('onQuestionsStoreLoad');
         var s = Ext.getStore('Questions');
 		//s.info();
-		this.showQuestion(0,0);
+		// show current question, based on last available response
+		// fixme: handle last page and last item navigated to instead
+        var currentOrdinal = Ext.getStore('Responses').getCount();
+		this.showQuestion(currentOrdinal,1);
 		// testing
-		this.showQuestion(80,0); 
+		//this.showQuestion(80,0); 
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {

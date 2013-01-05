@@ -49,7 +49,7 @@ Ext.define("adnat.view.Question", {
 			{
 				xtype: 'panel',
 				//maxWidth: '768px',
-				padding: '1em',
+				//padding: '1em',
 				items: [
 				{
 					id: 'title',
