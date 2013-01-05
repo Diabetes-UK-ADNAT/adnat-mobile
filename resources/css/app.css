@@ -11185,7 +11185,18 @@ input[type="search"]::-webkit-search-cancel-button {
 	xbackground: orange;
   }
 
-
+  .questionCategory {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  .questionId {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.75em;
+	color: #555;
+  }
   /***** end app styles *****/
 
   /***** start progress bar *****/

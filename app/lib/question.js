@@ -189,8 +189,11 @@ function buildQuestion(q) {
 			'</tpl>',
 			// info
 			"{ html: '",
-			'<div id="{name}" class="centered">',
-				'Category {category} Question #{q}',
+			'<div id="{name}" class="questionCategory">',
+				'{category}',
+			'</div>',
+			'<div id="{name}" class="questionId">',
+				'Question #{q}',
 			'</div>',
 			'<div>&nbsp;</div>',
 			"'}, ",
