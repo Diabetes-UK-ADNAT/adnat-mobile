@@ -92,7 +92,6 @@ function isResponseEqualSkip(q,skipQ, skipR) {
 	}
 	return false;
 }
-
 function setProgressBarHtml4(indicator) {
 	var percentComplete = calcProgress();
 	indicator.setStyle( 'width:' + percentComplete + '%;' );

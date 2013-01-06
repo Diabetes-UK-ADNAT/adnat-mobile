@@ -2,6 +2,7 @@ Ext.define('adnat.controller.QuestionController', {
     extend: 'Ext.app.Controller',
     config: {
         routes: {
+			'test/score' : 'doTestScore',	
 		},
         refs: {
 			question: '#questionPanel',
@@ -92,5 +93,9 @@ Ext.define('adnat.controller.QuestionController', {
 		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
 		Ext.getStore('Responses').saveResponse(r);
 		this.showQuestion( r.get('ordinal') + 1, 1 ); 
+	},
+
+	doTestScore: function() {
+		testScore();
 	},
 });

@@ -6,3 +6,6 @@ function logArrayElements(element, index, array) {
     log("a[" + index + "] = " + element);
 }
 
+
+
+

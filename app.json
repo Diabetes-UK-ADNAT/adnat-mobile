@@ -44,7 +44,7 @@
             "update": "delta"
         },
 		{
-            "path": "app/lib/adnat.js"
+            "path": "app/lib/score.js"
 		},
 		{
             "path": "app/lib/util.js"
