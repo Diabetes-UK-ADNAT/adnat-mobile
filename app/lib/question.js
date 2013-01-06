@@ -119,7 +119,7 @@ function buildQuestion(q) {
 				'<tpl for="options">',     
 				'<tpl if="this.isGroup(text)">',
 					"{ xtype: 'label', name:'{name}', style: 'padding: 0.2em;background: #eee;font-weight:bold;font-size: 1.2em;width: 30% !important;', cls:'x-form-labelDISAPPEARS', html:'{[this.formatGroup(values.text)]}',}, ",
-				'<tpl elseif="text != &quot;TEXT_OTHER&quot;">',
+				'<tpl elseif="text != &quot;TEXT_OTHER&quot; && text != &quot;TEXT_VALUE&quot;">',
 				'{ ' ,
 					'<tpl if="parent.type == &quot;SC&quot;">',
 					'xtype: "radiofield", ' ,
@@ -160,14 +160,33 @@ function buildQuestion(q) {
 				'}, ' ,
 				'</tpl>',
 				'</tpl>',
-				// TEXT_OTHER
+				// Additional option types
 				'<tpl for="options">',     
+					// TEXT_OTHER option
 					'<tpl if="text == &quot;TEXT_OTHER&quot;">',
 						"{ xtype: 'textfield', id:'{name}', name: 'other', ",
 							'style: "font-size: 1.2em;", ',
 							'labelWidth: "100px",	 ' ,
 							"label:'Other',}, ",
 					'</tpl>',
+					// TEXT_VALUE option
+					'<tpl if="text == &quot;TEXT_VALUE&quot;">',
+						"{ xtype: 'textfield', id:'{name}', name: 'other', ",
+							'style: "font-size: 1.2em;", ',
+							'labelWidth: "100px",	 ' ,
+							"label:'Value',}, ",
+					'</tpl>',
+				'</tpl>',
+				// NUMBER 
+				'<tpl if="type == &quot;NUMBER&quot;">',
+					"{ xtype: 'spinnerfield', id:'{name}', name: 'other', ",
+						'style: "font-size: 1.2em;", ',
+						'labelWidth: "100px",	 ' ,
+						'minValue: 0, ',
+						'maxValue: 100, ',
+						'increment: 1, ',
+						'cycle: true, ',
+						'label: null,}, ',
 				'</tpl>',
 				// TEXT
 				'<tpl if="type == &quot;TEXT&quot;">',
