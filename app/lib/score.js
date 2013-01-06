@@ -6,6 +6,26 @@
 
 function testScore() {
 	log('testScore');
+
+	var avals = [2,1,0,2,1,0];
+	avals.forEach(logArrayElements);
+	var opts = [1,2,3,4];
+
+	var scored = new Array();
+	opts.forEach(function(scoreIdx) {
+		log(avals[scoreIdx]);
+		if ( avals[scoreIdx] > 0 ) {
+			scored.push( avals[scoreIdx] );
+		}
+	});
+	var scoredDesc = scored.sort().reverse();
+	scoredDesc.forEach(logArrayElements);
+	var score = 0;
+	if (scoredDesc.length > 0) {
+		score = scoredDesc[0];
+	}
+	log( score );
+
 	// setup
 	//
 	// score psych
