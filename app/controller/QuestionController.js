@@ -46,6 +46,29 @@ Ext.define('adnat.controller.QuestionController', {
 			 this.nextPage();
 		 }
     },
+    prevPage: function() {
+		this.navToNextPage( -1 );
+	},
+	nextPage: function() {
+		this.navToNextPage( +1 );
+	},
+	navToNextPage: function(direction) {
+		// fixme validate 
+		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
+		Ext.getStore('Responses').saveResponse(r);
+		this.showQuestion( r.get('ordinal') + direction, direction ); 
+        /*
+		 * var errors = r.validate();
+        if (!errors.isValid()) {
+            Ext.Msg.alert('validation');
+			log('m valid? ', errors.isValid()); // returns 'false' as there were validation errors
+			log('All Errors:', errors.items); // returns the array of all errors found on this model instance
+			log('Field One Errors:', errors.getByField('fieldone')); // returns the errors for the age field
+            r.reject();
+            return;
+        }
+		*/
+	},
 	showQuestion: function(newO,direction) {
 		var q = getNextQuestion(newO, direction);
 		log(q);
@@ -64,37 +87,10 @@ Ext.define('adnat.controller.QuestionController', {
 			q.set('q', q.get('id'));
 			this.getQuestion().setRecord(q);
 		}
-
 		//setProgressBarHtml4( this.getProgressnum(), this.getIndicator() );
 		setProgressBarHtml4( this.getIndicator() );
 		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,false)
 	},
-
-    prevPage: function(){
-		// fixme validate 
-		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
-		Ext.getStore('Responses').saveResponse(r);
-		this.showQuestion( r.get('ordinal') - 1, -1 ); 
-        /*
-		 * var errors = r.validate();
-        if (!errors.isValid()) {
-            Ext.Msg.alert('validation');
-			log('m valid? ', errors.isValid()); // returns 'false' as there were validation errors
-			log('All Errors:', errors.items); // returns the array of all errors found on this model instance
-			log('Field One Errors:', errors.getByField('fieldone')); // returns the errors for the age field
-            r.reject();
-            return;
-        }
-		*/
-	},
-
-	nextPage: function(){
-		// fixme validate 
-		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
-		Ext.getStore('Responses').saveResponse(r);
-		this.showQuestion( r.get('ordinal') + 1, 1 ); 
-	},
-
 	doTestScore: function() {
 		testScore();
 	},

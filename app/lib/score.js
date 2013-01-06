@@ -37,6 +37,7 @@ function scorePsychQuestions() {
 	});
 	scoredPsychQuestions.forEach(logArrayElements);
 	log('totalPsychScore='+totalPsychScore);
+	return totalPsychScore;
 }
 
 function scoreQuestion(responses, qId) {
