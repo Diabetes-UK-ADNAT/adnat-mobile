@@ -29,7 +29,7 @@ Ext.define('adnat.controller.QuestionController', {
     },
 	onQuestionsStoreLoad : function() {
 		//log('onQuestionsStoreLoad');
-        var s = Ext.getStore('Questions');
+        //var s = Ext.getStore('Questions');
 		//s.info();
 		// show current question, based on last available response
 		// fixme: handle last page and last item navigated to instead

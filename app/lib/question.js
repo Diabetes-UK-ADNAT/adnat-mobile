@@ -13,33 +13,46 @@ function setQuestion(c, q) {
 	c.add(Ext.decode(response).data);
 }
 
+/*
+ * parm:  newO is the new ordinal requested, that may be skipped using skip rules and direction
+ * parm:  direction = 0 for direct, -1 for prev, 1 for next
+ */
 function getNextQuestion(newO, direction) {
-	// direction = 0 for direct, -1 for prev, 1 for next
-	var s = Ext.getStore('Questions');
+	var questions = Ext.getStore('Questions');
+	questionCount = questions.getCount() - 1;
+	newO = wrap(newO, questionCount);
+	return skipQuestions(questions.getAt(newO), direction);
+}
+
+function wrap(newO, questionCount) {
 	// wrap around for now; go to welcome / summary
 	if ( newO < 0 ) {
 		// summary
-		newO = s.getCount() - 1;
-	} else if ( newO > s.getCount() - 1) {
+		return questionCount;
+	} else if ( newO > questionCount) {
 		// start (clear/etc)
-		newO = 0;
+		return 0;
 	}
-	var q = s.getAt(newO);
-	if ( q.get('skip') != null ) {
-		q = skipQuestions(q, direction);
-	}
-	return q;
+
+	return newO;
 }
 
 function skipQuestions(q, direction) {
+	if ( q.get('skip') == null ) {
+		return q;
+	}
+
 	log('skipQuestion direction: ' + direction + ' q: ' + q.get('skip').split(',')[0] );
+
 	var skipItems = q.get('skip').split(',');
 	skipItems.forEach(logArrayElements);
+	
 	newQ = q;
 	skipItems.forEach(function(element) {
 		newQ = skipQuestionsItem(newQ, element, direction);
 		log('newQ ' + newQ.get('id'));
 	});
+
 	return newQ;
 }
 
