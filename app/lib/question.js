@@ -197,7 +197,7 @@ function buildQuestion(q) {
 						'labelWidth: "100px",	 ' ,
 						'minValue: 0, ',
 						'maxValue: 100, ',
-						'increment: 1, ',
+						'stepValue: 1, ',
 						'cycle: true, ',
 						'label: null,}, ',
 				'</tpl>',

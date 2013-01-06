@@ -8,6 +8,7 @@ Ext.define("adnat.view.Question", {
 		'Ext.field.Number',
 		'Ext.field.Radio',
 		'Ext.field.Hidden',
+		'Ext.field.Spinner',
 		'Ext.data.proxy.JsonP',
     ],
     config: {
