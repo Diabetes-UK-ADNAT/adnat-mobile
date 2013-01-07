@@ -19,6 +19,7 @@ function logArrayElements(element, index, array) {
 }
 
 function arraySortDescNumeric(arr) {
+	log(arr);
 	return arr.sort(function(a,b){return b - a});  
 }	
 

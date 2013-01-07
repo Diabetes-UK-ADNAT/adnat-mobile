@@ -93,5 +93,13 @@ Ext.define('adnat.controller.QuestionController', {
 	},
 	doTestScore: function() {
 		testScore();
+		log("is scored " + isScored());
+		// fixme, instead of delay, fire event with scores when scoring is complete
+		var task = Ext.create('Ext.util.DelayedTask', function () {
+			log("is scored " + isScored());
+			log( 'General Score is ' + getGeneralScore() );
+			log( 'Psych-Social Score is ' + getPsychScore() );
+        });
+		task.delay(1000);
 	},
 });
