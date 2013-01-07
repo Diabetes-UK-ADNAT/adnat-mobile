@@ -45,12 +45,18 @@
         },
 		{
             "path": "app/lib/score.js"
+            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta"
 		},
 		{
             "path": "app/lib/util.js"
+            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta"
 		},
 		{
             "path": "app/lib/question.js"
+            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta"
 		},
     ],
 
@@ -73,6 +79,10 @@
     "css": [
         {
             "path": "resources/css/app.css",
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/adnat.css",
             "update": "delta"
         }
     ],
