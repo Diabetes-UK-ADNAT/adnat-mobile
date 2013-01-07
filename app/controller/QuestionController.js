@@ -2,7 +2,7 @@ Ext.define('adnat.controller.QuestionController', {
     extend: 'Ext.app.Controller',
     config: {
         routes: {
-			'test/score' : 'doTestScore',	
+			'test/score' : 'doTestScore'
 		},
         refs: {
 			question: '#questionPanel',
@@ -10,7 +10,7 @@ Ext.define('adnat.controller.QuestionController', {
 			questionComponent: '#questionComponent',
 			prevButton: '#prevButton',
 			nextButton: '#nextButton',
-			indicator: '#indicator',
+			indicator: '#indicator'
 			//progressnum: '#progressnum',
         },
         control: {
@@ -19,8 +19,8 @@ Ext.define('adnat.controller.QuestionController', {
 			},
 			nextButton: {
 				tap: "nextPage"
-			},
-        },
+			}
+        }
     },
 	launch: function() {
         Ext.getStore('Questions').load({
@@ -40,9 +40,9 @@ Ext.define('adnat.controller.QuestionController', {
 		//this.showQuestion(78,0); 
     },
     onSwipe: function (event) {
-		 if (event.direction == 'right') {
+		 if (event.direction === 'right') {
 			 this.prevPage();
-		 } else if (event.direction == 'left') {
+		 } else if (event.direction === 'left') {
 			 this.nextPage();
 		 }
     },
@@ -78,7 +78,7 @@ Ext.define('adnat.controller.QuestionController', {
 		// find previous response if it exists and put on question
 		var s = Ext.getStore('Responses');
 		var r = s.findResponseRecord(q.get('id'));
-		if ( r != null ) {
+		if ( r !== null ) {
 			r.set('ordinal', q.get('ordinal'));
 			r.set('category', q.get('category'));
 			r.set('info', q.get('info'));
@@ -89,7 +89,7 @@ Ext.define('adnat.controller.QuestionController', {
 		}
 		//setProgressBarHtml4( this.getProgressnum(), this.getIndicator() );
 		setProgressBarHtml4( this.getIndicator() );
-		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,false)
+		this.getQuestion().getScrollable().getScroller().scrollTo(0,0,false);
 	},
 	doTestScore: function() {
 		testScore();
@@ -101,5 +101,5 @@ Ext.define('adnat.controller.QuestionController', {
 			log( 'Psych-Social Score is ' + getPsychScore() );
         });
 		task.delay(1000);
-	},
+	}
 });

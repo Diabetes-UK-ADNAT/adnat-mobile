@@ -5,10 +5,10 @@ Ext.define('adnat.controller.ResultsController', {
 		},
         refs: {
 			gscore: '#gScore',
-			pscore: '#pScore',
+			pscore: '#pScore'
         },
         control: {
-        },
+        }
     },
     onShow: function(){
 		Ext.getCmp('gScore').hide();
@@ -49,5 +49,5 @@ Ext.define('adnat.controller.ResultsController', {
 			Ext.Viewport.unmask();
         });
 		task.delay(1700);
-	},
+	}
 });
