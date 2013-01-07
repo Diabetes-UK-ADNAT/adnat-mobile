@@ -7,10 +7,12 @@
 function testScore() {
 	log('testScore');
 
-	var avals = [2,1,0,2,1,0];
-	avals.forEach(logArrayElements);
+	var avals = [2,7,11,0,21,1,0];
 	var opts = [1,2,3,4];
+	avals.forEach(logArrayElements);
+	opts.forEach(logArrayElements);
 
+	// pull answer vals based on options selected
 	var scored = new Array();
 	opts.forEach(function(scoreIdx) {
 		log(avals[scoreIdx]);
@@ -18,12 +20,13 @@ function testScore() {
 			scored.push( avals[scoreIdx] );
 		}
 	});
-	var scoredDesc = scored.sort().reverse();
+
+	// sort desc
+	var scoredDesc = arraySortDescNumeric(scored);
 	scoredDesc.forEach(logArrayElements);
-	var score = 0;
-	if (scoredDesc.length > 0) {
-		score = scoredDesc[0];
-	}
+
+	// grab highest score
+	var score = scoredDesc.length > 0 ? scoredDesc[0] : 0;
 	log( score );
 
 	// setup

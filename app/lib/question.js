@@ -72,6 +72,10 @@ function saveEmptyResponse(q) {
 		options: null,
 		ordinal:q.get('ordinal'),
 		other: null,
+	  //q.get('qtext'),
+	  //q.get('rtext'),
+	  //score: 0,
+	  //category:?
 	});
 	Ext.getStore('Responses').saveResponse(r);
 }
