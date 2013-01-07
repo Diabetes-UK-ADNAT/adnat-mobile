@@ -5,7 +5,7 @@ Ext.define('adnat.store.Questions', {
 		model: 'adnat.model.Question',
 		proxy:{
 			type:'ajax',
-			url:'app/data/questions.json',
+			url:'resources/data/questions.json',
 			reader : {
 				type : 'json',
 				rootProperty : 'questions',
