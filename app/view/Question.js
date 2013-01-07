@@ -29,7 +29,7 @@ Ext.define("adnat.view.Question", {
 			{
 				docked: 'top',
 				xtype: 'titlebar',
-				title: 'ADNAT'
+				title: 'ADNAT Questions'
 			},
 			{
 				id: 'progressbar',

@@ -3,14 +3,11 @@ Ext.define("adnat.view.Results", {
 	xtype: 'results',
     requires: [
         'Ext.TitleBar',
-		'Ext.form.FieldSet',
-		'Ext.field.Number',
     ],
     config: {
 		id: 'results', // works with refs to enable this.getSurvey()
 		title: 'My Results',
 		iconCls: 'star',
-
 		styleHtmlContent: true,
 		scrollable: true,
 		listeners: {
@@ -27,6 +24,7 @@ Ext.define("adnat.view.Results", {
 				title: 'My Results'
 			},
 			{
+				id: 'resultsTitle',
 				html: [
 					"<div id=\"results\">",
 					"<h1 style='font-size:2em;'>My ADNAT Results</h1>",

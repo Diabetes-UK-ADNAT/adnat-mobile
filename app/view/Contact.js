@@ -10,14 +10,7 @@ Ext.define("adnat.view.Contact", {
 		iconCls: 'reply',
 		styleHtmlContent: true,
 		scrollable: true,
-		items: [
-			{
-				docked: 'top',
-				xtype: 'titlebar',
-				title: 'Help'
-			},
-		],
-	   items: [
+	   	items: [
 			{
 				docked: 'top',
 				xtype: 'titlebar',
