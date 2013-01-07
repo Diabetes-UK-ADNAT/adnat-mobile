@@ -121,21 +121,28 @@ function scoreMultiQ(responses,q,options) {
 		}	
 		return 0;
 	}
-/*
 	// {"q": 66, "scoreType":"MultiQ",},
 	// {"q": 71, "scoreType":"MultiQ",},
-		red
-			often high bg
-		red
-			ketoacidosis
-		yellow
-			now and again high and not sure keto	
-		green	
-			rarely/never high and !keto	
-		hand code with helpers (response == tests)
-		For multi question, just log first question that score applies for (make sure zeros other ones)
-		grab both question rules, process each, eaval score, save both to questionscores
-*/
+	if (q == 66) {
+		var response = responses.findResponseRecord(71);
+		var options71 = response != null ? response.get('options') : null;
+		options71 = makeArray(options71);
+		log(options71);
+		// red often high bg
+		// red ketoacidosis
+	    if (arrayHasVal(options, 0) || arrayHasVal(options71, 0)) {
+			return 2;
+		}	
+		// yellow now and again high and not sure keto	
+	    if (arrayHasVal(options, 1) && arrayHasVal(options71, 1)) {
+			return 1;
+		}	
+		// green	rarely/never high and !keto	
+	    if (arrayHasVal(options, 2) || arrayHasVal(options71, 2)) {
+			return 0;
+		}	
+		return 0;
+	}
 	return 0;
 }	
 
