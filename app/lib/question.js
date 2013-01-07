@@ -230,6 +230,12 @@ function buildQuestion(q) {
 			'<div id="{name}" class="questionId">',
 				'Question #{q}',
 			'</div>',
+		/*	
+		 	'<div id="{name}" class="questionId">',
+				'General Score {gScore} ',
+				'PsychoSocial Score {pScore} ',
+			'</div>',
+		*/
 			'<div>&nbsp;</div>',
 			"'}, ",
 		'] }',
@@ -245,6 +251,7 @@ function buildQuestion(q) {
     }	
 	);
 	tpl.compile();
+	//var html = tpl.apply({gScore:getGeneralScore(),pScore:getPsychScore(),q:q.get('ordinal')+1,name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	var html = tpl.apply({q:q.get('ordinal')+1,name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
 	//log(html);
 	return html;
