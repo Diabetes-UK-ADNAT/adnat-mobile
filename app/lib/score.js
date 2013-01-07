@@ -81,7 +81,7 @@ function doScoring() {
 		// if area is special, set score
 		if (scoreType == 'MultiQ') {
 			log(scoreType);
-			score =	scoreMultiQ(); 
+			score =	scoreMultiQ(responses,scr.get('q'),options); 
 		}
 		if (scoreType == 'Complex1') {
 			log(scoreType);
@@ -98,22 +98,32 @@ function doScoring() {
 	_isScored = true; //fixme fire scored event
 }
 
-// {"q": 57, "scoreType":"MultiQ",},
-// {"q": 62, "scoreType":"MultiQ",},
-// {"q": 66, "scoreType":"MultiQ",},
-// {"q": 71, "scoreType":"MultiQ",},
+function scoreMultiQ(responses,q,options) {
+	// {"q": 57, "scoreType":"MultiQ",},
+	// {"q": 62, "scoreType":"MultiQ",},
+	if (q == 57) {
+		var response = responses.findResponseRecord(62);
+		var options62 = response != null ? response.get('options') : null;
+		options62 = makeArray(options62);
+		log(options62);
+		// red often hypo
+		// red unconcious
+	    if (arrayHasVal(options, 0) || arrayHasVal(options62, 0)) {
+			return 2;
+		}	
+		// yellow now and again hypo and !unconcious
+	    if (arrayHasVal(options, 1) && arrayHasVal(options62, 2)) {
+			return 1;
+		}	
+		// green rarely/never hypo and !unconcious
+	    if (arrayHasVal(options, 2) || arrayHasVal(options62, 2)) {
+			return 0;
+		}	
+		return 0;
+	}
 /*
-	MQS
-		Type M multi question
-		red
-			often hypo
-		red
-			unconcious
-		yellow
-			now and again hypo and !unconcious
-		green
-			rarely/never hypo and !unconcious
-		----------------------------------------
+	// {"q": 66, "scoreType":"MultiQ",},
+	// {"q": 71, "scoreType":"MultiQ",},
 		red
 			often high bg
 		red
@@ -126,7 +136,6 @@ function doScoring() {
 		For multi question, just log first question that score applies for (make sure zeros other ones)
 		grab both question rules, process each, eaval score, save both to questionscores
 */
-function scoreMultiQ() {
 	return 0;
 }	
 
