@@ -1,0 +1,11 @@
+{
+"total": 6,
+"scoreconfigs":[
+{"q":1, "area":"PS", "avals":[0,1,2],},
+{"q":2, "area":"PS", "tally":1, "avals":[0,1,2],},
+{"q":3, "avals":[2,2,1,1,0,0],},
+{"q":4, "avals":[0,2,2,1,0,1,2],},
+{"q":5, "scoreType":"MultiQ",},
+{"q":6, "scoreType":"Complex1",},
+],
+}

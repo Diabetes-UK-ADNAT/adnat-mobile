@@ -7,27 +7,72 @@
 function testScore() {
 	log('testScore');
 
-	var avals = [2,7,11,0,21,1,0];
-	var opts = [1,2,3,4];
-	avals.forEach(logArrayElements);
-	opts.forEach(logArrayElements);
-
-	// pull answer vals based on options selected
-	var scored = new Array();
-	opts.forEach(function(scoreIdx) {
-		log(avals[scoreIdx]);
-		if ( avals[scoreIdx] > 0 ) {
-			scored.push( avals[scoreIdx] );
+	var sc = Ext.getStore('ScoreConfigs');
+	sc.load({
+		scope: this,
+		callback : function() {
+			this.loadResponses();
 		}
 	});
+}
 
-	// sort desc
-	var scoredDesc = arraySortDescNumeric(scored);
-	scoredDesc.forEach(logArrayElements);
+function loadResponses() {
+	var responses = Ext.getStore('Responses');
+	responses.load({
+		scope: this,
+		callback : function() {
+			this.testScore2();
+		}
+	});
+}
 
-	// grab highest score
-	var score = scoredDesc.length > 0 ? scoredDesc[0] : 0;
-	log( score );
+function testScore2() {
+	log('testScore2');
+	var responses = Ext.getStore('Responses');
+	var sc = Ext.getStore('ScoreConfigs');
+	sc.each(function (scr) {
+		log('scr');
+		log(scr);
+
+		var avals = scr.get('avals');
+		var response = responses.findResponseRecord(scr.get('q'));
+
+		log('response');
+		log(response);
+		var options = new Array();
+		if (response != null) {
+			options = response.get('options');
+		}
+
+		log('options');
+		log(options);
+		if (options instanceof Array) {
+			options = options;
+		} else {
+			options = new Array(options);
+		}
+		
+		if (avals != null) avals.forEach(logArrayElements);
+		options.forEach(logArrayElements);
+
+		// pull answer vals based on options selected
+		var scored = new Array();
+		
+		if (avals != null)options.forEach(function(scoreIdx) {
+			log(avals[scoreIdx]);
+			if ( avals[scoreIdx] > 0 ) {
+				scored.push( avals[scoreIdx] );
+			}
+		});
+
+		// sort desc
+		var scoredDesc = arraySortDescNumeric(scored);
+		scoredDesc.forEach(logArrayElements);
+
+		// grab highest score
+		var score = scoredDesc.length > 0 ? scoredDesc[0] : 0;
+		log( 'score=' + score );
+	});
 
 	// setup
 	//

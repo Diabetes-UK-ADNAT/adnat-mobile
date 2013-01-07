@@ -199,7 +199,7 @@ function buildQuestion(q) {
 						'style: "font-size: 1.2em;", ',
 						'labelWidth: "100px",	 ' ,
 						'minValue: 0, ',
-						'maxValue: 100, ',
+						'maxValue: 20, ',
 						'stepValue: 1, ',
 						'cycle: true, ',
 						'label: null,}, ',

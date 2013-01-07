@@ -15,6 +15,7 @@ Ext.application({
     models: [
 		'Question',
 		'Response',
+		'ScoreConfig',
     ],
 
     views: [
@@ -33,6 +34,7 @@ Ext.application({
     stores: [
 		'Questions',
 		'Responses',
+		'ScoreConfigs',
 	],
 
     icon: {
@@ -63,7 +65,6 @@ Ext.application({
 		// fixme go to questions
 		Ext.getCmp('mainTabPanel').setActiveItem(1);
     },
-
     onUpdated: function() {
         Ext.Msg.confirm(
             "Application Update",
