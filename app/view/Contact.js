@@ -2,7 +2,7 @@ Ext.define("adnat.view.Contact", {
     extend: 'Ext.Panel',
 	xtype: 'contact',
     requires: [
-        'Ext.TitleBar',
+        'Ext.TitleBar'
     ],
     config: {
 		id: 'contact', 
@@ -27,7 +27,7 @@ Ext.define("adnat.view.Contact", {
 					},
 					{
 						xtype: 'emailfield',
-						label: 'Email',
+						label: 'Email'
 
 					},
 					{
@@ -45,7 +45,7 @@ Ext.define("adnat.view.Contact", {
 					//this.up('formpanel').submit();
 					//
 				}
-			},
-		],
+			}
+		]
 	}
 });

@@ -9,7 +9,7 @@ Ext.define("adnat.view.Question", {
 		'Ext.field.Radio',
 		'Ext.field.Hidden',
 		'Ext.field.Spinner',
-		'Ext.data.proxy.JsonP',
+		'Ext.data.proxy.JsonP'
     ],
     config: {
 		id: 'questionPanel', // works with refs to enable this.getQuestion()
@@ -22,8 +22,8 @@ Ext.define("adnat.view.Question", {
 				fn: function(event) {
 					adnat.app.getController('QuestionController').onSwipe(event);
 				},
-				element: 'innerElement',
-			},
+				element: 'innerElement'
+			}
 		},
 		items: [
 			{
@@ -38,14 +38,14 @@ Ext.define("adnat.view.Question", {
 				items: [
 					{
 						id: 'indicator',
-						html: null,
-					},
+						html: null
+					}
 					//{
 						//id: 'progressnum',
 						//padding: '1.0em',
 						//html: null,
 					//},
-				],
+				]
 			},
 			{
 				xtype: 'panel',
@@ -55,7 +55,7 @@ Ext.define("adnat.view.Question", {
 				{
 					id: 'title',
 					padding: '1.2em',
-					html: null,
+					html: null
 				},
 				{
 					xtype: 'fieldset',
@@ -63,8 +63,8 @@ Ext.define("adnat.view.Question", {
 					items: [
 						{xtype: 'textfield', name: 'text'},
 						{xtype: 'textfield', name: 'ordinal'},
-						{xtype: 'textfield', name: 'options'},
-					],
+						{xtype: 'textfield', name: 'options'}
+					]
 				},
 				{			
 					layout: 'hbox',
@@ -78,7 +78,7 @@ Ext.define("adnat.view.Question", {
 						id: 'prevButton',
 						ui: 'default',
 						disabled: false,
-						width: '100px',
+						width: '100px'
 					},
 					{xtype: 'spacer'},
 					{
@@ -86,15 +86,13 @@ Ext.define("adnat.view.Question", {
 						text: 'Next',
 						id: 'nextButton',
 						ui: 'confirm',
-						width: '100px',
+						width: '100px'
 					},
-					{xtype: 'spacer'},
-					],
-				},
-			],
-			},
-		],
-		html: [
-		].join(""),
+					{xtype: 'spacer'}
+					]
+				}
+			]
+			}
+		]
 	}
 });

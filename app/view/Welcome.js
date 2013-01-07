@@ -4,7 +4,7 @@ Ext.define("adnat.view.Welcome", {
     requires: [
         'Ext.TitleBar',
 		'Ext.field.Email',
-		'Ext.field.Password',
+		'Ext.field.Password'
     ],
     config: {
 		title: 'Welcome',
@@ -21,7 +21,7 @@ Ext.define("adnat.view.Welcome", {
 					"<img src=\"../resources/images/adnatpic4.1.png\"/>",
 					"<img src=\"../resources/images/adnatpic3.png\"/>",
 					"<img src=\"../resources/images/adnatpic4.png\"/>",
-					"</div>",
+					"</div>"
 				].join("")
 			},
 			{
@@ -37,14 +37,14 @@ Ext.define("adnat.view.Welcome", {
 					{
 						xtype: 'emailfield',
 						name : 'email',
-						label: 'Email',
+						label: 'Email'
 
 					},
 					{
 						xtype: 'passwordfield',
 						name : 'password',
-						label: 'Password',
-					},
+						label: 'Password'
+					}
 				]
 			},
 			{
@@ -55,8 +55,8 @@ Ext.define("adnat.view.Welcome", {
 					//Ext.Viewport.setActiveItem(Ext.create('adnat.view.ServerUnavailable'));
 					//Ext.Viewport.setActiveItem(Ext.create('adnat.view.Results'));
 					Ext.getCmp('mainTabPanel').setActiveItem(1);
-				},
-			},
-		],
-	},
+				}
+			}
+		]
+	}
 });

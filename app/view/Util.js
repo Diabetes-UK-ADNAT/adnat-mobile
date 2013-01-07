@@ -2,7 +2,7 @@ Ext.define("adnat.view.Util", {
     extend: 'Ext.Panel',
 	xtype: 'util',
     requires: [
-        'Ext.TitleBar',
+        'Ext.TitleBar'
     ],
     config: {
 		id: 'util', 
@@ -16,8 +16,6 @@ Ext.define("adnat.view.Util", {
 				xtype: 'titlebar',
 				title: 'Utility'
 			},
-		],
-	   items: [
 			{
 				xtype: 'button',
 				text: 'Clear / Delete All Responses',
@@ -27,6 +25,6 @@ Ext.define("adnat.view.Util", {
 					location.reload();
 				}
 			}
-		],
+		]
 	}
 });

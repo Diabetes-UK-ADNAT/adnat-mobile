@@ -2,7 +2,7 @@ Ext.define("adnat.view.Results", {
     extend: 'Ext.Panel',
 	xtype: 'results',
     requires: [
-        'Ext.TitleBar',
+        'Ext.TitleBar'
     ],
     config: {
 		id: 'results', // works with refs to enable this.getSurvey()
@@ -28,16 +28,16 @@ Ext.define("adnat.view.Results", {
 				html: [
 					"<div id=\"results\">",
 					"<h1 style='font-size:2em;'>My ADNAT Results</h1>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'gScoreRed',
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-red.png\"/>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'gScoreYellow',
@@ -52,43 +52,43 @@ Ext.define("adnat.view.Results", {
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-green.png\"/>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'gScore',
 				padding: '1.0em',
-				html: null,
+				html: null
 			},
 			{
 				id: 'pScoreRed',
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-red.png\"/>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'pScoreYellow',
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-yellow.png\"/>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'pScoreGreen',
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-green.png\"/>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'pScore',
 				padding: '1.0em',
-				html: null,
-			},
-		],
+				html: null
+			}
+		]
 	}
 });

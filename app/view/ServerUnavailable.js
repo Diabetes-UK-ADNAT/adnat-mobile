@@ -2,7 +2,7 @@ Ext.define("adnat.view.ServerUnavailable", {
     extend: 'Ext.Panel',
 	xtype: 'unavailable',
     requires: [
-        'Ext.TitleBar',
+        'Ext.TitleBar'
     ],
     config: {
 		title: 'Server Unavailable',
@@ -20,7 +20,7 @@ Ext.define("adnat.view.ServerUnavailable", {
 					"<img src=\"../resources/images/adnatpic4.1.png\"/>",
 					"<img src=\"../resources/images/adnatpic3.png\"/>",
 					"<img src=\"../resources/images/adnatpic4.png\"/>",
-					"</div>",
+					"</div>"
 				].join("")
 			},
 			{
@@ -30,7 +30,7 @@ Ext.define("adnat.view.ServerUnavailable", {
 			},
 			{
 				xtype: 'spacer',
-				height: '20px',
+				height: '20px'
 			},
 			{
 				xtype: 'button',
@@ -39,8 +39,7 @@ Ext.define("adnat.view.ServerUnavailable", {
 				handler: function() {
 					location.reload();
 				}
-			},
-			
-		],
-	},
+			}
+		]
+	}
 });

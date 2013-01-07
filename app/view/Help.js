@@ -3,12 +3,11 @@ Ext.define("adnat.view.Help", {
 	xtype: 'help',
     requires: [
         'Ext.TitleBar',
-		'Ext.dataview.NestedList',
+		'Ext.dataview.NestedList'
     ],
     config: {
 		title: 'Help',
 		iconCls: 'info',
-
 		styleHtmlContent: true,
 		scrollable: true,
 		items: [
@@ -22,7 +21,6 @@ Ext.define("adnat.view.Help", {
 				title: 'ADNAT Patient FAQ',
 				iconCls: 'star',
 				displayField: 'title',
-
 				store: {
 					type: 'tree',
 
@@ -45,6 +43,6 @@ Ext.define("adnat.view.Help", {
 					}
 				}
 			}
-		],
+		]
 	}
 });

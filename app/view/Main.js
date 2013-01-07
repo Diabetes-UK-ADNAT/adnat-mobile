@@ -7,11 +7,11 @@ Ext.define("adnat.view.Main", {
         tabBarPosition: 'bottom',
 
         items: [
-			{ xtype: 'welcome', },
-			{ xtype: 'question', },
-			{ xtype: 'results', },
-			{ xtype: 'contact', },
-			{ xtype: 'util', },
+			{ xtype: 'welcome' },
+			{ xtype: 'question' },
+			{ xtype: 'results' },
+			{ xtype: 'contact' },
+			{ xtype: 'util' }
         ]
     }
 });
