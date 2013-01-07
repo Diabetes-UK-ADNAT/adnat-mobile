@@ -44,20 +44,23 @@
             "update": "delta"
         },
 		{
-            "path": "app/lib/score.js"
-            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
-            "update": "delta"
+            "path": "app/lib/score.js",
+            "bundle": false,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta",
+			"remote": false
 		},
 		{
-            "path": "app/lib/util.js"
-            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
-            "update": "delta"
+            "path": "app/lib/util.js",
+            "bundle": false,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta",
+			"remote": false
 		},
 		{
-            "path": "app/lib/question.js"
-            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
-            "update": "delta"
-		},
+            "path": "app/lib/question.js",
+            "bundle": false,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta",
+			"remote": false
+		}
     ],
 
     /**
