@@ -6,7 +6,6 @@
 
 function testScore() {
 	log('testScore');
-
 	var sc = Ext.getStore('ScoreConfigs');
 	sc.load({
 		scope: this,
@@ -77,7 +76,7 @@ function testScore2() {
 	// setup
 	//
 	// score psych
-	scorePsychQuestions();
+	//scorePsychQuestions();
 	// score general
 	//
 	// assert psych
