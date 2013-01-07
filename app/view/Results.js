@@ -31,6 +31,27 @@ Ext.define("adnat.view.Results", {
 					"<div id=\"results\">",
 					"<h1 style='font-size:2em;'>My ADNAT Results</h1>",
 					"</div>",
+				].join(""),
+			},
+			{
+				id: 'gScoreRed',
+				html: [
+					"<div id=\"results\">",
+						"<img src=\"../resources/images/tl-red.png\"/>",
+					"</div>",
+				].join(""),
+			},
+			{
+				id: 'gScoreYellow',
+				html: [
+					"<div id=\"results\">",
+						"<img src=\"../resources/images/tl-yellow.png\"/>",
+					"</div>",
+				].join(""),
+			},
+			{
+				id: 'gScoreGreen',
+				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-green.png\"/>",
 					"</div>",
@@ -42,6 +63,7 @@ Ext.define("adnat.view.Results", {
 				html: null,
 			},
 			{
+				id: 'pScoreRed',
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-red.png\"/>",
@@ -49,16 +71,25 @@ Ext.define("adnat.view.Results", {
 				].join(""),
 			},
 			{
+				id: 'pScoreYellow',
+				html: [
+					"<div id=\"results\">",
+						"<img src=\"../resources/images/tl-yellow.png\"/>",
+					"</div>",
+				].join(""),
+			},
+			{
+				id: 'pScoreGreen',
+				html: [
+					"<div id=\"results\">",
+						"<img src=\"../resources/images/tl-green.png\"/>",
+					"</div>",
+				].join(""),
+			},
+			{
 				id: 'pScore',
 				padding: '1.0em',
 				html: null,
-			},
-			{
-				html: [
-					"<div id=\"results\">",
-				"Note, scores are actual calculated scores, but the lights still need to be set based on the scores",
-					"</div>",
-				].join(""),
 			},
 		],
 	}
