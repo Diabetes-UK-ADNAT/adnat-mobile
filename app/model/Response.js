@@ -1,6 +1,10 @@
 Ext.define('adnat.model.Response', {
     extend: 'Ext.data.Model',
     config: {
+		requires: [
+			'Ext.data.proxy.LocalStorage',
+			'Ext.data.identifier.Uuid'
+		],
 		idProperty: 'id',
 		identifier: {
 			type: 'uuid',

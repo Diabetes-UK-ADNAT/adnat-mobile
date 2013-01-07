@@ -1,6 +1,9 @@
 Ext.define('adnat.store.Responses', {
     extend  : 'Ext.data.Store',
-    requires: ['adnat.model.Response'],
+	requires: [
+		'Ext.data.proxy.LocalStorage',
+		'Ext.data.identifier.Uuid'
+	],
     config: {
 		model: 'adnat.model.Response',
 		autoLoad:true,
