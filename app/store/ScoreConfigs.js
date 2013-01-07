@@ -9,16 +9,16 @@ Ext.define('adnat.store.ScoreConfigs', {
 			reader : {
 				type : 'json',
 				rootProperty : 'scoreconfigs',
-				totalCount : 'total',
-			},
+				totalCount : 'total'
+			}
 		},
 		autoLoad:true,
 		sorters: [
 			{
 				property : 'q',
-				direction: 'ASC',
-			},
-		],
+				direction: 'ASC'
+			}
+		]
 	},
 	info : function() {
 		console.log("ScoreConfigs Store info");
@@ -38,6 +38,6 @@ Ext.define('adnat.store.ScoreConfigs', {
 	},
 	findScoreConfigRecord : function(questionId) {
 		return this.findRecord('q', questionId, 0, false, false, true);
-	},
+	}
 	
 });

@@ -9,16 +9,16 @@ Ext.define('adnat.store.Questions', {
 			reader : {
 				type : 'json',
 				rootProperty : 'questions',
-				totalCount : 'total',
-			},
+				totalCount : 'total'
+			}
 		},
 		autoLoad:true,
 		sorters: [
 			{
 				property : 'ordinal',
-				direction: 'ASC',
-			},
-		],
+				direction: 'ASC'
+			}
+		]
 	},
 	info : function() {
 		console.log("Question Store info");

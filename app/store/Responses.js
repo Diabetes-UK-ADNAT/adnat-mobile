@@ -6,7 +6,7 @@ Ext.define('adnat.store.Responses', {
 	],
     config: {
 		model: 'adnat.model.Response',
-		autoLoad:true,
+		autoLoad:true
 	},
 	info : function() {
 		console.log("Response Store info");
@@ -21,7 +21,7 @@ Ext.define('adnat.store.Responses', {
 	},
 	saveResponse : function (r) {
 		var find = this.findResponseIndex(r.get('q'));
-		if (find != -1) {
+		if (find !== -1) {
 			this.removeAt(find);
 			this.sync();
 		}
@@ -37,5 +37,5 @@ Ext.define('adnat.store.Responses', {
 	},
 	findResponseRecord : function(questionId) {
 		return this.findRecord('q', questionId, 0, false, false, true);
-	},
+	}
 });

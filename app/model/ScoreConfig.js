@@ -6,29 +6,29 @@ Ext.define('adnat.model.ScoreConfig', {
             {
 				id: 1,
                 name: 'q',
-                type: 'int',
+                type: 'int'
             },
             {
 				id: 2,
                 name: 'area',
-                type: 'string', 
+                type: 'string'
             },
             {
 				id: 3,
                 name: 'scoreType',
-                type: 'string', 
+                type: 'string'
             },
             {
 				id: 4,
                 name: 'avals',
-                type: 'auto', 
+                type: 'auto'
             },
             {
 				id: 5,
                 name: 'tally',
-                type: 'int',
-            },
-        ],
+                type: 'int'
+            }
+        ]
     }
 });
 

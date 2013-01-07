@@ -1,0 +1,421 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+'arrow-bottom' class='iconic arrow-bottom'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-bottom' class='iconic arrow-bottom'><\/a> Arrow Bottom<\/li>$/;"	a
+'arrow-bottom-alt' class='iconic arrow-bottom-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-bottom-alt' class='iconic arrow-bottom-alt'><\/a> Arrow Bottom (alternate)<\/li>$/;"	a
+'arrow-left' class='iconic arrow-left'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-left' class='iconic arrow-left'><\/a> Arrow Left<\/li>$/;"	a
+'arrow-left-alt' class='iconic arrow-left-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-left-alt' class='iconic arrow-left-alt'><\/a> Arrow Left (alternate)<\/li>$/;"	a
+'arrow-right' class='iconic arrow-right'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-right' class='iconic arrow-right'><\/a> Arrow Right<\/li>$/;"	a
+'arrow-right-alt' class='iconic arrow-right-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-right-alt' class='iconic arrow-right-alt'><\/a> Arrow Right (alternate)<\/li>$/;"	a
+'arrow-up' class='iconic arrow-up'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-up' class='iconic arrow-up'><\/a> Arrow Up<\/li>$/;"	a
+'arrow-up-alt' class='iconic arrow-up-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='arrow-up-alt' class='iconic arrow-up-alt'><\/a> Arrow Up (alternate)<\/li>$/;"	a
+'article' class='iconic article'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='article' class='iconic article'><\/a> Article<\/li>$/;"	a
+'at' class='iconic at'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='at' class='iconic at'><\/a> At Symbol<\/li>$/;"	a
+'beaker' class='iconic beaker'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='beaker' class='iconic beaker'><\/a> Beaker<\/li>$/;"	a
+'beaker-alt' class='iconic beaker-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='beaker-alt' class='iconic beaker-alt'><\/a> Beaker (alternate)<\/li>$/;"	a
+'bolt' class='iconic bolt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='bolt' class='iconic bolt'><\/a> Bolt<\/li>$/;"	a
+'book' class='iconic book'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='book' class='iconic book'><\/a> Book<\/li>$/;"	a
+'book-alt' class='iconic book-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='book-alt' class='iconic book-alt'><\/a> Book (alternate)<\/li>$/;"	a
+'box' class='iconic box'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='box' class='iconic box'><\/a> Box<\/li>$/;"	a
+'calendar' class='iconic calendar'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='calendar' class='iconic calendar'><\/a> Calendar<\/li>$/;"	a
+'calendar-alt' class='iconic calendar-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='calendar-alt' class='iconic calendar-alt'><\/a> Calendar (alternate)<\/li>$/;"	a
+'chat' class='iconic chat'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='chat' class='iconic chat'><\/a> Chat<\/li>$/;"	a
+'chat-alt' class='iconic chat-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='chat-alt' class='iconic chat-alt'><\/a> Chat (alternate)<\/li>$/;"	a
+'check' class='iconic check'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='check' class='iconic check'><\/a> Check<\/li>$/;"	a
+'check-alt' class='iconic check-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='check-alt' class='iconic check-alt'><\/a> Check (alternate)<\/li>$/;"	a
+'clock' class='iconic clock'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='clock' class='iconic clock'><\/a> Clock<\/li>$/;"	a
+'cog' class='iconic cog'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='cog' class='iconic cog'><\/a> Cog<\/li>$/;"	a
+'cog-alt' class='iconic cog-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='cog-alt' class='iconic cog-alt'><\/a> Cog (alternate)<\/li>$/;"	a
+'comment' class='iconic comment'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='comment' class='iconic comment'><\/a> Comment<\/li>$/;"	a
+'comment' class='iconic comment-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='comment' class='iconic comment-alt'><\/a> Comment (alternate)<\/li>$/;"	a
+'cursor' class='iconic cursor'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='cursor' class='iconic cursor'><\/a> Cursor<\/li>$/;"	a
+'denied' class='iconic denied'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='denied' class='iconic denied'><\/a> Denied<\/li>$/;"	a
+'dial' class='iconic dial'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='dial' class='iconic dial'><\/a> Dial<\/li>$/;"	a
+'document' class='iconic document'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='document' class='iconic document'><\/a> Document<\/li>$/;"	a
+'equalizer' class='iconic equalizer'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='equalizer' class='iconic equalizer'><\/a> Equalizer<\/li>$/;"	a
+'exit-fullscreen' class='iconic exit-fullscreen'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='exit-fullscreen' class='iconic exit-fullscreen'><\/a> Exit Fullscreen<\/li>$/;"	a
+'eyedropper' class='iconic eyedropper'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='eyedropper' class='iconic eyedropper'><\/a> Eyedropper<\/li>$/;"	a
+'fullscreen' class='iconic fullscreen'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='fullscreen' class='iconic fullscreen'><\/a> Fullscreen<\/li>$/;"	a
+'headphones' class='iconic headphones'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='headphones' class='iconic headphones'><\/a> Headphones<\/li>$/;"	a
+'heart' class='iconic heart'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='heart' class='iconic heart'><\/a> Heart<\/li>$/;"	a
+'home' class='iconic home'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='home' class='iconic home'><\/a> Home<\/li>$/;"	a
+'image' class='iconic image'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='image' class='iconic image'><\/a> Image<\/li>$/;"	a
+'info' class='iconic info'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='info' class='iconic info'><\/a> Info<\/li>$/;"	a
+'key' class='iconic key'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='key' class='iconic key'><\/a> Key<\/li>$/;"	a
+'lightbulb' class='iconic lightbulb'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='lightbulb' class='iconic lightbulb'><\/a> Lightbulb<\/li>$/;"	a
+'link' class='iconic link'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='link' class='iconic link'><\/a> Link<\/li>$/;"	a
+'locked' class='iconic locked'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='locked' class='iconic locked'><\/a> Locked<\/li>$/;"	a
+'magnifying-glass' class='iconic magnifying-glass'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='magnifying-glass' class='iconic magnifying-glass'><\/a> Magnifying Glass<\/li>$/;"	a
+'mail' class='iconic mail'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='mail' class='iconic mail'><\/a> Mail<\/li>$/;"	a
+'mail' class='iconic mail-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='mail' class='iconic mail-alt'><\/a> Mail (alternate)<\/li>$/;"	a
+'map-pin' class='iconic map-pin'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='map-pin' class='iconic map-pin'><\/a> Map Pin<\/li>$/;"	a
+'minus' class='iconic minus'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='minus' class='iconic minus'><\/a> Minus<\/li>$/;"	a
+'minus-alt' class='iconic minus-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='minus-alt' class='iconic minus-alt'><\/a> Minus (alternate)<\/li>$/;"	a
+'moon' class='iconic moon'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='moon' class='iconic moon'><\/a> Moon<\/li>$/;"	a
+'move' class='iconic move'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='move' class='iconic move'><\/a> Move<\/li>$/;"	a
+'move-alt' class='iconic move-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='move-alt' class='iconic move-alt'><\/a> Move (alternate)<\/li>$/;"	a
+'move-horizontal' class='iconic move-horizontal'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='move-horizontal' class='iconic move-horizontal'><\/a> Move Horizontal<\/li>$/;"	a
+'move-horizontal-alt' class='iconic move-horizontal-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='move-horizontal-alt' class='iconic move-horizontal-alt'><\/a> Move Horizontal (alternate)<\/li>$/;"	a
+'move-vertical' class='iconic move-vertical'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='move-vertical' class='iconic move-vertical'><\/a> Move Vertical<\/li>$/;"	a
+'move-vertical-alt' class='iconic move-vertical-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='move-vertical-alt' class='iconic move-vertical-alt'><\/a> Move Vertical (alternate)<\/li>$/;"	a
+'mute' class='iconic mute'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='mute' class='iconic mute'><\/a> Mute<\/li>$/;"	a
+'new-window' class='iconic new-window'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='new-window' class='iconic new-window'><\/a> New Window<\/li>$/;"	a
+'pencil' class='iconic pencil'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='pencil' class='iconic pencil'><\/a> Pencil<\/li>$/;"	a
+'pencil-alt' class='iconic pencil-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='pencil-alt' class='iconic pencil-alt'><\/a> Pencil (alternate)<\/li>$/;"	a
+'phone' class='iconic phone'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='phone' class='iconic phone'><\/a> Phone<\/li>$/;"	a
+'pin' class='iconic pin'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='pin' class='iconic pin'><\/a> Pin<\/li>$/;"	a
+'plus' class='iconic plus'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='plus' class='iconic plus'><\/a> Plus<\/li>$/;"	a
+'plus-alt' class='iconic plus-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='plus-alt' class='iconic plus-alt'><\/a> Plus (alternate)<\/li>$/;"	a
+'quote' class='iconic quote'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='quote' class='iconic quote'><\/a> Quote<\/li>$/;"	a
+'quote-alt' class='iconic quote-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='quote-alt' class='iconic quote-alt'><\/a> Quote (alternate)<\/li>$/;"	a
+'read-more' class='iconic read-more'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='read-more' class='iconic read-more'><\/a> Read More<\/li>$/;"	a
+'rss' class='iconic rss'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='rss' class='iconic rss'><\/a> RSS<\/li>$/;"	a
+'spin' class='iconic spin'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='spin' class='iconic spin'><\/a> Spin<\/li>$/;"	a
+'spin-alt' class='iconic spin-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='spin-alt' class='iconic spin-alt'><\/a> Spin (alternate)<\/li>$/;"	a
+'star' class='iconic star'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='star' class='iconic star'><\/a> Star<\/li>$/;"	a
+'sun' class='iconic sun'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='sun' class='iconic sun'><\/a> Sun<\/li>$/;"	a
+'tag' class='iconic tag'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='tag' class='iconic tag'><\/a> Tag<\/li>$/;"	a
+'trash' class='iconic trash'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='trash' class='iconic trash'><\/a> Trash<\/li>$/;"	a
+'unlocked' class='iconic unlocked'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='unlocked' class='iconic unlocked'><\/a> Unlocked<\/li>$/;"	a
+'user' class='iconic user'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='user' class='iconic user'><\/a> User<\/li>$/;"	a
+'volume' class='iconic volume'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='volume' class='iconic volume'><\/a> Volume<\/li>$/;"	a
+'x' class='iconic x'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='x' class='iconic x'><\/a> X<\/li>$/;"	a
+'x' class='iconic x-alt'	touch/resources/themes/vendor/compass-recipes/fonts/iconic/demo.html	/^<li><a name='x' class='iconic x-alt'><\/a> X (alternate)<\/li>$/;"	a
+Date	touch/src/util/JSON.js	/^        Date.prototype.toJSON = function (key) {$/;"	c
+Date.getMonthNumber	touch/src/locale/ext-lang-en.js	/^Date.getMonthNumber = function(name) {$/;"	f
+Date.getShortDayName	touch/src/locale/ext-lang-en.js	/^Date.getShortDayName = function(day) {$/;"	f
+Date.getShortMonthName	touch/src/locale/ext-lang-en.js	/^Date.getShortMonthName = function(month) {$/;"	f
+Date.monthNumbers.Apr	touch/src/locale/ext-lang-en.js	/^    'Apr': 3,$/;"	p
+Date.monthNumbers.Aug	touch/src/locale/ext-lang-en.js	/^    'Aug': 7,$/;"	p
+Date.monthNumbers.Dec	touch/src/locale/ext-lang-en.js	/^    'Dec': 11$/;"	p
+Date.monthNumbers.Feb	touch/src/locale/ext-lang-en.js	/^    'Feb': 1,$/;"	p
+Date.monthNumbers.Jan	touch/src/locale/ext-lang-en.js	/^    'Jan': 0,$/;"	p
+Date.monthNumbers.Jul	touch/src/locale/ext-lang-en.js	/^    'Jul': 6,$/;"	p
+Date.monthNumbers.Jun	touch/src/locale/ext-lang-en.js	/^    'Jun': 5,$/;"	p
+Date.monthNumbers.Mar	touch/src/locale/ext-lang-en.js	/^    'Mar': 2,$/;"	p
+Date.monthNumbers.May	touch/src/locale/ext-lang-en.js	/^    'May': 4,$/;"	p
+Date.monthNumbers.Nov	touch/src/locale/ext-lang-en.js	/^    'Nov': 10,$/;"	p
+Date.monthNumbers.Oct	touch/src/locale/ext-lang-en.js	/^    'Oct': 9,$/;"	p
+Date.monthNumbers.Sep	touch/src/locale/ext-lang-en.js	/^    'Sep': 8,$/;"	p
+Date.toJSON	touch/src/util/JSON.js	/^        Date.prototype.toJSON = function (key) {$/;"	m
+Ext.Date.now	touch/sencha-touch-all-debug.js	/^    now: Date.now,$/;"	p
+Ext.Date.now	touch/sencha-touch-all.js	/^    now: Date.now,$/;"	p
+Ext.Date.now	touch/sencha-touch-debug.js	/^    now: Date.now,$/;"	p
+Ext.Date.now	touch/sencha-touch.js	/^    now: Date.now,$/;"	p
+Ext.Date.now	touch/src/core/lang/Date.js	/^    now: Date.now,$/;"	p
+Ext.DateExtras.now	touch/sencha-touch-all-debug.js	/^    now: Date.now || function() {$/;"	p
+Ext.DateExtras.now	touch/sencha-touch-all.js	/^    now: Date.now || function() {$/;"	p
+Ext.DateExtras.now	touch/src/DateExtras.js	/^    now: Date.now || function() {$/;"	p
+Ext.Error.raise	touch/sencha-touch-all-debug.js	/^    raise: function(object) {$/;"	m
+Ext.Error.raise	touch/sencha-touch-all.js	/^    raise: function(object) {$/;"	m
+Ext.Error.raise	touch/sencha-touch-debug.js	/^    raise: function(object) {$/;"	m
+Ext.Error.raise	touch/sencha-touch.js	/^    raise: function(object) {$/;"	m
+Ext.Error.raise	touch/src/core/lang/Error.js	/^    raise: function(object) {$/;"	m
+Ext.Number.constrain	touch/sencha-touch-all-debug.js	/^    constrain: function(number, min, max) {$/;"	m
+Ext.Number.constrain	touch/sencha-touch-all.js	/^    constrain: function(number, min, max) {$/;"	m
+Ext.Number.constrain	touch/sencha-touch-debug.js	/^    constrain: function(number, min, max) {$/;"	m
+Ext.Number.constrain	touch/sencha-touch.js	/^    constrain: function(number, min, max) {$/;"	m
+Ext.Number.constrain	touch/src/core/lang/Number.js	/^    constrain: function(number, min, max) {$/;"	m
+Ext.Number.from	touch/sencha-touch-all-debug.js	/^    from: function(value, defaultValue) {$/;"	m
+Ext.Number.from	touch/sencha-touch-all.js	/^    from: function(value, defaultValue) {$/;"	m
+Ext.Number.from	touch/sencha-touch-debug.js	/^    from: function(value, defaultValue) {$/;"	m
+Ext.Number.from	touch/sencha-touch.js	/^    from: function(value, defaultValue) {$/;"	m
+Ext.Number.from	touch/src/core/lang/Number.js	/^    from: function(value, defaultValue) {$/;"	m
+Ext.Number.snap	touch/sencha-touch-all-debug.js	/^    snap : function(value, increment, minValue, maxValue) {$/;"	m
+Ext.Number.snap	touch/sencha-touch-all.js	/^    snap : function(value, increment, minValue, maxValue) {$/;"	m
+Ext.Number.snap	touch/sencha-touch-debug.js	/^    snap : function(value, increment, minValue, maxValue) {$/;"	m
+Ext.Number.snap	touch/sencha-touch.js	/^    snap : function(value, increment, minValue, maxValue) {$/;"	m
+Ext.Number.snap	touch/src/core/lang/Number.js	/^    snap : function(value, increment, minValue, maxValue) {$/;"	m
+Ext.Number.toFixed	touch/sencha-touch-all-debug.js	/^    toFixed: function(value, precision) {$/;"	m
+Ext.Number.toFixed	touch/sencha-touch-all.js	/^    toFixed: function(value, precision) {$/;"	m
+Ext.Number.toFixed	touch/sencha-touch-debug.js	/^    toFixed: function(value, precision) {$/;"	m
+Ext.Number.toFixed	touch/sencha-touch.js	/^    toFixed: function(value, precision) {$/;"	m
+Ext.Number.toFixed	touch/src/core/lang/Number.js	/^    toFixed: function(value, precision) {$/;"	m
+Ext.String.trimRegex	touch/sencha-touch-all-debug.js	/^    trimRegex: \/^[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+|[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+$\/g,$/;"	p
+Ext.String.trimRegex	touch/sencha-touch-all.js	/^    trimRegex: \/^[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+|[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+$\/g,$/;"	p
+Ext.String.trimRegex	touch/sencha-touch-debug.js	/^    trimRegex: \/^[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+|[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+$\/g,$/;"	p
+Ext.String.trimRegex	touch/sencha-touch.js	/^    trimRegex: \/^[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+|[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+$\/g,$/;"	p
+Ext.String.trimRegex	touch/src/core/lang/String.js	/^    trimRegex: \/^[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+|[\\x09\\x0a\\x0b\\x0c\\x0d\\x20\\xa0\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+$\/g,$/;"	p
+Ext.apply	touch/sencha-touch-all-debug.js	/^    Ext.apply = function(object, config, defaults) {$/;"	f
+Ext.apply	touch/sencha-touch-all.js	/^    Ext.apply = function(object, config, defaults) {$/;"	f
+Ext.apply	touch/sencha-touch-debug.js	/^    Ext.apply = function(object, config, defaults) {$/;"	f
+Ext.apply	touch/sencha-touch.js	/^    Ext.apply = function(object, config, defaults) {$/;"	f
+Ext.apply	touch/src/core/Ext.js	/^    Ext.apply = function(object, config, defaults) {$/;"	f
+Ext.blink	touch/microloader/production.js	/^    Ext.blink = function(manifest) {$/;"	f
+Ext.blink	touch/microloader/testing.js	/^    Ext.blink = function(options) {$/;"	f
+Ext.data.SyncModel.MODEL	touch/src/platform/src/data/sync/SyncModel.js	/^	MODEL: '_model',$/;"	p
+Ext.data.SyncModel.OID	touch/src/platform/src/data/sync/SyncModel.js	/^	OID: '_oid',$/;"	p
+Ext.data.SyncModel.REF	touch/src/platform/src/data/sync/SyncModel.js	/^	REF: '_ref',$/;"	p
+Ext.data.SyncModel.STATE	touch/src/platform/src/data/sync/SyncModel.js	/^	STATE: '_state',$/;"	p
+Ext.data.SyncModel.TOMBSTONE	touch/src/platform/src/data/sync/SyncModel.js	/^	TOMBSTONE: '_ts',$/;"	p
+Ext.data.SyncModel.changeReplicaNumber	touch/src/platform/src/data/sync/SyncModel.js	/^	changeReplicaNumber: function(old_replica_number,new_replica_number) {$/;"	m
+Ext.data.SyncModel.createReplStorageModel	touch/src/platform/src/data/sync/SyncModel.js	/^	createReplStorageModel: function(modelName) { \/\/ create the storage model, based on the user model$/;"	m
+Ext.data.SyncModel.equals	touch/src/platform/src/data/sync/SyncModel.js	/^	equals: function(r) {$/;"	m
+Ext.data.SyncModel.forEachPair	touch/src/platform/src/data/sync/SyncModel.js	/^	forEachPair: function(data,state,path,values,callback,scope) {$/;"	m
+Ext.data.SyncModel.getUpdates	touch/src/platform/src/data/sync/SyncModel.js	/^	getUpdates: function(csv) {$/;"	m
+Ext.data.SyncModel.isNotDestroyed	touch/src/platform/src/data/sync/SyncModel.js	/^	isNotDestroyed: function() { \/\/ test if a record has been deleted$/;"	m
+Ext.data.SyncModel.isSystemModel	touch/src/platform/src/data/sync/SyncModel.js	/^	isSystemModel: function() {$/;"	m
+Ext.data.SyncModel.oid	touch/src/platform/src/data/sync/SyncModel.js	/^	oid: function() {$/;"	m
+Ext.data.SyncModel.putUpdate	touch/src/platform/src/data/sync/SyncModel.js	/^	putUpdate: function(update) {$/;"	m
+Ext.data.SyncModel.ref	touch/src/platform/src/data/sync/SyncModel.js	/^	ref: function() {$/;"	m
+Ext.data.SyncModel.setCreateState	touch/src/platform/src/data/sync/SyncModel.js	/^	setCreateState: function(generator) {$/;"	m
+Ext.data.SyncModel.setUpdateState	touch/src/platform/src/data/sync/SyncModel.js	/^	setUpdateState: function(generator) {$/;"	m
+Ext.data.SyncModel.setUpdateStateValue	touch/src/platform/src/data/sync/SyncModel.js	/^	setUpdateStateValue: function(path,before_value,after_value,generator) {$/;"	m
+Ext.data.SyncModel.state	touch/src/platform/src/data/sync/SyncModel.js	/^	state: undefined,$/;"	p
+Ext.data.SyncModel.userData	touch/src/platform/src/data/sync/SyncModel.js	/^	userData: function() {$/;"	m
+Ext.data.UUIDGenerator.generate	touch/src/platform/src/data/sync/UUIDGenerator.js	/^	generate: function() { \/\/ totally random uuid$/;"	m
+Ext.data.array.all	touch/src/platform/src/data/sync/Array.js	/^	all: function(a,fn,scope) {$/;"	m
+Ext.data.array.any	touch/src/platform/src/data/sync/Array.js	/^	any: function(a,fn,scope) {$/;"	m
+Ext.data.array.collect	touch/src/platform/src/data/sync/Array.js	/^	collect: function(a,fn,scope) {$/;"	m
+Ext.data.array.forEachAsync	touch/src/platform/src/data/sync/Array.js	/^	forEachAsync: function(a,each_fn,each_scope,done_fn,done_scope) {$/;"	m
+Ext.data.array.forEachAsync.f	touch/src/platform/src/data/sync/Array.js	/^		var f= function f() {$/;"	f
+Ext.data.array.forEachYielding	touch/src/platform/src/data/sync/Array.js	/^	forEachYielding: function(a,each_fn,each_scope,done_fn,done_scope) {$/;"	m
+Ext.data.array.forEachYielding.f	touch/src/platform/src/data/sync/Array.js	/^		function f() {$/;"	f
+Ext.data.array.includes	touch/src/platform/src/data/sync/Array.js	/^	includes: function(a,v) {$/;"	m
+Ext.data.array.index	touch/src/platform/src/data/sync/Array.js	/^	index: function(a,fn,scope) {$/;"	m
+Ext.data.array.remove	touch/src/platform/src/data/sync/Array.js	/^	remove: function(a,v) {$/;"	m
+Ext.data.array.select	touch/src/platform/src/data/sync/Array.js	/^	select: function(a,fn,scope) {$/;"	m
+Ext.data.utilities.apply	touch/src/platform/src/data/sync/Utilities.js	/^	apply: function(instance,methods,a,done_callback,done_scope) {$/;"	m
+Ext.data.utilities.check	touch/src/platform/src/data/sync/Utilities.js	/^	check: function(class_name, method_name, instance_name, instance, properties) {$/;"	m
+Ext.data.utilities.copy	touch/src/platform/src/data/sync/Utilities.js	/^	copy: function(from_instance,to_instance,properties) {$/;"	m
+Ext.data.utilities.copyIfUndefined	touch/src/platform/src/data/sync/Utilities.js	/^	copyIfUndefined: function(from_instance,to_instance,properties) {$/;"	m
+Ext.data.utilities.delegate	touch/src/platform/src/data/sync/Utilities.js	/^	delegate: function(from_instance, to_instance, methods) {$/;"	m
+Ext.data.utilities.intersection	touch/src/platform/src/data/sync/Utilities.js	/^	intersection: function(a,b) { $/;"	m
+Ext.data.utilities.minus	touch/src/platform/src/data/sync/Utilities.js	/^	minus: function(a,b) { \/\/ minus(a,b) is all the name value pairs in a that are not in b $/;"	m
+Ext.extend	touch/sencha-touch-all-debug.js	/^    Ext.extend = function(Class, Parent, members) {$/;"	f
+Ext.extend	touch/sencha-touch-all.js	/^    Ext.extend = function(Class, Parent, members) {$/;"	f
+Ext.extend	touch/sencha-touch-debug.js	/^    Ext.extend = function(Class, Parent, members) {$/;"	f
+Ext.extend	touch/sencha-touch.js	/^    Ext.extend = function(Class, Parent, members) {$/;"	f
+Ext.extend	touch/src/core/class/Class.js	/^    Ext.extend = function(Class, Parent, members) {$/;"	f
+Ext.flexSetter	touch/sencha-touch-all-debug.js	/^    flexSetter: function(fn) {$/;"	m
+Ext.flexSetter	touch/sencha-touch-all.js	/^    flexSetter: function(fn) {$/;"	m
+Ext.flexSetter	touch/sencha-touch-debug.js	/^    flexSetter: function(fn) {$/;"	m
+Ext.flexSetter	touch/sencha-touch.js	/^    flexSetter: function(fn) {$/;"	m
+Ext.flexSetter	touch/src/core/lang/Function.js	/^    flexSetter: function(fn) {$/;"	m
+Ext.num	touch/sencha-touch-all-debug.js	/^Ext.num = function() {$/;"	f
+Ext.num	touch/sencha-touch-all.js	/^Ext.num = function() {$/;"	f
+Ext.num	touch/sencha-touch-debug.js	/^Ext.num = function() {$/;"	f
+Ext.num	touch/sencha-touch.js	/^Ext.num = function() {$/;"	f
+Ext.num	touch/src/core/lang/Number.js	/^Ext.num = function() {$/;"	f
+Ext.toArray	touch/sencha-touch-all-debug.js	/^    Ext.toArray = function() {$/;"	f
+Ext.toArray	touch/sencha-touch-all.js	/^    Ext.toArray = function() {$/;"	f
+Ext.toArray	touch/sencha-touch-debug.js	/^    Ext.toArray = function() {$/;"	f
+Ext.toArray	touch/sencha-touch.js	/^    Ext.toArray = function() {$/;"	f
+Ext.toArray	touch/src/core/lang/Array.js	/^    Ext.toArray = function() {$/;"	f
+Ext.urlDecode	touch/sencha-touch-all-debug.js	/^Ext.urlDecode = function() {$/;"	f
+Ext.urlDecode	touch/sencha-touch-all.js	/^Ext.urlDecode = function() {$/;"	f
+Ext.urlDecode	touch/sencha-touch-debug.js	/^Ext.urlDecode = function() {$/;"	f
+Ext.urlDecode	touch/sencha-touch.js	/^Ext.urlDecode = function() {$/;"	f
+Ext.urlDecode	touch/src/core/lang/Object.js	/^Ext.urlDecode = function() {$/;"	f
+Ext.urlEncode	touch/sencha-touch-all-debug.js	/^Ext.urlEncode = function() {$/;"	f
+Ext.urlEncode	touch/sencha-touch-all.js	/^Ext.urlEncode = function() {$/;"	f
+Ext.urlEncode	touch/sencha-touch-debug.js	/^Ext.urlEncode = function() {$/;"	f
+Ext.urlEncode	touch/sencha-touch.js	/^Ext.urlEncode = function() {$/;"	f
+Ext.urlEncode	touch/src/core/lang/Object.js	/^Ext.urlEncode = function() {$/;"	f
+Functions	touch/resources/themes/lib/theme_images.rb	/^    module Functions$/;"	m	class:SenchaTouch.SassExtensions
+JSON.decode	touch/src/util/JSON.js	/^    decode: function(s) {$/;"	m
+JSON.encode	touch/src/util/JSON.js	/^    encode: function(o) {$/;"	m
+JSON.parse.walk	touch/src/util/JSON.js	/^            function walk(holder, key) {$/;"	f
+JSON.stringify	touch/src/util/JSON.js	/^        JSON.stringify = function (value, replacer, space) {$/;"	f
+Manifest	touch/microloader/production.js	/^    function Manifest(manifest) {$/;"	c
+Manifest.asset.path	touch/microloader/production.js	/^                    path: asset$/;"	p
+Manifest.getAsset	touch/microloader/production.js	/^        this.getAsset = function(uri) {$/;"	m
+Manifest.processAsset	touch/microloader/production.js	/^        function processAsset(asset) {$/;"	f
+Manifest.processAssets	touch/microloader/production.js	/^        function processAssets(assets, type) {$/;"	f
+Manifest.store	touch/microloader/production.js	/^        this.store = function() {$/;"	m
+Sass	touch/resources/themes/lib/theme_images.rb	/^module Sass::Script::Functions$/;"	m
+Sass	touch/resources/themes/vendor/compass-recipes/lib/compass-recipes/sass_extensions.rb	/^module Sass::Script::Functions$/;"	m
+SassExtensions	touch/resources/themes/lib/theme_images.rb	/^  module SassExtensions$/;"	m	class:SenchaTouch
+SenchaTouch	touch/resources/themes/lib/theme_images.rb	/^module SenchaTouch$/;"	m
+String	touch/src/util/JSON.js	/^        String.prototype.toJSON =$/;"	c
+String.toJSON	touch/src/util/JSON.js	/^        String.prototype.toJSON =$/;"	m
+TemplateClass	touch/sencha-touch-all-debug.js	/^        TemplateClass.prototype = null;$/;"	c
+TemplateClass	touch/sencha-touch-all.js	/^        TemplateClass.prototype = null;$/;"	c
+TemplateClass	touch/sencha-touch-debug.js	/^        TemplateClass.prototype = null;$/;"	c
+TemplateClass	touch/sencha-touch.js	/^        TemplateClass.prototype = null;$/;"	c
+TemplateClass	touch/src/core/lang/Object.js	/^        TemplateClass.prototype = null;$/;"	c
+ThemeImages	touch/resources/themes/lib/theme_images.rb	/^      module ThemeImages$/;"	m	class:SenchaTouch.SassExtensions.Functions
+_isScored	app/lib/score.js	/^var _isScored = false;$/;"	v
+array	touch/src/core/lang/Array.js	/^            var array = [],$/;"	v
+arrayHasVal	app/lib/util.js	/^function arrayHasVal(arr, val) {$/;"	f
+arrayRemoveNullElements	app/lib/util.js	/^function arrayRemoveNullElements(options) {$/;"	f
+arraySortDescNumeric	app/lib/util.js	/^function arraySortDescNumeric(arr) {$/;"	f
+background_noise	touch/resources/themes/vendor/compass-recipes/lib/compass-recipes/sass_extensions.rb	/^ def background_noise(kwargs = {})$/;"	f	class:Sass
+blink	touch/microloader/production.js	/^    function blink(currentManifest) {$/;"	f
+blink.	touch/microloader/production.js	/^                onAppCacheIdle = function() {},$/;"	f
+blink.evaluateAsset	touch/microloader/production.js	/^        function evaluateAsset(asset) {$/;"	f
+blink.onAssetReady	touch/microloader/production.js	/^        function onAssetReady(asset, content) {$/;"	f
+blink.onReady	touch/microloader/production.js	/^        function onReady() {$/;"	f
+blinkOnDomReady	touch/microloader/production.js	/^    function blinkOnDomReady(manifest) {$/;"	f
+buildQuestion	app/lib/question.js	/^function buildQuestion(q) {$/;"	f
+calcProgress	app/lib/question.js	/^function calcProgress() {$/;"	f
+cls	touch/sencha-touch-all-debug.js	/^        cls.prototype.override = function(o) {$/;"	c
+cls	touch/sencha-touch-all.js	/^        cls.prototype.override = function(o) {$/;"	c
+cls	touch/sencha-touch-debug.js	/^        cls.prototype.override = function(o) {$/;"	c
+cls	touch/sencha-touch.js	/^        cls.prototype.override = function(o) {$/;"	c
+cls	touch/src/core/class/Class.js	/^        cls.prototype.override = function(o) {$/;"	c
+cls.override	touch/sencha-touch-all-debug.js	/^        cls.prototype.override = function(o) {$/;"	m
+cls.override	touch/sencha-touch-all.js	/^        cls.prototype.override = function(o) {$/;"	m
+cls.override	touch/sencha-touch-debug.js	/^        cls.prototype.override = function(o) {$/;"	m
+cls.override	touch/sencha-touch.js	/^        cls.prototype.override = function(o) {$/;"	m
+cls.override	touch/src/core/class/Class.js	/^        cls.prototype.override = function(o) {$/;"	m
+d	touch/sencha-touch-all-debug.js	/^        var d = date.getDate();$/;"	v
+d	touch/sencha-touch-all.js	/^        var d = date.getDate();$/;"	v
+d	touch/src/DateExtras.js	/^        var d = date.getDate();$/;"	v
+doScoring	app/lib/score.js	/^function doScoring() {$/;"	f
+dt	touch/sencha-touch-all-debug.js	/^        var dt = utilDate.add(new Date(y < 100 ? 100 : y, m - 1, d, h, i, s, ms), utilDate.YEAR, y < 100 ? y - 100 : 0);$/;"	v
+dt	touch/sencha-touch-all.js	/^        var dt = utilDate.add(new Date(y < 100 ? 100 : y, m - 1, d, h, i, s, ms), utilDate.YEAR, y < 100 ? y - 100 : 0);$/;"	v
+dt	touch/src/DateExtras.js	/^        var dt = utilDate.add(new Date(y < 100 ? 100 : y, m - 1, d, h, i, s, ms), utilDate.YEAR, y < 100 ? y - 100 : 0);$/;"	v
+e	touch/src/platform/src/data/sync/SyncModel.js	/^		var e= l-1;$/;"	v
+erase	touch/sencha-touch-all-debug.js	/^    var erase = supportsSplice ? eraseNative : eraseSim,$/;"	v
+erase	touch/sencha-touch-all.js	/^    var erase = supportsSplice ? eraseNative : eraseSim,$/;"	v
+erase	touch/sencha-touch-debug.js	/^    var erase = supportsSplice ? eraseNative : eraseSim,$/;"	v
+erase	touch/sencha-touch.js	/^    var erase = supportsSplice ? eraseNative : eraseSim,$/;"	v
+erase	touch/src/core/lang/Array.js	/^    var erase = supportsSplice ? eraseNative : eraseSim,$/;"	v
+eraseNative	touch/sencha-touch-all-debug.js	/^    function eraseNative (array, index, removeCount) {$/;"	f
+eraseNative	touch/sencha-touch-all.js	/^    function eraseNative (array, index, removeCount) {$/;"	f
+eraseNative	touch/sencha-touch-debug.js	/^    function eraseNative (array, index, removeCount) {$/;"	f
+eraseNative	touch/sencha-touch.js	/^    function eraseNative (array, index, removeCount) {$/;"	f
+eraseNative	touch/src/core/lang/Array.js	/^    function eraseNative (array, index, removeCount) {$/;"	f
+eraseSim	touch/sencha-touch-all-debug.js	/^    function eraseSim (array, index, removeCount) {$/;"	f
+eraseSim	touch/sencha-touch-all.js	/^    function eraseSim (array, index, removeCount) {$/;"	f
+eraseSim	touch/sencha-touch-debug.js	/^    function eraseSim (array, index, removeCount) {$/;"	f
+eraseSim	touch/sencha-touch.js	/^    function eraseSim (array, index, removeCount) {$/;"	f
+eraseSim	touch/src/core/lang/Array.js	/^    function eraseSim (array, index, removeCount) {$/;"	f
+fixArrayIndex	touch/sencha-touch-all-debug.js	/^    function fixArrayIndex (array, index) {$/;"	f
+fixArrayIndex	touch/sencha-touch-all.js	/^    function fixArrayIndex (array, index) {$/;"	f
+fixArrayIndex	touch/sencha-touch-debug.js	/^    function fixArrayIndex (array, index) {$/;"	f
+fixArrayIndex	touch/sencha-touch.js	/^    function fixArrayIndex (array, index) {$/;"	f
+fixArrayIndex	touch/src/core/lang/Array.js	/^    function fixArrayIndex (array, index) {$/;"	f
+gScore	app/lib/score.js	/^var gScore = 0;$/;"	v
+getGeneralScore	app/lib/score.js	/^function getGeneralScore() {$/;"	f
+getManifestStorageKey	touch/microloader/production.js	/^    function getManifestStorageKey(id) {$/;"	f
+getNextQuestion	app/lib/question.js	/^function getNextQuestion(newO, direction) {$/;"	f
+getPsychScore	app/lib/score.js	/^function getPsychScore() {$/;"	f
+i	touch/sencha-touch-all-debug.js	/^            var i = 0,$/;"	v
+i	touch/sencha-touch-all.js	/^            var i = 0,$/;"	v
+i	touch/sencha-touch-debug.js	/^            var i = 0,$/;"	v
+i	touch/sencha-touch.js	/^            var i = 0,$/;"	v
+i	touch/src/core/lang/Array.js	/^            var i = 0,$/;"	v
+isResponseEqualSkip	app/lib/question.js	/^function isResponseEqualSkip(q,skipQ, skipR) {$/;"	f
+isScored	app/lib/score.js	/^function isScored() {$/;"	f
+l	touch/src/platform/src/data/sync/SyncModel.js	/^		var l= path.length;$/;"	v
+length	touch/sencha-touch-all-debug.js	/^            var length = array.length,$/;"	v
+length	touch/sencha-touch-all.js	/^            var length = array.length,$/;"	v
+length	touch/sencha-touch-debug.js	/^            var length = array.length,$/;"	v
+length	touch/sencha-touch.js	/^            var length = array.length,$/;"	v
+length	touch/src/core/lang/Array.js	/^            var length = array.length,$/;"	v
+loadResponses	app/lib/score.js	/^function loadResponses() {$/;"	f
+log	app/lib/util.js	/^function log(m) {$/;"	f
+log	touch/microloader/production.js	/^    function log(message) {$/;"	f
+logArray	app/lib/util.js	/^function logArray(arr) {$/;"	f
+logArrayElements	app/lib/util.js	/^function logArrayElements(element, index, array) {$/;"	f
+makeArray	app/lib/util.js	/^function makeArray(v) {$/;"	f
+meta	touch/microloader/development.js	/^    function meta(name, content) {$/;"	f
+meta	touch/microloader/testing.js	/^    function meta(name, content) {$/;"	f
+method	touch/sencha-touch-all-debug.js	/^        var method = fn,$/;"	v
+method	touch/sencha-touch-all.js	/^        var method = fn,$/;"	v
+method	touch/sencha-touch-debug.js	/^        var method = fn,$/;"	v
+method	touch/sencha-touch.js	/^        var method = fn,$/;"	v
+method	touch/src/core/lang/Function.js	/^        var method = fn,$/;"	v
+objectClass	touch/sencha-touch-all-debug.js	/^        objectClass.prototype = object;$/;"	c
+objectClass	touch/sencha-touch-all.js	/^        objectClass.prototype = object;$/;"	c
+objectClass	touch/sencha-touch-debug.js	/^        objectClass.prototype = object;$/;"	c
+objectClass	touch/sencha-touch.js	/^        objectClass.prototype = object;$/;"	c
+objectClass	touch/src/core/lang/Object.js	/^        objectClass.prototype = object;$/;"	c
+onMessage	touch/microloader/production.js	/^    function onMessage(e) {$/;"	f
+onReady.checkForUpdate	touch/microloader/production.js	/^            function checkForUpdate() {$/;"	f
+onReady.doUpdate	touch/microloader/production.js	/^            function doUpdate() {$/;"	f
+onReady.notifyUpdate	touch/microloader/production.js	/^            function notifyUpdate() {$/;"	f
+onReady.notifyUpdateIfAppCacheReady	touch/microloader/production.js	/^            function notifyUpdateIfAppCacheReady() {$/;"	f
+onReady.onAssetUpdated	touch/microloader/production.js	/^            function onAssetUpdated(asset, content) {$/;"	f
+onSuccess	touch/microloader/production.js	/^            onSuccess = function(content) {$/;"	f
+options	touch/microloader/development.js	/^    var options = eval("(" + xhr.responseText + ")"),$/;"	v
+pScore	app/lib/score.js	/^var pScore = 0;$/;"	v
+parts	touch/src/core/class/ClassManager.js	/^            var parts = [],$/;"	v
+patch	touch/microloader/production.js	/^    function patch(content, delta) {$/;"	f
+postprocessors.name	touch/sencha-touch-all-debug.js	/^                name: name,$/;"	p
+postprocessors.name	touch/sencha-touch-all.js	/^                name: name,$/;"	p
+postprocessors.name	touch/sencha-touch-debug.js	/^                name: name,$/;"	p
+postprocessors.name	touch/sencha-touch.js	/^                name: name,$/;"	p
+postprocessors.name	touch/src/core/class/ClassManager.js	/^                name: name,$/;"	p
+postprocessors.properties	touch/sencha-touch-all-debug.js	/^                properties: properties || false,$/;"	p
+postprocessors.properties	touch/sencha-touch-all.js	/^                properties: properties || false,$/;"	p
+postprocessors.properties	touch/sencha-touch-debug.js	/^                properties: properties || false,$/;"	p
+postprocessors.properties	touch/sencha-touch.js	/^                properties: properties || false,$/;"	p
+postprocessors.properties	touch/src/core/class/ClassManager.js	/^                properties: properties || false,$/;"	p
+quote	touch/src/util/JSON.js	/^    function quote(string) {$/;"	f
+rFlatten	touch/sencha-touch-all-debug.js	/^            function rFlatten(a) {$/;"	f
+rFlatten	touch/sencha-touch-all.js	/^            function rFlatten(a) {$/;"	f
+rFlatten	touch/sencha-touch-debug.js	/^            function rFlatten(a) {$/;"	f
+rFlatten	touch/sencha-touch.js	/^            function rFlatten(a) {$/;"	f
+rFlatten	touch/src/core/lang/Array.js	/^            function rFlatten(a) {$/;"	f
+refresh	touch/microloader/production.js	/^    function refresh() {$/;"	f
+replaceNative	touch/sencha-touch-all-debug.js	/^    function replaceNative (array, index, removeCount, insert) {$/;"	f
+replaceNative	touch/sencha-touch-all.js	/^    function replaceNative (array, index, removeCount, insert) {$/;"	f
+replaceNative	touch/sencha-touch-debug.js	/^    function replaceNative (array, index, removeCount, insert) {$/;"	f
+replaceNative	touch/sencha-touch.js	/^    function replaceNative (array, index, removeCount, insert) {$/;"	f
+replaceNative	touch/src/core/lang/Array.js	/^    function replaceNative (array, index, removeCount, insert) {$/;"	f
+replaceSim	touch/sencha-touch-all-debug.js	/^    function replaceSim (array, index, removeCount, insert) {$/;"	f
+replaceSim	touch/sencha-touch-all.js	/^    function replaceSim (array, index, removeCount, insert) {$/;"	f
+replaceSim	touch/sencha-touch-debug.js	/^    function replaceSim (array, index, removeCount, insert) {$/;"	f
+replaceSim	touch/sencha-touch.js	/^    function replaceSim (array, index, removeCount, insert) {$/;"	f
+replaceSim	touch/src/core/lang/Array.js	/^    function replaceSim (array, index, removeCount, insert) {$/;"	f
+request	touch/microloader/production.js	/^    function request(uri, isShared, onSuccess, onFailure) {$/;"	f
+requestAsset	touch/microloader/production.js	/^    function requestAsset(asset, onSuccess, onFailure) {$/;"	f
+requestIframe	touch/microloader/production.js	/^    function requestIframe(uri, onSuccess) {$/;"	f
+requestXhr	touch/microloader/production.js	/^    function requestXhr(uri, onSuccess, onFailure) {$/;"	f
+result	touch/sencha-touch-all-debug.js	/^        var result = utilDate.formatFunctions[format].call(date);$/;"	v
+result	touch/sencha-touch-all.js	/^        var result = utilDate.formatFunctions[format].call(date);$/;"	v
+result	touch/src/DateExtras.js	/^        var result = utilDate.formatFunctions[format].call(date);$/;"	v
+results	touch/src/core/lang/Array.js	/^            var results = [],$/;"	v
+retrieve	touch/microloader/production.js	/^    function retrieve(key) {$/;"	f
+retrieveAsset	touch/microloader/production.js	/^    function retrieveAsset(asset) {$/;"	f
+return	touch/sencha-touch-all-debug.js	/^        return object[methodName] = function() {$/;"	f
+return	touch/sencha-touch-all.js	/^        return object[methodName] = function() {$/;"	f
+return	touch/sencha-touch-debug.js	/^        return object[methodName] = function() {$/;"	f
+return	touch/sencha-touch.js	/^        return object[methodName] = function() {$/;"	f
+return	touch/src/core/lang/Function.js	/^        return object[methodName] = function() {$/;"	f
+root	touch/sencha-touch-all-debug.js	/^            var root = global,$/;"	v
+root	touch/sencha-touch-all.js	/^            var root = global,$/;"	v
+root	touch/sencha-touch-debug.js	/^            var root = global,$/;"	v
+root	touch/sencha-touch.js	/^            var root = global,$/;"	v
+root	touch/src/core/class/ClassManager.js	/^            var root = global,$/;"	v
+saveEmptyResponse	app/lib/question.js	/^function saveEmptyResponse(q) {$/;"	f
+score	app/lib/score.js	/^function score() {$/;"	f
+scoreComplex1	app/lib/score.js	/^function scoreComplex1(options) {$/;"	f
+scoreMultiQ	app/lib/score.js	/^function scoreMultiQ(responses,q,options) {$/;"	f
+setProgressBarHtml4	app/lib/question.js	/^function setProgressBarHtml4(indicator) {$/;"	f
+setQuestion	app/lib/question.js	/^function setQuestion(c, q) {$/;"	f
+setTitle	app/lib/question.js	/^function setTitle(component,q) {$/;"	f
+skipQuestions	app/lib/question.js	/^function skipQuestions(q, direction) {$/;"	f
+skipQuestionsItem	app/lib/question.js	/^function skipQuestionsItem(q, element, direction) {$/;"	f
+spliceNative	touch/sencha-touch-all-debug.js	/^    function spliceNative (array) {$/;"	f
+spliceNative	touch/sencha-touch-all.js	/^    function spliceNative (array) {$/;"	f
+spliceNative	touch/sencha-touch-debug.js	/^    function spliceNative (array) {$/;"	f
+spliceNative	touch/sencha-touch.js	/^    function spliceNative (array) {$/;"	f
+spliceNative	touch/src/core/lang/Array.js	/^    function spliceNative (array) {$/;"	f
+spliceSim	touch/sencha-touch-all-debug.js	/^    function spliceSim (array, index, removeCount) {$/;"	f
+spliceSim	touch/sencha-touch-all.js	/^    function spliceSim (array, index, removeCount) {$/;"	f
+spliceSim	touch/sencha-touch-debug.js	/^    function spliceSim (array, index, removeCount) {$/;"	f
+spliceSim	touch/sencha-touch.js	/^    function spliceSim (array, index, removeCount) {$/;"	f
+spliceSim	touch/src/core/lang/Array.js	/^    function spliceSim (array, index, removeCount) {$/;"	f
+state2	touch/src/platform/src/data/sync/SyncModel.js	/^		var state2= state[name];$/;"	v
+store	touch/microloader/production.js	/^    function store(key, value) {$/;"	f
+storeAsset	touch/microloader/production.js	/^    function storeAsset(asset, content) {$/;"	f
+str	touch/src/util/JSON.js	/^    function str(key, holder) {$/;"	f
+testScore	app/lib/score.js	/^function testScore() {$/;"	f
+theme_image	touch/resources/themes/lib/theme_images.rb	/^        def theme_image(theme, path, mime_type = nil)$/;"	f	class:SenchaTouch.SassExtensions.Functions.ThemeImages
+toAbsoluteUri	touch/microloader/production.js	/^    function toAbsoluteUri(uri) {$/;"	f
+utilDate	touch/sencha-touch-all-debug.js	/^var utilDate = Ext.DateExtras;$/;"	v
+utilDate	touch/sencha-touch-all.js	/^var utilDate = Ext.DateExtras;$/;"	v
+utilDate	touch/src/DateExtras.js	/^var utilDate = Ext.DateExtras;$/;"	v
+window.cancelAnimationFrame	touch/src/TaskQueue.js	/^        window.cancelAnimationFrame = function(id) {$/;"	f
+window.requestAnimationFrame	touch/src/TaskQueue.js	/^        window.requestAnimationFrame = function(callback, element) {$/;"	f
+wrap	app/lib/question.js	/^function wrap(newO, questionCount) {$/;"	f
+write	touch/microloader/testing.js	/^    function write(content) {$/;"	f
+writeMeta	touch/microloader/production.js	/^    function writeMeta(name, content) {$/;"	f
+xhr.onreadystatechange	touch/microloader/production.js	/^            xhr.onreadystatechange = function() {$/;"	f

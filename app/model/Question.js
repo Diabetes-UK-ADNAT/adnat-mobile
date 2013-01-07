@@ -6,49 +6,49 @@ Ext.define('adnat.model.Question', {
             {
 				id: 1,
                 name: 'id',
-                type: 'int',
+                type: 'int'
             },
             {
 				id: 2,
                 name: 'ordinal',
-                type: 'int',
+                type: 'int'
             },
             {
 				id: 3,
                 name: 'type',
-                type: 'string',
+                type: 'string'
             },
             {
 				id: 4,
                 name: 'text',
-                type: 'string',
+                type: 'string'
             },
             {
 				id: 5,
                 name: 'options',
-                type: 'auto', 
+                type: 'auto'
             },
             {
 				id: 6,
                 name: 'required',
-                type: 'int', 
+                type: 'int'
             },
             {
 				id: 7,
                 name: 'category',
-                type: 'string', 
+                type: 'string'
             },
             {
 				id: 8,
                 name: 'info',
-                type: 'string', 
+                type: 'string'
             },
             {
 				id: 9,
                 name: 'skip',
-                type: 'string', 
-            },
-        ],
+                type: 'string'
+            }
+        ]
     }
 });
 

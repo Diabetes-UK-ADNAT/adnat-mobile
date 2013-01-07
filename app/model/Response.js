@@ -8,30 +8,30 @@ Ext.define('adnat.model.Response', {
 		idProperty: 'id',
 		identifier: {
 			type: 'uuid',
-			prefix: '',
+			prefix: ''
 		},
         fields: [
             {
 				id: 1,
                 name: 'q',
-                type: 'int',
+                type: 'int'
             },
             {
 				id: 2,
                 name: 'options',
-                type: 'auto', 
+                type: 'auto',
             },
             {
 				id: 3,
                 name: 'ordinal',
                 type: 'int', 
-				persist: false,
+				persist: false
             },
             {
 				id: 4,
                 name: 'other',
-                type: 'auto', 
-            },
+                type: 'auto'
+            }
         ],
         proxy: {
             type: 'localstorage',
