@@ -44,12 +44,12 @@ function testScore2() {
 
 		// pull answer vals based on options selected
 		var scored = new Array();
-		if (options != null) options.forEach(function(scoreIdx) {
-			log(avals[scoreIdx]);
-			if ( avals[scoreIdx] > 0 ) {
-				scored.push( avals[scoreIdx] );
+		for( i = 0; options != null && i < options.length; i++ ) {
+			// score selected options that have a score > 0
+			if ( options[i] != null && avals[i] > 0 ) {
+				scored.push( avals[i] );
 			}
-		});
+		};
 
 		// sort desc
 		var scoredDesc = arraySortDescNumeric(scored);
