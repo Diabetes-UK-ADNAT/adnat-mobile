@@ -11,6 +11,7 @@ Ext.define("adnat.view.Main", {
 			{ xtype: 'question', },
 			{ xtype: 'results', },
 			{ xtype: 'contact', },
+			{ xtype: 'util', },
         ]
     }
 });

@@ -48,18 +48,11 @@ Ext.define("adnat.view.Contact", {
 				text: 'Send',
 				ui: 'confirm',
 				handler: function() {
+					Ext.Viewport.setActiveItem(Ext.create('adnat.view.ServerUnavailable'));
 					//this.up('formpanel').submit();
+					//
 				}
 			},
-			{
-				xtype: 'button',
-				text: 'Clear Responses',
-				ui: 'confirm',
-				handler: function() {
-					Ext.getStore('Responses').deleteAllRecords();
-					location.reload();
-				}
-			}
 		],
 	}
 });

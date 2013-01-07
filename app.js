@@ -25,6 +25,8 @@ Ext.application({
 		'Contact', 
 		'Results', 
 		'Question', 
+		'Util', 
+		'ServerUnavailable',
 	],
 
 	controllers: [
