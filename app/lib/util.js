@@ -3,14 +3,14 @@ function log(m) {
 }
 
 function makeArray(v) {
-	if (v != null ) {
+	if (v !== null ) {
 		return v instanceof Array ? v : new Array(v);
 	}
 	return new Array();
 }
 
 function logArray(arr) {
-	if (arr != null) arr.forEach(logArrayElements);
+	if (arr !== null) arr.forEach(logArrayElements);
 }
 
 
@@ -19,13 +19,15 @@ function logArrayElements(element, index, array) {
 }
 
 function arraySortDescNumeric(arr) {
-	log(arr);
-	return arr.sort(function(a,b){return b - a});  
+    log(arr);
+    return arr.sort(function(a, b) {
+        return b - a;
+    });
 }	
 
 function arrayHasVal(arr, val) {
-	for (i = 0; arr != null && i < arr.length; i++ ) {
-		if (arr[i] == val) {
+	for (i = 0; arr !== null && i < arr.length; i++ ) {
+		if (arr[i] === val) {
 			return true;
 		}
 	};
@@ -36,7 +38,7 @@ function arrayHasVal(arr, val) {
 function arrayRemoveNullElements(options) {
 	o2 = new Array();
 	options.forEach(function(element) {
-		if (element != null) {
+		if (element !== null) {
 			o2.push(element);
 		}
 	});

@@ -60,7 +60,7 @@ function doScoring() {
         var avals = scr.get('avals');
 
         var response = responses.findResponseRecord(scr.get('q'));
-        var options = response != null ? response.get('options') : null;
+        var options = response !== null ? response.get('options') : null;
         options = makeArray(options);
 
         log('response');
@@ -83,16 +83,16 @@ function doScoring() {
         }
 
         // if area is special, set score
-        if (scoreType == 'MultiQ') {
+        if (scoreType === 'MultiQ') {
             log(scoreType);
             score = scoreMultiQ(responses, scr.get('q'), options);
         }
-        if (scoreType == 'Complex1') {
+        if (scoreType === 'Complex1') {
             log(scoreType);
             score = scoreComplex1(options);
         }
 
-        if (area != null && scr.get('tally') == 1) {
+        if (area !== null && scr.get('tally') === 1) {
             pScore += score;
         } else {
             gScore += score;
@@ -105,7 +105,7 @@ function doScoring() {
 function scoreMultiQ(responses, q, options) {
     // {"q": 57, "scoreType":"MultiQ",},
     // {"q": 62, "scoreType":"MultiQ",},
-    if (q == 57) {
+    if (q === 57) {
         var response = responses.findResponseRecord(62);
         var options62 = response != null ? response.get('options') : null;
         options62 = makeArray(options62);
@@ -127,9 +127,9 @@ function scoreMultiQ(responses, q, options) {
     }
     // {"q": 66, "scoreType":"MultiQ",},
     // {"q": 71, "scoreType":"MultiQ",},
-    if (q == 66) {
+    if (q === 66) {
         var response = responses.findResponseRecord(71);
-        var options71 = response != null ? response.get('options') : null;
+        var options71 = response !== null ? response.get('options') : null;
         options71 = makeArray(options71);
         log(options71);
         // red often high bg
@@ -158,7 +158,7 @@ function scoreComplex1(options) {
     options = arrayRemoveNullElements(options);
 
     // red length = 1 && none of the above 
-    if (options.length == 1 && arrayHasVal(options, 5)) {
+    if (options.length === 1 && arrayHasVal(options, 5)) {
         return 2;
     }
     // red two responses are empty (no meter or insulin equip)
@@ -166,7 +166,7 @@ function scoreComplex1(options) {
         return 2;
     }
     // yellow length = 2 && two responses are NOT empty (no meter or insulin equip)
-    if (options.length == 2 && arrayHasVal(options, 3) && arrayHasVal(options, 4)) {
+    if (options.length === 2 && arrayHasVal(options, 3) && arrayHasVal(options, 4)) {
         return 1;
     }
     // green length > 2 && two responses are NOT empty (no meter or insulin equip)

@@ -1,6 +1,6 @@
 function setTitle(component,q) {
 	var tpl = new Ext.Template([
-		'<div class="question">{t}</div>',
+		'<div class="question">{t}</div>'
 	]);
 	tpl.compile();
 	html = tpl.apply( {t: q.get('text') } );
@@ -38,7 +38,7 @@ function wrap(newO, questionCount) {
 }
 
 function skipQuestions(q, direction) {
-	if ( q.get('skip') == null ) {
+	if ( q.get('skip') === null ) {
 		return q;
 	}
 
@@ -71,7 +71,7 @@ function saveEmptyResponse(q) {
 		q:q.get('id'),
 		options: null,
 		ordinal:q.get('ordinal'),
-		other: null,
+		other: null
 	  //q.get('qtext'),
 	  //q.get('rtext'),
 	  //score: 0,
@@ -85,13 +85,13 @@ function isResponseEqualSkip(q,skipQ, skipR) {
 	var s = Ext.getStore('Responses');
 	s.load(); //is required to work
 	var r = s.findResponseRecord( skipQ );
-	if ( r != null ) {
+	if ( r !== null ) {
 		log(r);
 		var options = r.get('options');
 		if (options instanceof Array) {
-			return ( options != null && options.indexOf(skipR) > -1 );
+			return ( options !== null && options.indexOf(skipR) > -1 );
 		} else {
-			return ( options != null && options == skipR );
+			return ( options !== null && options === skipR );
 		}
 	}
 	return false;
@@ -243,11 +243,11 @@ function buildQuestion(q) {
         // XTemplate configuration:
         disableFormats: true,
         isGroup: function(text){
-           return text.substring(0, 6) == "GROUP:";
+           return text.substring(0, 6) === "GROUP:";
         },
         formatGroup: function(text){
            return text.substring(6, text.length);
-        },
+        }
     }	
 	);
 	tpl.compile();
