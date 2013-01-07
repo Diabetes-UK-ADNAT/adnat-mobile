@@ -37,7 +37,7 @@ Ext.define('adnat.controller.QuestionController', {
         var currentOrdinal = Ext.getStore('Responses').getCount();
 		this.showQuestion(currentOrdinal,1);
 		// testing
-		//this.showQuestion(80,0); 
+		this.showQuestion(108,0); 
     },
     onSwipe: function (event) {
 		 if (event.direction == 'right') {

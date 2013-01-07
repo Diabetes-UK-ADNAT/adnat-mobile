@@ -64,17 +64,19 @@ function doScoring() {
 
 		log('response'); log(response); logArray(avals); logArray(options);
 
-		// pull answer vals based on options selected
-		var scored = new Array();
-		options.forEach(function(optionIndex) {
-			if ( optionIndex != null && avals[optionIndex] > 0 ) {
-				scored.push( avals[optionIndex] );
-			}
-		});
-		var scoredDesc = arraySortDescNumeric(scored);
+		if (avals) {
+			// pull answer vals based on options selected
+			var scored = new Array();
+			options.forEach(function(optionIndex) {
+				if ( optionIndex != null && avals[optionIndex] > 0 ) {
+					scored.push( avals[optionIndex] );
+				}
+			});
+			var scoredDesc = arraySortDescNumeric(scored);
 
-		// grab highest score
-		var score = scoredDesc.length > 0 ? scoredDesc[0] : 0;
+			// grab highest score
+			var score = scoredDesc.length > 0 ? scoredDesc[0] : 0;
+		}
 
 		// if area is special, set score
 		if (scoreType == 'MultiQ') {
@@ -83,7 +85,7 @@ function doScoring() {
 		}
 		if (scoreType == 'Complex1') {
 			log(scoreType);
-			score = scoreComplex1();
+			score = scoreComplex1(options);
 		}
 
 		if (area != null && scr.get('tally') == 1 ) {
@@ -100,12 +102,54 @@ function doScoring() {
 // {"q": 62, "scoreType":"MultiQ",},
 // {"q": 66, "scoreType":"MultiQ",},
 // {"q": 71, "scoreType":"MultiQ",},
+/*
+	MQS
+		Type M multi question
+		red
+			often hypo
+		red
+			unconcious
+		yellow
+			now and again hypo and !unconcious
+		green
+			rarely/never hypo and !unconcious
+		----------------------------------------
+		red
+			often high bg
+		red
+			ketoacidosis
+		yellow
+			now and again high and not sure keto	
+		green	
+			rarely/never high and !keto	
+		hand code with helpers (response == tests)
+		For multi question, just log first question that score applies for (make sure zeros other ones)
+		grab both question rules, process each, eaval score, save both to questionscores
+*/
 function scoreMultiQ() {
 	return 0;
 }	
 
 // {"q": 94, "scoreType":"Complex1",},
-function scoreComplex1() {
+/*
+You are staying over at your friend’s house. Which of the following would you do?
+*/ 
+function scoreComplex1(options) {
+	options =  arrayRemoveNullElements(options);
+
+	// red length = 1 && none of the above 
+ 	if (options.length == 1 && arrayHasVal(options, 5)) {
+		return 2;
+	} 
+	// red two responses are empty (no meter or insulin equip)
+ 	if (!arrayHasVal(options, 3) && !arrayHasVal(options, 4)) {
+		return 2;
+	}
+	// yellow length = 2 && two responses are NOT empty (no meter or insulin equip)
+ 	if (options.length == 2 && arrayHasVal(options, 3) && arrayHasVal(options, 4)) {
+		return 1;
+	} 
+	// green length > 2 && two responses are NOT empty (no meter or insulin equip)
 	return 0;
 }
 

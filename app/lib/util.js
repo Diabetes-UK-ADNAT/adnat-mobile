@@ -23,6 +23,26 @@ function arraySortDescNumeric(arr) {
 	return arr.sort(function(a,b){return b - a});  
 }	
 
+function arrayHasVal(arr, val) {
+	for (i = 0; arr != null && i < arr.length; i++ ) {
+		if (arr[i] == val) {
+			return true;
+		}
+	};
+	return false;
+}
+
+
+function arrayRemoveNullElements(options) {
+	o2 = new Array();
+	options.forEach(function(element) {
+		if (element != null) {
+			o2.push(element);
+		}
+	});
+	return o2;
+}
+
 
 
 
