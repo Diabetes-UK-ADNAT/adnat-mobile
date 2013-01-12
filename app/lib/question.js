@@ -7,14 +7,15 @@ function setTitle(component,q) {
 	component.getTitle().setHtml(html);
 }
 
-function setFeedback(component,q) {
+function setFeedback(component,q,moreFeedback) {
 	var feedback = q.get('feedback');
-	if ( feedback !== null ) {
+	if ( moreFeedback !== null || feedback !== null ) {
 		var tpl = new Ext.Template([
+			'<div class="feedback">{mf}</div>',
 			'<div class="feedback">{t}</div>'
 		]);
 		tpl.compile();
-		html = tpl.apply( {t: q.get('feedback') } );
+		html = tpl.apply( {mf: moreFeedback, t: q.get('feedback') } );
 		component.getFeedback().setHtml(html);
 		component.getFeedback().show();
 	} else {
@@ -138,6 +139,7 @@ function buildQuestion(q) {
 			// fields
 			'{ xtype: "hiddenfield", name: "q", suborgetsdropped: "{name}"}, ' ,
 			'{ xtype: "hiddenfield", name: "ordinal", suborgetsdropped: "{name}"}, ' ,
+			'{ xtype: "hiddenfield", name: "required", suborgetsdropped: "{name}"}, ' ,
 			// info
 			'<tpl if="info != null">',
 			'{ html: "',
@@ -268,7 +270,15 @@ function buildQuestion(q) {
 	);
 	tpl.compile();
 	//var html = tpl.apply({gScore:getGeneralScore(),pScore:getPsychScore(),q:q.get('ordinal')+1,name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
-	var html = tpl.apply({q:q.get('ordinal')+1,name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+	var html = tpl.apply({
+		q:q.get('ordinal')+1,
+		name:Date.now(),
+	   	info:q.get('info'),
+	   	category:q.get('category'),
+		options:q.get('options'),
+	   	type:q.get('type'),
+	   	required:q.get('required')
+	});  
 	//log(html);
 	return html;
 }	

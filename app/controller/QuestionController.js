@@ -54,26 +54,23 @@ Ext.define('adnat.controller.QuestionController', {
 		this.navToNextPage( +1 );
 	},
 	navToNextPage: function(direction) {
-		// fixme validate 
 		r = Ext.create('adnat.model.Response', this.getQuestion().getValues() );
-		Ext.getStore('Responses').saveResponse(r);
-		this.showQuestion( r.get('ordinal') + direction, direction ); 
-        /*
-		 * var errors = r.validate();
-        if (!errors.isValid()) {
-            Ext.Msg.alert('validation');
-			log('m valid? ', errors.isValid()); // returns 'false' as there were validation errors
-			log('All Errors:', errors.items); // returns the array of all errors found on this model instance
-			log('Field One Errors:', errors.getByField('fieldone')); // returns the errors for the age field
-            r.reject();
-            return;
-        }
-		*/
+		
+		if ( r.get('required') === 1 && (
+			   typeof r.get('options') === 'undefined' 
+			|| r.get('options') === null 
+			|| r.get('options').length === 0
+		)) {
+			this.showQuestion( r.get('ordinal'), 0, 'Please answer this question so we may score your ADNAT survey'); 
+		} else {
+			Ext.getStore('Responses').saveResponse(r);
+			this.showQuestion( r.get('ordinal') + direction, direction ); 
+		}
 	},
-	showQuestion: function(newO,direction) {
+	showQuestion: function(newO,direction,moreFeedback) {
 		var q = getNextQuestion(newO, direction);
 		log(q);
-		setFeedback(this,q);
+		setFeedback(this,q,moreFeedback);
 		setTitle(this,q);
 		// fixme does not display progress here, even though numbers are set; setProgress(this);
 		setQuestion(this.getQuestionComponent(), q);
@@ -84,6 +81,7 @@ Ext.define('adnat.controller.QuestionController', {
 			r.set('ordinal', q.get('ordinal'));
 			r.set('category', q.get('category'));
 			r.set('info', q.get('info'));
+			r.set('required', q.get('required'));
 			this.getQuestion().setRecord(r);
 		} else {
 			q.set('q', q.get('id'));
