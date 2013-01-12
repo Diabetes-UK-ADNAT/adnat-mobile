@@ -7,6 +7,22 @@ function setTitle(component,q) {
 	component.getTitle().setHtml(html);
 }
 
+function setFeedback(component,q) {
+	var feedback = q.get('feedback');
+	if ( feedback !== null ) {
+		var tpl = new Ext.Template([
+			'<div class="feedback">{t}</div>'
+		]);
+		tpl.compile();
+		html = tpl.apply( {t: q.get('feedback') } );
+		component.getFeedback().setHtml(html);
+		component.getFeedback().show();
+	} else {
+		component.getFeedback().setHtml(null);
+		component.getFeedback().hide();
+	}
+}
+
 function setQuestion(c, q) {
 	c.removeAll();
 	var response = buildQuestion(q);

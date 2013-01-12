@@ -53,6 +53,11 @@ Ext.define("adnat.view.Question", {
 				//padding: '1em',
 				items: [
 				{
+					id: 'feedback',
+					padding: '1.2em',
+					html: null
+				},
+				{
 					id: 'title',
 					padding: '1.2em',
 					html: null

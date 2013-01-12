@@ -47,6 +47,11 @@ Ext.define('adnat.model.Question', {
 				id: 9,
                 name: 'skip',
                 type: 'string'
+            },
+            {
+				id: 10,
+                name: 'feedback',
+                type: 'string'
             }
         ]
     }
