@@ -8,6 +8,7 @@ Ext.define('adnat.controller.QuestionController', {
 			question: '#questionPanel',
 			title: '#title',
 			feedback: '#feedback',
+			morefeedback: '#morefeedback',
 			questionComponent: '#questionComponent',
 			prevButton: '#prevButton',
 			nextButton: '#nextButton',
@@ -70,7 +71,8 @@ Ext.define('adnat.controller.QuestionController', {
 	showQuestion: function(newO,direction,moreFeedback) {
 		var q = getNextQuestion(newO, direction);
 		log(q);
-		setFeedback(this,q,moreFeedback);
+		setFeedback(this,q);
+		setMoreFeedback(this,moreFeedback);
 		setTitle(this,q);
 		// fixme does not display progress here, even though numbers are set; setProgress(this);
 		setQuestion(this.getQuestionComponent(), q);

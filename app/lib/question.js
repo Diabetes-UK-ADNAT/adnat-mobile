@@ -7,15 +7,14 @@ function setTitle(component,q) {
 	component.getTitle().setHtml(html);
 }
 
-function setFeedback(component,q,moreFeedback) {
+function setFeedback(component,q) {
 	var feedback = q.get('feedback');
-	if ( moreFeedback !== null || feedback !== null ) {
+	if ( feedback !== null ) {
 		var tpl = new Ext.Template([
-			'<div class="feedback">{mf}</div>',
 			'<div class="feedback">{t}</div>'
 		]);
 		tpl.compile();
-		html = tpl.apply( {mf: moreFeedback, t: q.get('feedback') } );
+		html = tpl.apply( {t: feedback } );
 		component.getFeedback().setHtml(html);
 		component.getFeedback().show();
 	} else {
@@ -24,6 +23,20 @@ function setFeedback(component,q,moreFeedback) {
 	}
 }
 
+function setMoreFeedback(component,moreFeedback) {
+	if ( moreFeedback !== null ) {
+		var tpl = new Ext.Template([
+			'<div class="morefeedback">{t}</div>'
+		]);
+		tpl.compile();
+		html = tpl.apply( {t: moreFeedback } );
+		component.getMorefeedback().setHtml(html);
+		component.getMorefeedback().show();
+	} else {
+		component.getMorefeedback().setHtml(null);
+		component.getMorefeedback().hide();
+	}
+}
 function setQuestion(c, q) {
 	c.removeAll();
 	var response = buildQuestion(q);
