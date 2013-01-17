@@ -1,3 +1,7 @@
+/* 
+color:#708cc0; 
+color: #0e4b75;
+*/
 .question {
   padding: 0.2em;
   font-size: 1.4em;
@@ -15,11 +19,11 @@
 }
 .feedback {
   padding: 0.0em;
-  color:blue;
+  /* color:#708cc0; */
+  color: #0e4b75;
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
-  font-weight: normal;
 }
 .red {
   text-align: center;
