@@ -15,7 +15,7 @@ Ext.application({
     models: [
 		'Question',
 		'Response',
-		'ScoreConfig',
+		'ScoreConfig'
     ],
 
     views: [
@@ -26,18 +26,18 @@ Ext.application({
 		'Results', 
 		'Question', 
 		'Util', 
-		'ServerUnavailable',
+		'ServerUnavailable'
 	],
 
 	controllers: [
         'QuestionController',
-        'ResultsController',
+        'ResultsController'
     ],
 
     stores: [
 		'Questions',
 		'Responses',
-		'ScoreConfigs',
+		'ScoreConfigs'
 	],
 
     icon: {
