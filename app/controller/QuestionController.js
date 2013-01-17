@@ -37,7 +37,7 @@ Ext.define('adnat.controller.QuestionController', {
 		// show current question, based on last available response
 		// fixme: handle last page and last item navigated to instead
         var currentOrdinal = Ext.getStore('Responses').getCount();
-		this.showQuestion(currentOrdinal,1);
+		this.showQuestion(currentOrdinal,0);
 		// testing
 		//this.showQuestion(78,0); 
     },
