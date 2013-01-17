@@ -33,5 +33,15 @@
             <target name="-before-build"/>
             <target name="-after-build"/>
     -->
+	<target name="-after-init-local">
+	  <echoproperties/>
+	</target>
+	<target name="-before-build">
+	  <tstamp>
+		  <format property="touch.time" pattern="yyyy-MM-dd hh:mm aa"/>
+	  </tstamp>
+	  <mkdir dir="${build.dir}/${args.environment}/v"/>
+	  <echo file="${build.dir}/${args.environment}/v/index.html">${version.name}&lt;p&gt;${major.version}.${minor.version}.${build.version}&lt;p&gt;${touch.time}</echo>
+	</target>
 
 </project>
