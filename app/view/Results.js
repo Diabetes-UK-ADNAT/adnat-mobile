@@ -44,8 +44,8 @@ Ext.define("adnat.view.Results", {
 				html: [
 					"<div id=\"results\">",
 						"<img src=\"../resources/images/tl-yellow.png\"/>",
-					"</div>",
-				].join(""),
+					"</div>"
+				].join("")
 			},
 			{
 				id: 'gScoreGreen',

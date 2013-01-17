@@ -19,7 +19,7 @@ Ext.define('adnat.model.Response', {
             {
 				id: 2,
                 name: 'options',
-                type: 'auto',
+                type: 'auto'
             },
             {
 				id: 3,

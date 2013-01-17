@@ -1,22 +1,25 @@
 .question {
   padding: 0.2em;
   font-size: 1.4em;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 .morefeedback {
   padding: 0.0em;
+  color:red;
+  font-size: 1.4em;
+  font-weight: normal;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background: red;
 }
 .feedback {
   padding: 0.0em;
-  font-size: 1.2em;
+  color:blue;
+  font-size: 1.4em;
+  font-weight: bold;
   text-align: center;
   font-weight: normal;
-  background: orange;
 }
 .red {
   text-align: center;
