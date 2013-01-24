@@ -40,26 +40,26 @@
         },
         {
             "path": "app.js",
-            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
+			"bundle": true,  
             "update": "full"
         },
 		{
             "path": "app/lib/score.js",
-            "bundle": false,  /* Indicates that all class dependencies are concatenated into this file when build */
+			"bundle": false,  
             "update": "full",
-			"remote": false
+			"remote": true
 		},
 		{
             "path": "app/lib/util.js",
-            "bundle": false,  /* Indicates that all class dependencies are concatenated into this file when build */
+			"bundle": false,  
             "update": "full",
-			"remote": false
+			"remote": true
 		},
 		{
             "path": "app/lib/question.js",
-            "bundle": false,  /* Indicates that all class dependencies are concatenated into this file when build */
+			"bundle": false,  
             "update": "full",
-			"remote": false
+			"remote": true
 		}
     ],
 
@@ -155,7 +155,6 @@
 			"resources/icons/Icon.png",
 			*/
         "cache": [
-			"index.html"
         ],
         /**
          * List of items in the NETWORK section
@@ -174,6 +173,7 @@
      */
     "resources": [
         ".htaccess",
+        "app/lib",
         "resources/images",
         "resources/icons",
         "resources/startup",
@@ -210,8 +210,8 @@
     "buildOptions": {
         "product": "touch",
         "minVersion": 3,
-        "debug": false,
-        "logger": false
+        "debug": true,
+        "logger": true
     },
 
     /**
