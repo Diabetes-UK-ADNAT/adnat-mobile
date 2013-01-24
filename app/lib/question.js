@@ -61,7 +61,9 @@ function wrap(newO, questionCount) {
 		return questionCount;
 	} else if ( newO > questionCount) {
 		// start (clear/etc)
-		return 0;
+		// wrap to beginning: return 0;
+		// go to scoring
+		Ext.getCmp('mainTabPanel').setActiveItem(2);
 	}
 
 	return newO;

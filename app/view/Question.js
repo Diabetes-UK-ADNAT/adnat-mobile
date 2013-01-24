@@ -86,7 +86,7 @@ Ext.define("adnat.view.Question", {
 						xtype: 'button',
 						text: 'Prev',
 						id: 'prevButton',
-						ui: 'default',
+						ui: 'normal',
 						disabled: false,
 						width: '100px'
 					},
@@ -95,7 +95,7 @@ Ext.define("adnat.view.Question", {
 						xtype: 'button',
 						text: 'Next',
 						id: 'nextButton',
-						ui: 'confirm',
+						ui: 'action',
 						width: '100px'
 					},
 					{xtype: 'spacer'}

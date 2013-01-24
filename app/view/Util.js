@@ -18,11 +18,36 @@ Ext.define("adnat.view.Util", {
 			},
 			{
 				xtype: 'button',
-				text: 'Clear / Delete All Responses',
-				ui: 'confirm',
+				margin: '40px',
+				text: 'Delete All of My Responses',
+				ui: 'decline',
 				handler: function() {
-					Ext.getStore('Responses').deleteAllRecords();
-					location.reload();
+					Ext.Msg.confirm(
+						"Confirmation", "Are you sure you delete all of your answers? <br><i>This action can not be undone</i>", 
+						function ( answer ) { 
+							if ( answer === 'yes') { 
+								Ext.getStore('Responses').deleteAllRecords();
+								location.reload();
+							}
+						}
+					);
+				}
+			},
+			{
+				xtype: 'button',
+				margin: '40px',
+				text: 'Logout',
+				ui: 'normal',
+				handler: function() {
+					Ext.Msg.confirm(
+						"Confirmation", "Would you like to logout of the ADNAT application?",
+						function ( answer ) { 
+							if ( answer === 'yes') { 
+								Ext.getStore('Responses').deleteAllRecords();
+								location.reload();
+							}
+						}
+					);
 				}
 			}
 		]

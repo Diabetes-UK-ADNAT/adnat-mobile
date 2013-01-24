@@ -50,10 +50,11 @@ Ext.define("adnat.view.Welcome", {
 			{
 				xtype: 'button',
 				text: 'Login',
-				ui: 'confirm',
+				ui: 'action',
 				handler: function() {
 					//Ext.Viewport.setActiveItem(Ext.create('adnat.view.ServerUnavailable'));
 					//Ext.Viewport.setActiveItem(Ext.create('adnat.view.Results'));
+					//Question page: Ext.getCmp('mainTabPanel').setActiveItem(1);
 					Ext.getCmp('mainTabPanel').setActiveItem(1);
 				}
 			}

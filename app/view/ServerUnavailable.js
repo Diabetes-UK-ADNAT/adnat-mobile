@@ -16,7 +16,6 @@ Ext.define("adnat.view.ServerUnavailable", {
 				html: [
 					"<div class=\"centered\">",
 					"<h1>The Server is Unavailable</h1>",
-					"<p>Server is under construction!</p>",
 					"<img src=\"../resources/images/adnatpic4.1.png\"/>",
 					"<img src=\"../resources/images/adnatpic3.png\"/>",
 					"<img src=\"../resources/images/adnatpic4.png\"/>",
@@ -34,8 +33,8 @@ Ext.define("adnat.view.ServerUnavailable", {
 			},
 			{
 				xtype: 'button',
-				text: 'Back',
-				ui: 'confirm',
+				text: 'Return to Welcome Page',
+				ui: 'action',
 				handler: function() {
 					location.reload();
 				}

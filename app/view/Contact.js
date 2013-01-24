@@ -19,7 +19,6 @@ Ext.define("adnat.view.Contact", {
 			{
 				xtype: 'fieldset',
 				title: 'Contact ADNAT Support',
-				instructions: 'Contact ADNAT Support',
 				items: [
 					{
 						xtype: 'textfield',
@@ -39,7 +38,7 @@ Ext.define("adnat.view.Contact", {
 			{
 				xtype: 'button',
 				text: 'Send',
-				ui: 'confirm',
+				ui: 'action',
 				handler: function() {
 					Ext.Viewport.setActiveItem(Ext.create('adnat.view.ServerUnavailable'));
 					//this.up('formpanel').submit();
