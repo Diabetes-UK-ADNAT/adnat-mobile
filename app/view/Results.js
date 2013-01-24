@@ -35,7 +35,7 @@ Ext.define("adnat.view.Results", {
 				id: 'gScoreRed',
 				html: [
 					"<div id=\"results\">",
-						"<img src=\"../resources/images/tl-red.png\"/>",
+						"<img src=\"./resources/images/tl-red.png\"/>",
 					"</div>"
 				].join("")
 			},
@@ -43,7 +43,7 @@ Ext.define("adnat.view.Results", {
 				id: 'gScoreYellow',
 				html: [
 					"<div id=\"results\">",
-						"<img src=\"../resources/images/tl-yellow.png\"/>",
+						"<img src=\"./resources/images/tl-yellow.png\"/>",
 					"</div>"
 				].join("")
 			},
@@ -51,7 +51,7 @@ Ext.define("adnat.view.Results", {
 				id: 'gScoreGreen',
 				html: [
 					"<div id=\"results\">",
-						"<img src=\"../resources/images/tl-green.png\"/>",
+						"<img src=\"./resources/images/tl-green.png\"/>",
 					"</div>"
 				].join("")
 			},
@@ -64,7 +64,7 @@ Ext.define("adnat.view.Results", {
 				id: 'pScoreRed',
 				html: [
 					"<div id=\"results\">",
-						"<img src=\"../resources/images/tl-red.png\"/>",
+						"<img src=\"./resources/images/tl-red.png\"/>",
 					"</div>"
 				].join("")
 			},
@@ -72,7 +72,7 @@ Ext.define("adnat.view.Results", {
 				id: 'pScoreYellow',
 				html: [
 					"<div id=\"results\">",
-						"<img src=\"../resources/images/tl-yellow.png\"/>",
+						"<img src=\"./resources/images/tl-yellow.png\"/>",
 					"</div>"
 				].join("")
 			},
@@ -80,7 +80,7 @@ Ext.define("adnat.view.Results", {
 				id: 'pScoreGreen',
 				html: [
 					"<div id=\"results\">",
-						"<img src=\"../resources/images/tl-green.png\"/>",
+						"<img src=\"./resources/images/tl-green.png\"/>",
 					"</div>"
 				].join("")
 			},

@@ -18,9 +18,9 @@ Ext.define("adnat.view.Welcome", {
 				html: [
 					"<div class=\"centered\">",
 					"<h1>Welcome to ADNAT</h1>",
-					"<img src=\"../resources/images/adnatpic4.1.png\"/>",
-					"<img src=\"../resources/images/adnatpic3.png\"/>",
-					"<img src=\"../resources/images/adnatpic4.png\"/>",
+					"<img src=\"./resources/images/adnatpic4.1.png\"/>",
+					"<img src=\"./resources/images/adnatpic3.png\"/>",
+					"<img src=\"./resources/images/adnatpic4.png\"/>",
 					"</div>"
 				].join("")
 			},
