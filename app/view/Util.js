@@ -23,7 +23,7 @@ Ext.define("adnat.view.Util", {
 				ui: 'decline',
 				handler: function() {
 					Ext.Msg.confirm(
-						"Confirmation", "Are you sure you delete all of your answers? <br><i>This action can not be undone</i>", 
+						"Confirmation", "Are you sure you want to delete all of your answers? <br><i>This action can not be undone</i>", 
 						function ( answer ) { 
 							if ( answer === 'yes') { 
 								Ext.getStore('Responses').deleteAllRecords();
