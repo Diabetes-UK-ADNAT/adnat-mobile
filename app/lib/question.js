@@ -105,6 +105,7 @@ function saveEmptyResponse(q) {
 		ordinal:q.get('ordinal'),
 		other: null
 	});
+    //FIXME do we need these, since they were skipped, will we display them on server? could save skipped flag and keep
     r.set('text', q.get('text'));
     r.set('category', q.get('category'));
 	Ext.getStore('Responses').saveResponse(r);
