@@ -1,42 +1,56 @@
 Ext.define('adnat.model.Response', {
     extend: 'Ext.data.Model',
     config: {
-		requires: [
-			'Ext.data.proxy.LocalStorage',
-			'Ext.data.identifier.Uuid'
-		],
-		idProperty: 'id',
-		identifier: {
-			type: 'uuid',
-			prefix: ''
-		},
+        requires: [
+            'Ext.data.proxy.LocalStorage',
+            'Ext.data.identifier.Uuid'
+        ],
+        idProperty: 'id',
+        identifier: {
+            type: 'uuid',
+            prefix: ''
+        },
         fields: [
             {
-				id: 1,
+                id: 1,
                 name: 'q',
                 type: 'int'
             },
             {
-				id: 2,
+                id: 2,
                 name: 'options',
                 type: 'auto'
             },
             {
-				id: 3,
+                id: 3,
                 name: 'ordinal',
-                type: 'int', 
-				persist: false
+                type: 'int',
             },
             {
-				id: 4,
+                id: 4,
                 name: 'other',
                 type: 'auto'
             },
             {
-				id: 5,
+                id: 5,
                 name: 'required',
-                type: 'int', 
-				persist: false
+                type: 'int',
+                persist: false
+            },
+            {
+                id: 6,
+                name: 'category',
+                type: 'auto'
+            },
+            {
+                id: 7,
+                name: 'text',
+                type: 'auto'
+            },
+            {
+                id: 8,
+                name: 'optionsText',
+                type: 'auto'
             }
         ],
         proxy: {

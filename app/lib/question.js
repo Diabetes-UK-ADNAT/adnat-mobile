@@ -104,11 +104,9 @@ function saveEmptyResponse(q) {
 		options: null,
 		ordinal:q.get('ordinal'),
 		other: null
-	  //q.get('qtext'),
-	  //q.get('rtext'),
-	  //score: 0,
-	  //category:?
 	});
+    r.set('text', q.get('text'));
+    r.set('category', q.get('category'));
 	Ext.getStore('Responses').saveResponse(r);
 }
 
@@ -155,6 +153,8 @@ function buildQuestion(q) {
 			'{ xtype: "hiddenfield", name: "q", suborgetsdropped: "{name}"}, ' ,
 			'{ xtype: "hiddenfield", name: "ordinal", suborgetsdropped: "{name}"}, ' ,
 			'{ xtype: "hiddenfield", name: "required", suborgetsdropped: "{name}"}, ' ,
+			'{ xtype: "hiddenfield", name: "category", suborgetsdropped: "{name}"}, ' ,
+			'{ xtype: "hiddenfield", name: "text", suborgetsdropped: "{name}"}, ' ,
 			// info
 			'<tpl if="info != null">',
 			'{ html: "',
