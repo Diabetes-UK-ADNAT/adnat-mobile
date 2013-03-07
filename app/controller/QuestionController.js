@@ -24,7 +24,15 @@ Ext.define('adnat.controller.QuestionController', {
             }
         }
     },
+    
+    // FIXME reload store on upgrade, or on launch and size of local store == 0
     launch: function() {
+        Ext.getStore('QuestionsOnline').load({
+            callback: this.onQuestionsOnlineStoreLoad,
+            scope: this
+        });
+    },
+    onQuestionsOnlineStoreLoad: function() {
         Ext.getStore('Questions').load({
             callback: this.onQuestionsStoreLoad,
             scope: this
@@ -36,6 +44,7 @@ Ext.define('adnat.controller.QuestionController', {
         //s.info();
         // show current question, based on last available response
         // fixme: handle last page and last item navigated to instead
+        ///// these two below 
         var currentOrdinal = Ext.getStore('Responses').getCount();
         this.showQuestion(currentOrdinal, 0);
         // testing

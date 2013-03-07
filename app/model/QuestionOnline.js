@@ -1,4 +1,4 @@
-Ext.define('adnat.model.Question', {
+Ext.define('adnat.model.QuestionOnline', {
     extend: 'Ext.data.Model',
     config: {
         idProperty: 'id',
@@ -53,11 +53,11 @@ Ext.define('adnat.model.Question', {
                 name: 'feedback',
                 type: 'string'
             }
-        ],
-        proxy: {
-            type: 'localstorage',
-            id: 'adnat-questions'
-        }
+        ]
+//        proxy: {
+//            type: 'localstorage',
+//            id: 'adnat-questions'
+//        }
 
     }
 });
