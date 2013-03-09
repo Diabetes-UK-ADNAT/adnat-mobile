@@ -1,5 +1,5 @@
 Ext.define("adnat.view.Welcome", {
-    extend: 'Ext.Panel',
+    extend: 'Ext.form.Panel',
 	xtype: 'welcome',
     requires: [
         'Ext.TitleBar',
