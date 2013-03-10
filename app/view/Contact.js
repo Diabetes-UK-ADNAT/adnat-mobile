@@ -51,14 +51,17 @@ Ext.define("adnat.view.Contact", {
                     var errors = contactRequest.validate();
                     if (errors.isValid()) {
                         contactRequest.save();
+                        this.up('panel').reset();
+                        Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
                     } else {
                         console.log(errors);
                         var data = "";
                         errors.each(function(item, index, length) {
                             // Each item in the errors collection is an instance of the Ext.data.Error class.
-                            data = data + '|' + item.getField() + ' - ' + item.getMessage() + '|';
+                            //data = data + '|' + item.getField() + ' - ' + item.getMessage() + '|';
+                            data = data + item.getMessage() + '<br>';
                         });
-                        Ext.Msg.alert("Validation Failed", data);
+                        Ext.Msg.alert("Please check your information", data);
                     }
                 }
             }

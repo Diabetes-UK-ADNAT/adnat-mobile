@@ -22,23 +22,23 @@ Ext.define('adnat.model.ContactRequest', {
             {
                 type: 'presence',
                 name: 'name',
-                message: "Enter name"
+                message: "Name missing"
             },
             {
                 type: 'presence',
                 name: 'email',
-                message: "Enter email"
+                message: "Email missing"
             },
             {
                 type: 'format',
                 name: 'email',
                 matcher: /^[a-zA-Z0-9\._\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,4}$/,
-                message: "Wrong email Format"
+                message: "Email format"
             },
             {
                 type: 'presence',
                 name: 'message',
-                message: "Please enter a message"
+                message: "Message missing"
             },
         ],
         proxy: {
