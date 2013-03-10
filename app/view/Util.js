@@ -10,54 +10,88 @@ Ext.define("adnat.view.Util", {
         iconCls: 'info',
         styleHtmlContent: true,
         scrollable: true,
-        listeners: {
-            show: function() {
-                adnat.app.getController('UtilController').update(event);
-            },
-            painted: function() {
-                adnat.app.getController('UtilController').update(event);
-            },
-            hide: function() {
-            }
-        },
+        /*
+         
+         listeners: {
+         show: function() {
+         adnat.app.getController('UtilController').update(event);
+         },
+         painted: function() {
+         adnat.app.getController('UtilController').update(event);
+         },
+         hide: function() {
+         }
+         },
+         */
         items: [
             {
                 docked: 'top',
                 xtype: 'titlebar',
                 title: 'Utility'
             },
-            {
-                xtype: 'fieldset',
-                title: 'ADNAT Information',
-                items: [
-                    {
-                        xtype: 'label',
-                        id: 'isOnline',
-                        style: 'text-align: center',
-                        html: ''
-                    },
-                    {
-                        xtype: 'label',
-                        id: 'lastSynced',
-                        style: 'text-align: center',
-                        html: ''
-                    },
-                    {
-                        xtype: 'label',
-                        id: 'lastUpdated',
-                        style: 'text-align: center',
-                        html: ''
-                    }
-
-                ]},
+            /*
+             {
+             xtype: 'fieldset',
+             title: 'ADNAT Information',
+             items: [
+             {
+             xtype: 'label',
+             id: 'isOnline',
+             style: 'text-align: center',
+             html: ''
+             },
+             {
+             xtype: 'label',
+             id: 'lastSynced',
+             style: 'text-align: center',
+             html: ''
+             },
+             {
+             xtype: 'label',
+             id: 'lastUpdated',
+             style: 'text-align: center',
+             html: ''
+             }
+             
+             ]},
+             */
             {
                 xtype: 'button',
                 margin: '40px',
-                text: 'Update',
+                text: 'Show Information',
                 ui: 'normal',
                 handler: function() {
-                    Ext.getStore('Settings').load();
-                    adnat.app.getController('UtilController').update(event);
+                    var online =
+                            'The application is in <i>'
+                            + (window.navigator.onLine ? "online" : "offline")
+                            + '</i> mode.'
+                            ;
+
+                    var lastSyncedMessage = null;
+                    var ls = AppSettings.getLastSynced();
+                    if (ls === null) {
+                        lastSyncedMessage = 'Has not been synced to server';
+                    } else {
+                        lastSyncedMessage = 'Last synced to server on ' + ls;
+                    }
+
+                    var lastUpdatedMessage = null;
+                    var lu = AppSettings.getLastUpdated();
+                    if (lu === null) {
+                        lastUpdatedMessage = 'Has no last updated response';
+                    } else {
+                        lastUpdatedMessage = 'Last assessment response on ' + lu; //new Date().toISOString());
+                    }
+
+                    Ext.Msg.alert("Information",
+                            online
+                            + "<p>"
+                            + lastSyncedMessage
+                            + "<p>"
+                            + lastUpdatedMessage
+                            + "<p>"
+                            + 'Current date and time is <br>' + new Date()
+                            );
                 }
             },
             {
