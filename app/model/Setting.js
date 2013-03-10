@@ -1,12 +1,20 @@
 Ext.define('adnat.model.Setting', {
     extend: 'Ext.data.Model',
     config: {
+        requires: [
+            'Ext.data.proxy.LocalStorage',
+            'Ext.data.identifier.Uuid'
+        ],
+        identifier: {
+            type: 'uuid',
+            prefix: ''
+        },
         idProperty: 'id',
         fields: [
             {
                 id: 1,
                 name: 'name',
-                type: 'string'
+                type: 'int'
             },
             {
                 id: 2,

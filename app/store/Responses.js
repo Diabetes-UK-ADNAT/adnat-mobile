@@ -27,11 +27,7 @@ Ext.define('adnat.store.Responses', {
         }
         r.save();
         this.sync();
-        settings = Ext.getStore('Settings');
-        lastUpdated = settings.findSettingRecordByName(settings.getSettingNames().ASSESSMENT_LAST_UPDATED);
-        lastUpdated.set('value',new Date());
-        lastUpdated.save();
-        settings.sync();
+        AppSettings.updateLastUpdated();
     },
     deleteAllRecords: function() {
         this.removeAll();

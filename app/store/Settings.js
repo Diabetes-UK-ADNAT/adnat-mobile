@@ -8,12 +8,6 @@ Ext.define('adnat.store.Settings', {
         model: 'adnat.model.Setting',
         autoLoad: true
     },
-    getSettingNames: function() {
-        var settings = new Object();
-        settings.ASSESSMENT_LAST_SYNC = 'assessmentLastSyncTimestamp';
-        settings.ASSESSMENT_LAST_UPDATED = 'assessmentLastUpdatedTimestamp';
-        return settings;
-    },
     info: function() {
         console.log("Settings Store info");
         console.log(this.getAt(0));
@@ -26,7 +20,7 @@ Ext.define('adnat.store.Settings', {
         }
     },
     saveSetting: function(s) {
-        var find = this.findResponseIndex(s.get('name'));
+        var find = this.findSettingIndexByName(s.get('name'));
         if (find !== -1) {
             this.removeAt(find);
             this.sync();
@@ -42,11 +36,10 @@ Ext.define('adnat.store.Settings', {
         return this.find('name', name, 0, false, false, true);
     },
     findSettingRecordByName: function(settingName) {
+        //findRecord: function(fieldName, value, startIndex, anyMatch, caseSensitive, exactMatch) {
         setting = this.findRecord('name', settingName, 0, false, false, true);
         if (setting === null) {
             setting = Ext.create('adnat.model.Setting', {name: settingName, value: null});
-            setting.save();
-            this.sync();
         }
         return setting;
     }

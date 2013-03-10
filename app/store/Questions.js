@@ -14,6 +14,10 @@ Ext.define('adnat.store.Questions', {
             }
         ]
     },
+    deleteAllRecords: function() {
+        this.removeAll();
+        // leaves ids in place for some reason this.sync();
+    },
     info: function() {
         console.log("Question Store info");
         console.log(this.getTotalCount());

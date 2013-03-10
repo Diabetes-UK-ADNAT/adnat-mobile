@@ -9,11 +9,8 @@ function postAssessment(ps, gs, force) {
 }
 
 function needsUpdate() {
-    settings = Ext.getStore('Settings');
-    lastSync = settings.findSettingRecordByName(settings.getSettingNames().ASSESSMENT_LAST_SYNC);
-    lastUpdated = settings.findSettingRecordByName(settings.getSettingNames().ASSESSMENT_LAST_UPDATED);
-    lastUpdatedTs = lastUpdated.get('value');
-    lastSyncedTs = lastSync.get('value');
+    lastUpdatedTs = AppSettings.getLastUpdated();
+    lastSyncedTs = AppSettings.getLastSynced();
     return (lastUpdatedTs === null || lastSyncedTs === null)
             ||
             (lastUpdatedTs > lastSyncedTs);
@@ -53,10 +50,6 @@ function post(assessment) {
         }
     });
     Ext.ModelMgr.create(assessment, 'assessment').save();
-    // set last updated //fixme only set on success sync
-    settings = Ext.getStore('Settings');
-    lastSync = settings.findSettingRecordByName(settings.getSettingNames().ASSESSMENT_LAST_SYNC);
-    lastSync.set('value', new Date());
-    lastSync.save();
-    settings.sync();
+
+    AppSettings.updateLastSynced();
 }
