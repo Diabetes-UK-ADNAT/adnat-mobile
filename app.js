@@ -16,7 +16,8 @@ Ext.application({
         'Response',
         'ScoreConfig',
         'AssessmentResponse',
-        'ContactRequest'
+        'ContactRequest',
+        'Setting'
     ],
     views: [
         'Main',
@@ -36,7 +37,8 @@ Ext.application({
         'Questions',
         'QuestionsOnline',
         'Responses',
-        'ScoreConfigs'
+        'ScoreConfigs',
+        'Settings'
     ],
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -54,15 +56,14 @@ Ext.application({
         '1496x2048': 'resources/startup/1496x2048.png'
     },
     launch: function() {
+        Ext.getStore('Settings').load();
+        
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
-
         // Initialize the main view
         Ext.Viewport.add(Ext.create('adnat.view.Main'));
-
         // fixme go to questions
         // Ext.getCmp('mainTabPanel').setActiveItem(1);
-
     },
     onUpdated: function() {
         Ext.Msg.confirm(
