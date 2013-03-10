@@ -6,6 +6,7 @@ Ext.define('adnat.controller.UtilController', {
         refs: {
             lastSynced: '#lastSynced',
             lastUpdated: '#lastUpdated',
+            isOnline: '#isOnline'
         },
         control: {
         }
@@ -15,6 +16,12 @@ Ext.define('adnat.controller.UtilController', {
     ],
     update: function() {
         Ext.Viewport.mask({xtype: 'loadmask', message: 'Updating...'});
+
+        this.getIsOnline().setHtml(
+                'The application is in <i>'
+                + (window.navigator.onLine ? "online" : "offline")
+                + '</i> mode.'
+                );
 
         var ls = AppSettings.getLastSynced();
         if (ls === null) {

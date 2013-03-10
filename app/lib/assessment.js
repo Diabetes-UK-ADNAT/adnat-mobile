@@ -1,10 +1,18 @@
 function postAssessment(ps, gs, force) {
     if (force || needsUpdate()) {
-        log(new Date().getTime()); //3ms
-        var assessment = prep();
-        log(new Date().getTime());
-        post(assessment);
-        log(new Date().getTime());
+        if (window.navigator.onLine) {
+            log(new Date().getTime()); //3ms
+            var assessment = prep();
+            log(new Date().getTime());
+            post(assessment);
+            log(new Date().getTime());
+        } else {
+            Ext.Msg.alert(
+                    "Internet Connection Required",
+                    "You are not online, please get an internet connection working and try to post your results again"
+                    );
+        }
+
     }
 }
 

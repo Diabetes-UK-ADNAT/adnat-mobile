@@ -32,8 +32,9 @@ Ext.define("adnat.view.Util", {
                 items: [
                     {
                         xtype: 'label',
+                        id: 'isOnline',
                         style: 'text-align: center',
-                        html: 'The application is in <i>' + (window.navigator.onLine ? "online" : "offline") + '</i> mode.'
+                        html: ''
                     },
                     {
                         xtype: 'label',
@@ -62,6 +63,22 @@ Ext.define("adnat.view.Util", {
             {
                 xtype: 'button',
                 margin: '40px',
+                text: 'Sync to Server Now',
+                ui: 'normal',
+                handler: function() {
+                    Ext.Viewport.mask({xtype: 'loadmask', message: 'Submitting...'});
+                    score();
+                    var task = Ext.create('Ext.util.DelayedTask', function() {
+                        var gs = getGeneralScore();
+                        var ps = getPsychScore();
+                        postAssessment(ps, gs); // anytime after scoring is _really_ done
+                        Ext.Viewport.unmask();
+                    });
+                    task.delay(1900);
+                }
+            }, {
+                xtype: 'button',
+                margin: '40px',
                 text: 'Delete All of My Responses',
                 ui: 'decline',
                 handler: function() {
@@ -86,9 +103,7 @@ Ext.define("adnat.view.Util", {
                             "Confirmation", "Are you sure you want to delete all of your data and logout? <br><i>This action can not be undone</i>",
                             function(answer) {
                                 if (answer === 'yes') {
-                                    Ext.getStore('Responses').deleteAllRecords();
-                                    Ext.getStore('Questions').deleteAllRecords();
-                                    Ext.getStore('Settings').deleteAllRecords();
+                                    window.localStorage.clear()
                                     location.reload();
                                 }
                             }
