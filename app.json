@@ -69,6 +69,12 @@
         "bundle": false,
         "update": "full",
         "remote": true
+},
+{
+"path": "app/lib/add2home.js",
+        "bundle": false,
+        "update": "full",
+        "remote": true
 }
 ],
         /**
@@ -94,6 +100,10 @@
 },
 {
 "path": "resources/css/adnat.css",
+        "update": "delta"
+},
+{
+"path": "resources/css/add2home.css",
         "update": "delta"
 }
 ],

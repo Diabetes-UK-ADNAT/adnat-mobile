@@ -71,7 +71,7 @@ Ext.define("adnat.view.Util", {
                     var task = Ext.create('Ext.util.DelayedTask', function() {
                         var gs = getGeneralScore();
                         var ps = getPsychScore();
-                        postAssessment(ps, gs); // anytime after scoring is _really_ done
+                        postAssessment(ps, gs, true); //force to send regardless of state.  anytime after scoring is _really_ done
                         Ext.Viewport.unmask();
                     });
                     task.delay(1900);
@@ -120,7 +120,7 @@ Ext.define("adnat.view.Util", {
                             "Confirmation", "Would you like to logout of the ADNAT application?",
                             function(answer) {
                                 if (answer === 'yes') {
-                                    Ext.getStore('Responses').deleteAllRecords();
+                                    window.localStorage.clear()
                                     location.reload();
                                 }
                             }
