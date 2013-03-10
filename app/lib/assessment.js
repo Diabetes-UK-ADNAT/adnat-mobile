@@ -1,6 +1,12 @@
 function postAssessment(ps, gs) {
-    /// send assessment to the server
     log(new Date().getTime()); //3ms
+    var assessment = prep();
+    log(new Date().getTime());
+    post(assessment);
+    log(new Date().getTime());
+}
+
+function prep() {
     responses = Ext.getStore('Responses');
     var assessmentResponses = [];
     responses.each(function(record) {
@@ -17,19 +23,22 @@ function postAssessment(ps, gs) {
     var assessment = new Object();
     assessment.responses = assessmentResponses;
     assessment.score = new Object();
-    assessment.score.psycn = getPsychScore();
+    assessment.score.psych = getPsychScore();
     assessment.score.general = getGeneralScore();
     log(Ext.encode(assessment));
-    log(new Date().getTime());
-    // post it
-    Ext.Ajax.request({
-        url: 'https://api.myadnat.co.uk:4443/v1/contactrequests.json', //FIXME url
-        params: {json: Ext.encode(assessment)},
-        success: function(response, opts) {
-            log('ok');
-        },
-        failure: function() {
-            log('fail');
+    return assessment;
+}
+
+function post(assessment) {
+    // post it with json
+    Ext.define("assessment", {extend: "Ext.data.Model",
+        config: {
+            fields: ['responses', 'score'],
+            proxy: {
+                type: 'rest',
+                url: 'https://api.myadnat.co.uk:4443/v1/assessments.json'
+            }
         }
     });
+    Ext.ModelMgr.create(assessment, 'assessment').save();
 }
