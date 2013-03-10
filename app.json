@@ -56,6 +56,12 @@
 			"remote": true
 		},
 		{
+            "path": "app/lib/assessment.js",
+			"bundle": false,  
+            "update": "full",
+			"remote": true
+		},
+		{
             "path": "app/lib/question.js",
 			"bundle": false,  
             "update": "full",

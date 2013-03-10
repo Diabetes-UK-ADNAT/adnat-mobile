@@ -14,7 +14,9 @@ Ext.application({
         'Question',
         'QuestionOnline',
         'Response',
-        'ScoreConfig'
+        'ScoreConfig',
+        'AssessmentResponse',
+        'ContactRequest'
     ],
     views: [
         'Main',
