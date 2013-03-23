@@ -12,7 +12,7 @@ Ext.define("adnat.view.Contact", {
         styleHtmlContent: true,
         scrollable: true,
         defaults: {
-            required: true,
+            required: true
         },
         items: [
             {
@@ -27,7 +27,7 @@ Ext.define("adnat.view.Contact", {
                     {
                         xtype: 'textfield',
                         label: 'Name',
-                        name: 'name',
+                        name: 'name'
                     },
                     {
                         xtype: 'emailfield',

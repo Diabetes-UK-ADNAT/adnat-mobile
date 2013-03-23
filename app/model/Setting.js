@@ -20,7 +20,7 @@ Ext.define('adnat.model.Setting', {
                 id: 2,
                 name: 'value',
                 type: 'string'
-            },
+            }
         ],
         proxy: {
             type: 'localstorage',

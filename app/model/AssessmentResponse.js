@@ -3,19 +3,19 @@ Ext.define('adnat.model.AssessmentResponse', {
     config: {
         fields: [
             {
-                name: 'q',
+                name: 'q'
             },
             {
-                name: 'other',
+                name: 'other'
             },
             {
-                name: 'category',
+                name: 'category'
             },
             {
-                name: 'text',
+                name: 'text'
             },
             {
-                name: 'optionsText',
+                name: 'optionsText'
             }
         ]
     }

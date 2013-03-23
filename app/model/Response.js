@@ -24,7 +24,7 @@ Ext.define('adnat.model.Response', {
             {
                 id: 3,
                 name: 'ordinal',
-                type: 'int',
+                type: 'int'
             },
             {
                 id: 4,

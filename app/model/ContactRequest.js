@@ -15,7 +15,7 @@ Ext.define('adnat.model.ContactRequest', {
             {
                 id: 3,
                 name: 'message',
-                type: 'string',
+                type: 'string'
             }
         ],
         validations: [
@@ -39,7 +39,7 @@ Ext.define('adnat.model.ContactRequest', {
                 type: 'presence',
                 name: 'message',
                 message: "Message missing"
-            },
+            }
         ],
         proxy: {
             type: 'rest',
