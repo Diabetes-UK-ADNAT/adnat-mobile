@@ -37,7 +37,7 @@ Ext.define('adnat.store.Settings', {
     },
     findSettingRecordByName: function(settingName) {
         //findRecord: function(fieldName, value, startIndex, anyMatch, caseSensitive, exactMatch) {
-        setting = this.findRecord('name', settingName, 0, false, false, true);
+        setting = this.findRecord('name', settingName, 0, true, true, true);
         if (setting === null) {
             setting = Ext.create('adnat.model.Setting', {name: settingName, value: null});
         }

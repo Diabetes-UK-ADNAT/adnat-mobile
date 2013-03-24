@@ -45,8 +45,7 @@ Ext.application({
     ],
     controllers: [
         'QuestionController',
-        'ResultsController',
-        'UtilController'
+        'ResultsController'
     ],
     stores: [
         'Questions',

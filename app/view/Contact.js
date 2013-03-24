@@ -50,9 +50,16 @@ Ext.define("adnat.view.Contact", {
                     var contactRequest = Ext.ModelMgr.create(this.up('panel').getValues(), 'adnat.model.ContactRequest');
                     var errors = contactRequest.validate();
                     if (errors.isValid()) {
-                        contactRequest.save();
-                        this.up('panel').reset();
-                        Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
+                        if (window.navigator.onLine) {
+                            contactRequest.save();
+                            this.up('panel').reset();
+                            Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
+                        } else {
+                            Ext.Msg.alert(
+                                    "Internet Connection Required",
+                                    "You are not online, please get an internet connection working and try to send your message again"
+                                    );
+                        }
                     } else {
                         console.log(errors);
                         var data = "";

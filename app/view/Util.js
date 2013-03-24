@@ -29,32 +29,6 @@ Ext.define("adnat.view.Util", {
                 xtype: 'titlebar',
                 title: 'Utility'
             },
-            /*
-             {
-             xtype: 'fieldset',
-             title: 'ADNAT Information',
-             items: [
-             {
-             xtype: 'label',
-             id: 'isOnline',
-             style: 'text-align: center',
-             html: ''
-             },
-             {
-             xtype: 'label',
-             id: 'lastSynced',
-             style: 'text-align: center',
-             html: ''
-             },
-             {
-             xtype: 'label',
-             id: 'lastUpdated',
-             style: 'text-align: center',
-             html: ''
-             }
-             
-             ]},
-             */
             {
                 xtype: 'button',
                 margin: '40px',
@@ -72,7 +46,9 @@ Ext.define("adnat.view.Util", {
                     if (ls === null) {
                         lastSyncedMessage = 'Has not been synced to server';
                     } else {
-                        lastSyncedMessage = 'Last synced to server on ' + ls;
+                        lsDate = new Date();
+                        lsDate.setTime(ls);
+                        lastSyncedMessage = 'Last synced to server on <br>' + lsDate.toISOString();
                     }
 
                     var lastUpdatedMessage = null;
@@ -80,17 +56,19 @@ Ext.define("adnat.view.Util", {
                     if (lu === null) {
                         lastUpdatedMessage = 'Has no last updated response';
                     } else {
-                        lastUpdatedMessage = 'Last assessment response on ' + lu; //new Date().toISOString());
+                                      luDate = new Date();
+                        luDate.setTime(lu);
+                        lastUpdatedMessage = 'Last assessment response on <br>' + luDate.toISOString();
                     }
 
                     Ext.Msg.alert("Information",
                             online
                             + "<p>"
+                            + 'Current date and time is <br>' + new Date().toISOString()
+                            + "<p>"
                             + lastSyncedMessage
                             + "<p>"
                             + lastUpdatedMessage
-                            + "<p>"
-                            + 'Current date and time is <br>' + new Date()
                             );
                 }
             },
@@ -100,7 +78,7 @@ Ext.define("adnat.view.Util", {
                 text: 'Sync to Server Now',
                 ui: 'normal',
                 handler: function() {
-                    Ext.Viewport.mask({xtype: 'loadmask', message: 'Submitting...'});
+                    Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Submitting...'});
                     score();
                     var task = Ext.create('Ext.util.DelayedTask', function() {
                         var gs = getGeneralScore();
@@ -121,6 +99,7 @@ Ext.define("adnat.view.Util", {
                             function(answer) {
                                 if (answer === 'yes') {
                                     Ext.getStore('Responses').deleteAllRecords();
+                                    AppSettings.clearLastUpdated();
                                     location.reload();
                                 }
                             }

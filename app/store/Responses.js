@@ -27,7 +27,7 @@ Ext.define('adnat.store.Responses', {
         }
         r.save();
         this.sync();
-        AppSettings.updateLastUpdated();
+        AppSettings.updateLastUpdated(); // timestamp
     },
     deleteAllRecords: function() {
         this.removeAll();

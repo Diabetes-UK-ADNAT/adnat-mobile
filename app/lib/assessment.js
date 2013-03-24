@@ -17,11 +17,13 @@ function postAssessment(ps, gs, force) {
 }
 
 function needsUpdate() {
-    lastUpdatedTs = AppSettings.getLastUpdated();
-    lastSyncedTs = AppSettings.getLastSynced();
-    return (lastUpdatedTs === null || lastSyncedTs === null)
-            ||
-            (lastUpdatedTs > lastSyncedTs);
+    lastUpdatedTs = AppSettings.getLastUpdated(); //timestamp
+    lastSyncedTs = AppSettings.getLastSynced(); //timestamp
+    return (
+            lastUpdatedTs !== null
+            &&
+            (lastSyncedTs === null || lastUpdatedTs > lastSyncedTs)
+            );
 }
 function prep() {
     responses = Ext.getStore('Responses');
@@ -47,19 +49,17 @@ function prep() {
 }
 
 function post(assessment) {
-    // post it with json
+// post it with json
     Ext.define("assessment", {extend: "Ext.data.Model",
         config: {
             fields: ['responses', 'score'],
             proxy: {
                 type: 'rest',
                 url: 'http://172.16.1.35:9000/v1/assessments.json'
-                //url: 'https://api.myadnat.co.uk:4443/v1/assessments.json'
-
+                        //url: 'https://api.myadnat.co.uk:4443/v1/assessments.json'
             }
         }
     });
     Ext.ModelMgr.create(assessment, 'assessment').save();
-
-    AppSettings.updateLastSynced();
+    AppSettings.updateLastSynced(); //timestamp
 }
