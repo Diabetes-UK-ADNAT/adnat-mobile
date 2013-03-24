@@ -87,14 +87,16 @@ Ext.application({
     },
 
     onUpdated: function() {
-        Ext.Msg.confirm(
-            "Application Update",
-            "This application has just successfully been updated to the latest version. Reload now?",
-            function(buttonId) {
-                if (buttonId === 'yes') {
-                    window.location.reload();
-                }
-            }
-        );
+        // FIXME mask with message that we are updating 
+        window.location.reload();
+        //        Ext.Msg.confirm(
+        //            "Application Update",
+        //            "This application has just successfully been updated to the latest version. Reload now?",
+        //            function(buttonId) {
+        //                if (buttonId === 'yes') {
+        //                    window.location.reload();
+        //                }
+        //            }
+        //        );
     }
 });

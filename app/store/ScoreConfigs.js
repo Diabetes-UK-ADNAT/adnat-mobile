@@ -6,6 +6,11 @@ Ext.define('adnat.store.ScoreConfigs', {
 		proxy:{
 			type:'ajax',
 			url:'resources/data/scoreconfigs.json',
+            pageParam: false,
+            sortParam: undefined,
+            startParam: false,
+            limitParam: false,
+            noCache: false,
 			reader : {
 				type : 'json',
 				rootProperty : 'scoreconfigs',
