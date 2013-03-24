@@ -7,6 +7,20 @@ Ext.define('adnat.store.Questions', {
         model: 'adnat.model.Question',
         identifier: 'uuid',
         autoLoad: true,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/questions.json',
+            pageParam: false,
+            sortParam: undefined,
+            startParam: false,
+            limitParam: false,
+            noCache: false,
+            reader: {
+                type: 'json',
+                rootProperty: 'questions',
+                totalCount: 'total'
+            }
+        },
         sorters: [
             {
                 property: 'ordinal',
@@ -21,14 +35,5 @@ Ext.define('adnat.store.Questions', {
     info: function() {
         console.log("Question Store info");
         console.log(this.getTotalCount());
-        /*
-         console.log(this.getAt(0));
-         console.log(this.getCount());
-         console.log(this.getData());
-         var a = this.getData();
-         for (var i=0; i<a.length; i++) {
-         console.log(a[i]);
-         }
-         */
     }
 });

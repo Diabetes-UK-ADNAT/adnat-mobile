@@ -13,7 +13,6 @@ Ext.define('adnat.controller.QuestionController', {
             prevButton: '#prevButton',
             nextButton: '#nextButton',
             indicator: '#indicator'
-                    //progressnum: '#progressnum',
         },
         control: {
             prevButton: {
@@ -25,32 +24,14 @@ Ext.define('adnat.controller.QuestionController', {
         }
     },
     launch: function() {
-        if (window.navigator.onLine) {
-            Ext.getStore('QuestionsOnline').load({
-                callback: this.onQuestionsOnlineStoreLoad,
-                scope: this
-            });
-        } else {
-            this.onQuestionsOnlineStoreLoad();
-        }
-    },
-    onQuestionsOnlineStoreLoad: function() {
         Ext.getStore('Questions').load({
             callback: this.onQuestionsStoreLoad,
             scope: this
         });
     },
     onQuestionsStoreLoad: function() {
-        //log('onQuestionsStoreLoad');
-        //var s = Ext.getStore('Questions');
-        //s.info();
-        // show current question, based on last available response
-        // fixme: handle last page and last item navigated to instead
-        ///// these two below 
         var currentOrdinal = Ext.getStore('Responses').getCount();
         this.showQuestion(currentOrdinal, 0);
-        // testing
-        //this.showQuestion(78,0); 
     },
     onSwipe: function(event) {
         if (event.direction === 'right') {

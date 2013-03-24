@@ -26,7 +26,7 @@ Ext.define('adnat.controller.ResultsController', {
     },
     onShow: function() {
         this.hideComponents();
-        Ext.Viewport.mask({xtype: 'loadmask', message: 'Scoring...'});
+        Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Scoring...'});
         score();
         log("is scored " + isScored());
         // fixme, instead of delay, fire event with scores when scoring is complete

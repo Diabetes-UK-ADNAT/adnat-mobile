@@ -5,7 +5,7 @@ Ext.define("adnat.view.Results", {
         'Ext.TitleBar'
     ],
     config: {
-		id: 'results', // works with refs to enable this.getSurvey()
+		id: 'results', 
 		title: 'My Results',
 		iconCls: 'star',
 		styleHtmlContent: true,
