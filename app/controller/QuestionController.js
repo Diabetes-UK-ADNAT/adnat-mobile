@@ -24,13 +24,15 @@ Ext.define('adnat.controller.QuestionController', {
             }
         }
     },
-    
-    // FIXME reload store on upgrade, or on launch and size of local store == 0
     launch: function() {
-        Ext.getStore('QuestionsOnline').load({
-            callback: this.onQuestionsOnlineStoreLoad,
-            scope: this
-        });
+        if (window.navigator.onLine) {
+            Ext.getStore('QuestionsOnline').load({
+                callback: this.onQuestionsOnlineStoreLoad,
+                scope: this
+            });
+        } else {
+            this.onQuestionsOnlineStoreLoad();
+        }
     },
     onQuestionsOnlineStoreLoad: function() {
         Ext.getStore('Questions').load({

@@ -47,7 +47,13 @@
 	  </tstamp>
 	  <mkdir dir="${build.dir}/${args.environment}/v"/>
 	  <echo file="${build.dir}/${args.environment}/v/index.html">${version.name}&lt;p&gt;${major.version}.${minor.version}.${build.version}&lt;p&gt;${touch.time}</echo>
-	</target>
+      <copy todir="${build.dir}/${args.environment}">
+      <fileset dir="${workspace.dir}/resources/icons">
+          <include name="apple-touch-icon*"/>
+          <include name="fav*"/>
+      </fileset>
+  </copy>
+    </target>
     
     <!-- Specify preprocessor options -->
     <!--
