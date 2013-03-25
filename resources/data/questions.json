@@ -135,6 +135,6 @@
 {"id":1163,"ordinal":131,"category":"About You","text":"Rate how you feel about your life at the moment in relation to Well-being?","type":"SC-SL","options":[{"value":0,"text":"Very happy"},{"value":1,"text":"Things could be better"},{"value":2,"text":"Unhappy"},		],},
 {"id":1164,"ordinal":132,"category":"About You","text":"Rate how you feel about your life at the moment in relation to My Future?","type":"SC-SL","options":[{"value":0,"text":"Very happy"},{"value":1,"text":"Things could be better"},{"value":2,"text":"Unhappy"},		],},
 {"id":117,"ordinal":133,"required":1,"category":"About You","feedback":"Brilliant!","text":"And to finish......now you have answered all the questions, how do you feel about Your Diabetes at the moment?","type":"SC-SL","options":[{"value":0,"text":"OK"},{"value":1,"text":"Things could be better"},{"value":2,"text":"Unhappy"},		],},
-{"id":118,"ordinal":134,"required":1,"category":"About You","text":"Now submit your survey by checking the tick for 'submit my survey' then see your score by clicking 'Next'","type":"MC","options":[{"value":0,"text":"Submit my survey"},		],},
+{"id":118,"ordinal":134,"required":1,"category":"About You","text":"Now submit your survey by checking the tick for 'submit my survey' then see your score by clicking 'Next'","type":"SC","options":[{"value":0,"text":"Submit my survey now"},{"value":1,"text":"I will submit my survey later"},		],},
 ],
 }
