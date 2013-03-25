@@ -1,5 +1,5 @@
 function postAssessment(ps, gs, force) {
-    if (force || needsUpdate()) {
+    if (force || (isReadyToSubmit() && needsUpdate())) {
         if (window.navigator.onLine) {
             log(new Date().getTime()); //3ms
             var assessment = prep();
@@ -14,6 +14,13 @@ function postAssessment(ps, gs, force) {
         }
 
     }
+}
+
+function isReadyToSubmit() {
+    var response = Ext.getStore('Responses').findResponseRecord(118);
+    var options = response !== null ? response.get('options') : null;
+    options = makeArray(options);
+    return arrayHasVal(options, "0");
 }
 
 function needsUpdate() {
