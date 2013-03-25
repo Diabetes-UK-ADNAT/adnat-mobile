@@ -27,13 +27,39 @@ Ext.define("adnat.view.Util", {
             {
                 docked: 'top',
                 xtype: 'titlebar',
-                title: 'Utility'
+                title: 'ADNAT Utilities'
             },
             {
                 xtype: 'button',
-                margin: '40px',
+                margin: '60 60 8 60px',
+                text: 'Submit My Survey Now',
+                instructions: 'Login to take ADNAT',
+                ui: 'action',
+                handler: function() {
+                    Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Submitting...'});
+                    score();
+                    var task = Ext.create('Ext.util.DelayedTask', function() {
+                        var gs = getGeneralScore();
+                        var ps = getPsychScore();
+                        postAssessment(ps, gs, true); //force to send regardless of state.  anytime after scoring is _really_ done
+                        Ext.Viewport.unmask();
+                    });
+                    task.delay(1900);
+                }
+            },
+            {
+                margin: '0 60 0 60px',
+                html: [
+                    "<div class=\"centered\">",
+                    "Submit your survey to the ADNAT site for review.",
+                    "</div>"
+                ].join("")
+            },
+            {
+                xtype: 'button',
+                margin: '60 60 8 60px',
                 text: 'Show Information',
-                ui: 'normal',
+                ui: 'action',
                 handler: function() {
                     var online =
                             'The application is in <i>'
@@ -56,7 +82,7 @@ Ext.define("adnat.view.Util", {
                     if (lu === null) {
                         lastUpdatedMessage = 'Has no last updated response';
                     } else {
-                                      luDate = new Date();
+                        luDate = new Date();
                         luDate.setTime(lu);
                         lastUpdatedMessage = 'Last assessment response on <br>' + luDate.toISOString();
                     }
@@ -73,24 +99,16 @@ Ext.define("adnat.view.Util", {
                 }
             },
             {
+                margin: '0 60 0 60px',
+                html: [
+                    "<div class=\"centered\">",
+                    "Show system information for technical support.",
+                    "</div>"
+                ].join("")
+            },
+            {
                 xtype: 'button',
-                margin: '40px',
-                text: 'Sync to Server Now',
-                ui: 'normal',
-                handler: function() {
-                    Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Submitting...'});
-                    score();
-                    var task = Ext.create('Ext.util.DelayedTask', function() {
-                        var gs = getGeneralScore();
-                        var ps = getPsychScore();
-                        postAssessment(ps, gs, true); //force to send regardless of state.  anytime after scoring is _really_ done
-                        Ext.Viewport.unmask();
-                    });
-                    task.delay(1900);
-                }
-            }, {
-                xtype: 'button',
-                margin: '40px',
+                margin: '60 60 8 60px',
                 text: 'Delete All of My Responses',
                 ui: 'decline',
                 handler: function() {
@@ -107,9 +125,17 @@ Ext.define("adnat.view.Util", {
                 }
             },
             {
+                margin: '0 60 0 60px',
+                html: [
+                    "<div class=\"centered\">",
+                    "Delete all of your answers and start the the survey over.",
+                    "</div>"
+                ].join("")
+            },
+            {
                 xtype: 'button',
-                margin: '40px',
-                text: 'Reset Application',
+                margin: '60 60 8 60px',
+                text: 'Logout',
                 ui: 'decline',
                 handler: function() {
                     Ext.Msg.confirm(
@@ -124,23 +150,13 @@ Ext.define("adnat.view.Util", {
                 }
             },
             {
-                xtype: 'button',
-                margin: '40px',
-                text: 'Logout',
-                ui: 'normal',
-                handler: function() {
-                    Ext.Msg.confirm(
-                            "Confirmation", "Would you like to logout of the ADNAT application?",
-                            function(answer) {
-                                if (answer === 'yes') {
-                                    window.localStorage.clear()
-                                    location.reload();
-                                }
-                            }
-                    );
-                }
-            }
-
+                margin: '0 60 0 60px',
+                html: [
+                    "<div class=\"centered\">",
+                    "Clear all data from the device, logout and reset the application.",
+                    "</div>"
+                ].join("")
+            },
         ]
     }
 });
