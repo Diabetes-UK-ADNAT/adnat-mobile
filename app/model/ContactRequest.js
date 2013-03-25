@@ -32,7 +32,7 @@ Ext.define('adnat.model.ContactRequest', {
             {
                 type: 'format',
                 name: 'email',
-                matcher: /^[a-zA-Z0-9\._\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,4}$/,
+                matcher: /^[a-zA-Z0-9+\._\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,4}$/,
                 message: "Email format"
             },
             {
@@ -44,7 +44,7 @@ Ext.define('adnat.model.ContactRequest', {
         proxy: {
             type: 'rest',
             url: 'http://172.16.1.35:9000/v1/contactrequests.json'
-            //url: 'https://api.myadnat.co.uk:4443/v1/contactrequests.json'
+//            url: 'https://api.myadnat.co.uk/v1/contactrequests.json'
         }
     }
 });

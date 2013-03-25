@@ -33,7 +33,7 @@ Ext.define("adnat.view.Util", {
                 xtype: 'button',
                 margin: '60 60 8 60px',
                 text: 'Submit My Survey Now',
-                instructions: 'Login to take ADNAT',
+                disabled: true,
                 ui: 'action',
                 handler: function() {
                     Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Submitting...'});

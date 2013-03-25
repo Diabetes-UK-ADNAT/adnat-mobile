@@ -26,7 +26,7 @@ function isReadyToScore() {
     var response = Ext.getStore('Responses').findResponseRecord(118);
     var options = response !== null ? response.get('options') : null;
     options = makeArray(options);
-    return arrayHasVal(options, "0") || arrayHasVal(options, "1") ;
+    return arrayHasVal(options, "0") || arrayHasVal(options, "1");
 }
 function needsUpdate() {
     lastUpdatedTs = AppSettings.getLastUpdated(); //timestamp
@@ -68,7 +68,7 @@ function post(assessment) {
             proxy: {
                 type: 'rest',
                 url: 'http://172.16.1.35:9000/v1/assessments.json'
-                        //url: 'https://api.myadnat.co.uk:4443/v1/assessments.json'
+//                url: 'https://api.myadnat.co.uk/v1/assessments.json'
             }
         }
     });
