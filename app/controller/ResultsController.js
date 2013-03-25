@@ -15,6 +15,7 @@ Ext.define('adnat.controller.ResultsController', {
         'Ext.util.DelayedTask'
     ],
     hideComponents: function() {
+        Ext.getCmp('noScore').hide();
         Ext.getCmp('gScore').hide();
         Ext.getCmp('pScore').hide();
         Ext.getCmp('gScoreRed').hide();
@@ -26,6 +27,13 @@ Ext.define('adnat.controller.ResultsController', {
     },
     onShow: function() {
         this.hideComponents();
+        if (isReadyToScore()) {
+            this.displayScore();
+        } else {
+            Ext.getCmp('noScore').show();
+        }
+    },
+    displayScore: function() {
         Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Scoring...'});
         score();
         log("is scored " + isScored());

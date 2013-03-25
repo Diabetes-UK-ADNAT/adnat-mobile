@@ -22,7 +22,12 @@ function isReadyToSubmit() {
     options = makeArray(options);
     return arrayHasVal(options, "0");
 }
-
+function isReadyToScore() {
+    var response = Ext.getStore('Responses').findResponseRecord(118);
+    var options = response !== null ? response.get('options') : null;
+    options = makeArray(options);
+    return arrayHasVal(options, "0") || arrayHasVal(options, "1") ;
+}
 function needsUpdate() {
     lastUpdatedTs = AppSettings.getLastUpdated(); //timestamp
     lastSyncedTs = AppSettings.getLastSynced(); //timestamp
