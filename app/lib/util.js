@@ -1,3 +1,7 @@
+var REGEX_URL = /^(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+var REGEX_EMAIL = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+var REGEX_NUMBER = /^\s*(\-|\+)?(\d+|(\d*(\.\d*)))\s*$/;
+
 function log(m) {
     console.log(m);
 }

@@ -32,7 +32,7 @@ Ext.define('adnat.model.ContactRequest', {
             {
                 type: 'format',
                 name: 'email',
-                matcher: /^[a-zA-Z0-9+\._\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,4}$/,
+                matcher: REGEX_EMAIL,
                 message: "Email format"
             },
             {
