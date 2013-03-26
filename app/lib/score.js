@@ -10,10 +10,14 @@ function testScore() {
 }
 
 var _isScored = false;
+var pscoreColor = '';
+var gscoreColor = '';
+var pScore = 0;
+var gScore = 0;
+
 function isScored() {
     return _isScored;
 }
-
 function getGeneralScore() {
     return gScore;
 }
@@ -21,8 +25,14 @@ function getPsychScore() {
     return pScore;
 }
 
-var pScore = 0;
-var gScore = 0;
+function getGeneralScoreColor() {
+    return gscoreColor;
+}
+
+function getPsychScoreColor() {
+    return pscoreColor;
+}
+
 
 function score() {
     _isScored = false;
@@ -97,11 +107,31 @@ function doScoring() {
         } else {
             gScore += score;
         }
-        log('score=' + score + ',gScore=' + gScore + ',pScore=' + pScore);
+        log('gScore=' + gScore + ',pScore=' + pScore + ',gscoreColor=' + gscoreColor + ',pscoreColor=' + pscoreColor);
     });
+
+    setColors();
+    log('gScore=' + gScore + ',pScore=' + pScore + ',gscoreColor=' + gscoreColor + ',pscoreColor=' + pscoreColor);
     _isScored = true; //fixme fire scored event
 }
 
+
+function setColors() {
+    if (gScore > 25) {
+        gscoreColor = 'Red';
+    } else if (gScore > 12) {
+        gscoreColor = 'Yellow';
+    } else {
+        gscoreColor = 'Green';
+    }
+    if (pScore > 10) {
+        pscoreColor = 'Red';
+    } else if (pScore > 4) {
+        pscoreColor = 'Yellow';
+    } else {
+        pscoreColor = 'Green';
+    }
+}
 function scoreMultiQ(responses, q, options) {
     // {"q": 57, "scoreType":"MultiQ",},
     // {"q": 62, "scoreType":"MultiQ",},

@@ -7,8 +7,8 @@ Ext.define("adnat.view.Main", {
         tabBarPosition: 'bottom',
         items: [
             {xtype: 'welcome'},
-            {xtype: 'question', disabled: true},
-            {xtype: 'results', disabled: true},
+            {xtype: 'question', disabled: !AppAuth.isLoggedIn()},
+            {xtype: 'results', disabled: !AppAuth.isLoggedIn()},
             {xtype: 'contact'},
             {xtype: 'util'}
         ]

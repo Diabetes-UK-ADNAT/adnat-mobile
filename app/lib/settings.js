@@ -1,3 +1,9 @@
+var AppConstants = {
+    REGEX_URL: /^(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/,
+    REGEX_EMAIL: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/,
+    REGEX_NUMBER: /^\s*(\-|\+)?(\d+|(\d*(\.\d*)))\s*$/
+};
+
 var AppSettings = {
     '_ASSESSMENT_LAST_SYNC': 0,
     '_ASSESSMENT_LAST_UPDATED': 1,
