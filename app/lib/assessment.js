@@ -75,11 +75,8 @@ function post(assessment) {
             fields: ['responses', 'score'],
             proxy: {
                 type: 'rest',
-//                url: 'http://172.16.1.35:9000//v1/assessments.json'
-//                url: 'https://api.myadnat.co.uk/v1/assessments.json'
-//                url: 'https://api.myadnat.co.uk:4443/v1/assessments.json'
-//            url: 'https://api.myadnat.co.uk:4443/v1/contactrequests.json'
-               url: 'https://api.myadnat.co.uk:4443/v1/assessments.json'
+                //url: 'https://api.myadnat.co.uk/v1/assessments' //PROD
+                url: 'https://api.myadnat.co.uk:4443/v1/assessments' //DEV
             }
         }
     });

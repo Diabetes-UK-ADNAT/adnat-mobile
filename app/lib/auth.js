@@ -1,6 +1,6 @@
 var AppAuth = {
     'isLoggedIn': function() {
-        return false;
+        return true;
     }
 };
 
