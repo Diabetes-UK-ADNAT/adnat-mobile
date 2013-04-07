@@ -76,7 +76,8 @@ function post(assessment) {
             proxy: {
                 type: 'rest',
                 //url: 'https://api.myadnat.co.uk/v1/assessments' //PROD
-                url: 'https://api.myadnat.co.uk:4443/v1/assessments' //DEV
+                //url: 'https://api.myadnat.co.uk:4443/v1/assessments' //DEV
+                url:'http://localhost:9000/v1/assessments'
             }
         }
     });

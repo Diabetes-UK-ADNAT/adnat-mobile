@@ -6,6 +6,8 @@ Ext.define('adnat.model.AssessmentResponse', {
                 name: 'q'
             },
             {
+                name: 'ordinal'
+            },            {
                 name: 'other'
             },
             {
