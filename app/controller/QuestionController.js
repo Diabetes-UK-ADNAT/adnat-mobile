@@ -85,6 +85,11 @@ Ext.define('adnat.controller.QuestionController', {
     },
     showQuestion: function(newO, direction, moreFeedback) {
         var q = getNextQuestion(newO, direction);
+
+        if (q === null || typeof q === 'undefined') {
+            return;
+        }
+
         log(q);
         setFeedback(this, q);
         setMoreFeedback(this, moreFeedback);
