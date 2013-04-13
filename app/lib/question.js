@@ -105,6 +105,7 @@ function skipQuestionsItem(q, element, direction) {
 function saveEmptyResponse(q) {
     r = Ext.create('adnat.model.Response', {
         q: q.get('id'),
+        type: q.get('type'),
         options: null,
         ordinal: q.get('ordinal'),
         other: null
@@ -160,6 +161,7 @@ function buildQuestion(q) {
             '{ xtype: "hiddenfield", name: "required", suborgetsdropped: "{name}"}, ',
             '{ xtype: "hiddenfield", name: "category", suborgetsdropped: "{name}"}, ',
             '{ xtype: "hiddenfield", name: "text", suborgetsdropped: "{name}"}, ',
+            '{ xtype: "hiddenfield", name: "type", suborgetsdropped: "{name}"}, ',
             // info
             '<tpl if="info != null">',
             '{ html: "',
@@ -289,7 +291,7 @@ function buildQuestion(q) {
             }
     );
     tpl.compile();
-    //var html = tpl.apply({gScore:getGeneralScore(),pScore:getPsychScore(),q:q.get('ordinal')+1,name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
+    //var html = tpl.apply({gScore:getGeneralScore(),pScore:getPsychScore(),q:q.get('ordinal')+1,type:q.get('type'),name:Date.now(), info:q.get('info'), category:q.get('category'),options:q.get('options'), required:q.get('required'), type:q.get('type')});  
     var html = tpl.apply({
         q: q.get('ordinal') + 1,
         name: Date.now(),

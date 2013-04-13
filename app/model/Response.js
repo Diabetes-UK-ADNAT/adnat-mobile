@@ -51,6 +51,11 @@ Ext.define('adnat.model.Response', {
                 id: 8,
                 name: 'optionsText',
                 type: 'auto'
+            },
+            {
+                id: 9,
+                name: 'type',
+                type: 'auto'
             }
         ],
         proxy: {
