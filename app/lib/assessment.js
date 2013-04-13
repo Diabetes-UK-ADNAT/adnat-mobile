@@ -59,6 +59,7 @@ function prep() {
     var assessment = new Object();
     assessment.responses = assessmentResponses;
     assessment.score = new Object();
+    assessment.userToken = AppAuth.token();
     assessment.score.psych = getPsychScore();
     assessment.score.psychColor = getPsychScoreColor();
     assessment.score.general = getGeneralScore();
@@ -72,12 +73,12 @@ function post(assessment) {
 // post it with json
     Ext.define("assessment", {extend: "Ext.data.Model",
         config: {
-            fields: ['responses', 'score'],
+            fields: ['responses', 'userToken', 'score'],
             proxy: {
                 type: 'rest',
                 //url: 'https://api.myadnat.co.uk/v1/assessments' //PROD
                 url: 'https://api.myadnat.co.uk:4443/v1/assessments' //DEV
-                //url:'http://localhost:9000/v1/assessments'
+                        //url:'http://localhost:9000/v1/assessments'
             }
         }
     });
