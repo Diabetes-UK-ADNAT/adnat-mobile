@@ -27,7 +27,7 @@ Ext.define("adnat.view.Contact", {
             {
                 xtype: 'fieldset',
                 title: 'Contact ADNAT Support',
-                width: '375px', 
+                maxWidth: '350px', 
                         items: [
                     {
                         xtype: 'textfield',
@@ -49,7 +49,7 @@ Ext.define("adnat.view.Contact", {
             },
             {
                 xtype: 'button',
-                width: '375px',
+                maxWidth: '350px',
                 text: 'Send',
                 ui: 'action',
                 handler: function() {

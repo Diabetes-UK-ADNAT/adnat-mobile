@@ -17,6 +17,7 @@ Ext.define("adnat.view.Welcome", {
         },
         items: [
             {
+                maxWidth: '300px',
                 html: [
                     "<div class=\"centered\">",
                     "<h1>Welcome to ADNAT</h1>",
@@ -33,13 +34,13 @@ Ext.define("adnat.view.Welcome", {
             },
             {
                 xtype: 'panel',
-                width: '350px',
+                maxWidth: '350px',
                 items: [
                     {
                         xtype: 'fieldset',
                         title: 'ADNAT Login',
                         instructions: 'Login to take ADNAT',
-                        width: '350px',
+                        maxWidth: '350px',
                         items: [
                             {
                                 xtype: 'emailfield',
@@ -56,7 +57,7 @@ Ext.define("adnat.view.Welcome", {
                     },
                     {
                         xtype: 'button',
-                        width: '350px',
+                        maxWidth: '350px',
                         text: 'Login',
                         ui: 'action',
                         handler: function() {

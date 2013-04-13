@@ -18,16 +18,15 @@ Ext.define("adnat.view.Util", {
             {
                 docked: 'top',
                 xtype: 'titlebar',
-                title: 'ADNAT Utilities',
+                title: 'ADNAT Utilities'
             },
             {
                 id: 'utilbuttons',
                 xtype: 'panel',
-                width: '370px',
+                maxWidth: '350px',
                 items: [
                     {
                         xtype: 'button',
-                        margin: '60 60 8 60px',
                         text: 'Submit My Survey Now',
                         disabled: !AppAuth.isLoggedIn(),
                         ui: 'action',
@@ -44,7 +43,6 @@ Ext.define("adnat.view.Util", {
                         }
                     },
                     {
-                        margin: '0 60 0 60px',
                         html: [
                             "<div class=\"centered\">",
                             "Submit your survey to the ADNAT site for review.",
@@ -53,7 +51,7 @@ Ext.define("adnat.view.Util", {
                     },
                     {
                         xtype: 'button',
-                        margin: '60 60 8 60px',
+                        margin: '30 0 0 0px',
                         text: 'Show Information',
                         ui: 'action',
                         handler: function() {
@@ -94,7 +92,6 @@ Ext.define("adnat.view.Util", {
                         }
                     },
                     {
-                        margin: '0 60 0 60px',
                         html: [
                             "<div class=\"centered\">",
                             "Show system information for technical support.",
@@ -103,7 +100,7 @@ Ext.define("adnat.view.Util", {
                     },
                     {
                         xtype: 'button',
-                        margin: '60 60 8 60px',
+                        margin: '30 0 0 0px',
                         text: 'Delete All of My Responses',
                         ui: 'decline',
                         handler: function() {
@@ -120,7 +117,6 @@ Ext.define("adnat.view.Util", {
                         }
                     },
                     {
-                        margin: '0 60 0 60px',
                         html: [
                             "<div class=\"centered\">",
                             "Delete all of your answers and start the the survey over.",
@@ -129,7 +125,7 @@ Ext.define("adnat.view.Util", {
                     },
                     {
                         xtype: 'button',
-                        margin: '60 60 8 60px',
+                        margin: '30 0 0 0px',
                         text: 'Logout',
                         ui: 'decline',
                         handler: function() {
@@ -145,7 +141,6 @@ Ext.define("adnat.view.Util", {
                         }
                     },
                     {
-                        margin: '0 60 0 60px',
                         html: [
                             "<div class=\"centered\">",
                             "Clear all data from the device, logout and reset the application.",
