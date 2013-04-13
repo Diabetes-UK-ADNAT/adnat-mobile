@@ -31,11 +31,13 @@ Ext.application({
         'ScoreConfig',
         'AssessmentResponse',
         'ContactRequest',
-        'Setting'
+        'Setting',
+        'LoginCredentials'
     ],
     views: [
         'Main',
         'Welcome',
+        'WelcomeLoggedIn',
         'Help',
         'Contact',
         'Results',
@@ -79,6 +81,9 @@ Ext.application({
     launch: function() {
         Ext.getStore('Settings').load();
         Ext.Viewport.add(Ext.create('adnat.view.Main'));
+        Ext.Ajax.on('beforerequest', function(conn, options, eOptions) {
+            //options.headers['X-Auth-Token'] = AppAuth.token();
+        }, this);
         Ext.fly('appLoadingIndicator').destroy();
         // fixme go to questions
         // Ext.getCmp('mainTabPanel').setActiveItem(1);

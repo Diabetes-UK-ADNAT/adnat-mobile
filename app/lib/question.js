@@ -70,6 +70,10 @@ function wrap(newO, questionCount) {
 }
 
 function skipQuestions(q, direction) {
+    if (q === null ) {
+        return null;
+    }
+    
 	if ( q.get('skip') === null ) {
 		return q;
 	}

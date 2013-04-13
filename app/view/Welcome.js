@@ -11,6 +11,10 @@ Ext.define("adnat.view.Welcome", {
         iconCls: 'home',
         styleHtmlContent: true,
         scrollable: true,
+        layout: {
+            type: 'vbox',
+            align: 'center'
+        },
         items: [
             {
                 html: [
@@ -28,43 +32,67 @@ Ext.define("adnat.view.Welcome", {
                 title: 'ADNAT'
             },
             {
-                xtype: 'fieldset',
-                title: 'ADNAT Login',
-                instructions: 'Login to take ADNAT',
+                xtype: 'panel',
+                width: '350px',
                 items: [
                     {
-                        xtype: 'emailfield',
-                        name: 'email',
-                        label: 'Email'
+                        xtype: 'fieldset',
+                        title: 'ADNAT Login',
+                        instructions: 'Login to take ADNAT',
+                        width: '350px',
+                        items: [
+                            {
+                                xtype: 'emailfield',
+                                name: 'email',
+                                label: 'Email'
 
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                name: 'password',
+                                label: 'Password'
+                            }
+                        ]
                     },
                     {
-                        xtype: 'passwordfield',
-                        name: 'password',
-                        label: 'Password'
-                    }
-                ]
-            },
-            {
-                xtype: 'button',
-                text: 'Login',
-                ui: 'action',
-                handler: function() {
-                    Ext.Viewport.setActiveItem(Ext.create('adnat.view.ServerUnavailable'));
-                    //Ext.Viewport.setActiveItem(Ext.create('adnat.view.Results'));
-                    //Question page: Ext.getCmp('mainTabPanel').setActiveItem(1);
-                    //Ext.getCmp('mainTabPanel').setActiveItem(1);
-                    //
-                    // login and get tokens setup
+                        xtype: 'button',
+                        width: '350px',
+                        text: 'Login',
+                        ui: 'action',
+                        handler: function() {
+//
 
-
-//                    var contactRequest = Ext.ModelMgr.create(this.up('panel').getValues(), 'adnat.model.ContactRequest');
-//                    var errors = contactRequest.validate();
+                            Ext.Ajax.request({
+                                url: 'https://auth.myadnat.co.uk:4443/login',
+                                actionMethods: 'POST',
+                                async: false,
+                                params: {
+                                    email: 'email@example.com',
+                                    password: 'mypassword'
+                                },
+                                success: function(response, opts) {
+                                    console.log(response);
+                                    console.log(opts);
+                                    //welcome text
+                                    alert('Login OK');
+                                    //Ext.Viewport.setActiveItem(Ext.create('adnat.view.WelcomeLoggedIn'));
+                                },
+                                failure: function(response, opts) {
+                                    console.log(response);
+                                    console.log(opts);
+                                    alert('Login Failed');
+                                }
+                            });
+//Working how to handle resposne values
+//                    var loginCredentials = Ext.ModelMgr.create(this.up('panel').getValues(), 'adnat.model.LoginCredentials');
+//                    var errors = loginCredentials.validate();
 //                    if (errors.isValid()) {
 //                        if (window.navigator.onLine) {
-//                            contactRequest.save();
+//                            loginCredentials.save();
 //                            this.up('panel').reset();
-//                            Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
+//                            // if valid, get cookie token and show welcome panel
+//                            Ext.Msg.alert("show welcome view panel");
+//                            //  else alert try again
 //                        } else {
 //                            Ext.Msg.alert(
 //                                    "Internet Connection Required",
@@ -79,8 +107,9 @@ Ext.define("adnat.view.Welcome", {
 //                        });
 //                        Ext.Msg.alert("Please check your information", data);
 //                    }
-//                }
-            }
+                        }
+                    }
+                ]
             }
         ]
     }
