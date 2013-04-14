@@ -28,6 +28,15 @@ Ext.define('adnat.controller.ResultsController', {
     },
     onShow: function() {
         this.hideComponents();
+        this.loadResponses();
+    },
+    loadResponses: function() {
+        Ext.getStore('Responses').load({
+            callback: this.onResponsesStoreLoad,
+            scope: this
+        });
+    },
+    onResponsesStoreLoad: function() {
         if (isReadyToScore()) {
             this.displayScore();
         } else {
