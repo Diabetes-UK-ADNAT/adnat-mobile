@@ -88,7 +88,10 @@ Ext.define("adnat.view.Util", {
                                     + lastSyncedMessage
                                     + "<p>"
                                     + lastUpdatedMessage
+                                    + "<p>"
+                                    + AppAuth.getToken()
                                     );
+
                         }
                     },
                     {

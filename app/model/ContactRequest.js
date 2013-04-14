@@ -16,6 +16,11 @@ Ext.define('adnat.model.ContactRequest', {
                 id: 3,
                 name: 'message',
                 type: 'string'
+            },
+            {
+                id: 4,
+                name: 'userToken',
+                type: 'string'
             }
         ],
         validations: [

@@ -55,6 +55,7 @@ Ext.define("adnat.view.Contact", {
                     var errors = contactRequest.validate();
                     if (errors.isValid()) {
                         if (window.navigator.onLine) {
+                            contactRequest.set('userToken', AppAuth.getToken());
                             contactRequest.save();
                             this.up('panel').reset();
                             Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
