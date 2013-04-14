@@ -13,11 +13,10 @@ Ext.define("adnat.view.Welcome", {
         scrollable: true,
         layout: {
             type: 'vbox',
-            align: 'center'
+            pack: 'top'
         },
         items: [
             {
-                maxWidth: '300px',
                 html: [
                     "<div class=\"centered\">",
                     "<h1>Welcome to ADNAT</h1>",
@@ -34,13 +33,15 @@ Ext.define("adnat.view.Welcome", {
             },
             {
                 xtype: 'panel',
-                maxWidth: '350px',
+                layout: {
+                    type: 'vbox',
+                    pack: 'top'
+                },
                 items: [
                     {
                         xtype: 'fieldset',
                         title: 'ADNAT Login',
                         instructions: 'Login to take ADNAT',
-                        maxWidth: '350px',
                         items: [
                             {
                                 xtype: 'emailfield',
@@ -57,7 +58,6 @@ Ext.define("adnat.view.Welcome", {
                     },
                     {
                         xtype: 'button',
-                        maxWidth: '350px',
                         text: 'Login',
                         ui: 'action',
                         handler: function() {

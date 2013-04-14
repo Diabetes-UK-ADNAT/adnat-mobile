@@ -27,6 +27,7 @@ Ext.define("adnat.view.Util", {
                 items: [
                     {
                         xtype: 'button',
+                        margin: '30 0 0 0px',
                         text: 'Submit My Survey Now',
                         disabled: !AppAuth.isLoggedIn(),
                         ui: 'action',
