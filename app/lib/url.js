@@ -1,5 +1,5 @@
 var AppUrl = {
-    isDev: true,
+    isDev: false,
     'assessments': function() {
         return this.isDev ? 'https://api.myadnat.co.uk:4443/v1/assessments' : 'https://api.myadnat.co.uk/v1/assessments';
     }
