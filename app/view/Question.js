@@ -68,7 +68,7 @@ Ext.define("adnat.view.Question", {
                     {
                         id: 'title',
                         padding: '1.2em',
-                        html: null,
+                        html: null
                     },
                     {
                         xtype: 'fieldset',

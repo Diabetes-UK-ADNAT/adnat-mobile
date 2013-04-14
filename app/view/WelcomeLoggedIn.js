@@ -44,7 +44,7 @@ Ext.define("adnat.view.WelcomeLoggedIn", {
                     "</p>",
                     "<p>",
                     "The Utility tab has options to submit your ADNAT assessment, clear your responses and log out.",
-                    "</p>",
+                    "</p>"
                 ].join("")
             },
             {
