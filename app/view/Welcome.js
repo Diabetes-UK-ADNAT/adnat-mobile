@@ -4,7 +4,8 @@ Ext.define("adnat.view.Welcome", {
     requires: [
         'Ext.TitleBar',
         'Ext.field.Email',
-        'Ext.field.Password'
+        'Ext.field.Password',
+        'Ext.util.DelayedTask'
     ],
     config: {
         title: 'Welcome',
@@ -66,31 +67,38 @@ Ext.define("adnat.view.Welcome", {
                             if (errors.isValid()) {
                                 if (window.navigator.onLine) {
                                     Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Logging in...'});
-                                    Ext.Ajax.request({
-                                        url: AppUrl.login(),
-                                        actionMethods: 'POST',
-                                        async: false,
-                                        params: {
-                                            email: loginCredentials.get('email'),
-                                            password: loginCredentials.get('password'),
-                                            appKey: AppConstants.APP_KEY
-                                        },
-                                        success: function(response, opts) {
-                                            log(response);
-                                            log(opts);
-                                            Ext.Viewport.unmask();
-                                            var data = Ext.JSON.decode(response.responseText.trim());
-                                            AppAuth.setToken(data.userToken); 
-                                            AppAuth.setPrincipal(data.userName); 
-                                            adnat.app.getController('QuestionController').initMainView();
-                                        },
-                                        failure: function(response, opts) {
-                                            log(response);
-                                            log(opts);
-                                            Ext.Viewport.unmask();
-                                            Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
-                                        }
+                                    var task = Ext.create('Ext.util.DelayedTask', function() {
+                                        Ext.Ajax.request({
+                                            url: AppUrl.login(),
+                                            actionMethods: 'POST',
+                                            async: false,
+                                            params: {
+                                                email: loginCredentials.get('email'),
+                                                password: loginCredentials.get('password'),
+                                                appKey: AppConstants.APP_KEY
+                                            },
+                                            success: function(response, opts) {
+                                                log(response);
+                                                log(opts);
+                                                Ext.Viewport.unmask();
+                                                var data = Ext.JSON.decode(response.responseText.trim());
+                                                if (data.userToken !== null) {
+                                                    AppAuth.setToken(data.userToken);
+                                                    AppAuth.setPrincipal(data.userName);
+                                                    adnat.app.getController('QuestionController').initMainView();
+                                                } else {
+                                                    Ext.Msg.alert("Login Failed", "<b>The username or password <br>you entered is incorrect.</b><p>Please try again.");
+                                                }
+                                            },
+                                            failure: function(response, opts) {
+                                                log(response);
+                                                log(opts);
+                                                Ext.Viewport.unmask();
+                                                Ext.Msg.alert("Login Error", "Server responded with error.  Please try again later.");
+                                            }
+                                        });
                                     });
+                                    task.delay(10);
                                     this.up('panel').up('panel').reset();
                                 } else {
                                     Ext.Msg.alert(
