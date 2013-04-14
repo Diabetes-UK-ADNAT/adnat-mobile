@@ -24,6 +24,7 @@ Ext.define('adnat.controller.ResultsController', {
         Ext.getCmp('pScoreRed').hide();
         Ext.getCmp('pScoreYellow').hide();
         Ext.getCmp('pScoreGreen').hide();
+        Ext.getCmp('submittedDate').hide();
     },
     onShow: function() {
         this.hideComponents();
@@ -50,6 +51,19 @@ Ext.define('adnat.controller.ResultsController', {
             var gsc = getGeneralScoreColor();
             Ext.getCmp('gScore' + gsc).show();
             Ext.getCmp('pScore' + psc).show();
+
+            var lastSyncedMessage = null;
+            var ls = AppSettings.getLastSynced();
+            if (ls === null) {
+                lastSyncedMessage = 'Survey has not been submitted.';
+            } else {
+                lsDate = new Date();
+                lsDate.setTime(ls);
+                lastSyncedMessage = 'Survey submitted on <br>' + lsDate.toISOString();
+            }
+
+            Ext.getCmp('submittedDate').setHtml(lastSyncedMessage);
+            Ext.getCmp('submittedDate').show();
             Ext.Viewport.unmask();
         });
     }

@@ -96,6 +96,11 @@ Ext.define("adnat.view.Results", {
                 id: 'pScore',
                 padding: '1.0em',
                 html: null
+            },
+            {
+                id: 'submittedDate',
+                padding: '1.0em',
+                html: null
             }
         ]
     }
