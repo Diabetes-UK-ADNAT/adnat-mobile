@@ -9,14 +9,14 @@ Ext.define('adnat.store.Settings', {
         autoLoad: true
     },
     info: function() {
-        console.log("Settings Store info");
-        console.log(this.getAt(0));
-        console.log(this.getCount());
-        console.log(this.getTotalCount());
-        console.log(this.getData());
+        log("Settings Store info");
+        log(this.getAt(0));
+        log(this.getCount());
+        log(this.getTotalCount());
+        log(this.getData());
         var a = this.getData();
         for (var i = 0; i < a.length; i++) {
-            console.log(a[i]);
+            log(a[i]);
         }
     },
     saveSetting: function(s) {

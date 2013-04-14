@@ -33,7 +33,7 @@ Ext.define('adnat.store.Questions', {
         // leaves ids in place for some reason  this.sync();
     },
     info: function() {
-        console.log("Question Store info");
-        console.log(this.getTotalCount());
+        log("Question Store info");
+        log(this.getTotalCount());
     }
 });

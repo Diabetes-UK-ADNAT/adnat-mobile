@@ -43,8 +43,7 @@ Ext.define('adnat.model.ContactRequest', {
         ],
         proxy: {
             type: 'rest',
-//            url: 'https://api.myadnat.co.uk/v1/contactrequests' //PROD
-            url: 'https://api.myadnat.co.uk:4443/v1/contactrequests' //DEV
+            url: AppUrl.contact()
         }
     }
 });

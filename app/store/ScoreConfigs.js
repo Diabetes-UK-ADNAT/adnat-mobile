@@ -26,15 +26,15 @@ Ext.define('adnat.store.ScoreConfigs', {
 		]
 	},
 	info : function() {
-		console.log("ScoreConfigs Store info");
-		console.log(this.getTotalCount());
+		log("ScoreConfigs Store info");
+		log(this.getTotalCount());
 		/*
-		console.log(this.getAt(0));
-		console.log(this.getCount());
-		console.log(this.getData());
+		log(this.getAt(0));
+		log(this.getCount());
+		log(this.getData());
 		var a = this.getData();
 		for (var i=0; i<a.length; i++) {
-			console.log(a[i]);
+			log(a[i]);
 		}
 		*/
 	},

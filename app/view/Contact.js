@@ -67,7 +67,7 @@ Ext.define("adnat.view.Contact", {
                                     );
                         }
                     } else {
-                        console.log(errors);
+                        log(errors);
                         var data = "";
                         errors.each(function(item, index, length) {
                             data = data + item.getMessage() + '<br>';

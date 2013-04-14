@@ -33,6 +33,11 @@
             "remote": true
         },
         {
+            "path": "app/lib/url.js",
+            "bundle": false,
+            "remote": true
+        },
+        {
             "path": "app/lib/auth.js",
             "bundle": false,
             "remote": true

@@ -9,14 +9,14 @@ Ext.define('adnat.store.Responses', {
         autoLoad: true
     },
     info: function() {
-        console.log("Response Store info");
-        console.log(this.getAt(0));
-        console.log(this.getCount());
-        console.log(this.getTotalCount());
-        console.log(this.getData());
+        log("Response Store info");
+        log(this.getAt(0));
+        log(this.getCount());
+        log(this.getTotalCount());
+        log(this.getData());
         var a = this.getData();
         for (var i = 0; i < a.length; i++) {
-            console.log(a[i]);
+            log(a[i]);
         }
     },
     saveResponse: function(r) {
