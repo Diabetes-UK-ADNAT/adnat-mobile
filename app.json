@@ -70,12 +70,16 @@
     "appCache": {
         "cache": [
             "index.html",
+            "app.js",
+            "app.json",
             "resources/data/scoreconfigs.json",
             "resources/data/questions.json",
             "app/lib/score.js",
             "app/lib/util.js",
             "app/lib/assessment.js",
             "app/lib/settings.js",
+            "app/lib/url.js",
+            "app/lib/auth.js",
             "app/lib/question.js",
             "app/lib/add2home.js",
             "resources/images/pggray.png",
@@ -87,7 +91,11 @@
             "resources/images/tl-red.png",
             "resources/images/adnatpic3.png",
             "resources/images/adnatpic4.1.png",
-            "resources/images/adnatpic4.png"
+            "resourceso/images/adnatpic4.png",
+            "resources/css/add2home.css",
+            "resources/css/app.css",
+            "resources/css/adnat.css"
+
         ],
         "network": [
             "*"
