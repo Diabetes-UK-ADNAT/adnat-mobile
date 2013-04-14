@@ -33,8 +33,10 @@ function getPsychScoreColor() {
     return pscoreColor;
 }
 
+var _myScoringCallback = null;
 
-function score() {
+function score(callback) {
+    _myScoringCallback = callback;
     _isScored = false;
     pScore = 0;
     gScore = 0;
@@ -113,6 +115,7 @@ function doScoring() {
     setColors();
     log('gScore=' + gScore + ',pScore=' + pScore + ',gscoreColor=' + gscoreColor + ',pscoreColor=' + pscoreColor);
     _isScored = true; //fixme fire scored event
+    _myScoringCallback(_isScored);
 }
 
 

@@ -32,14 +32,13 @@ Ext.define("adnat.view.Util", {
                         ui: 'action',
                         handler: function() {
                             Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Submitting...'});
-                            score();
-                            var task = Ext.create('Ext.util.DelayedTask', function() {
+                            score(function() {
                                 var gs = getGeneralScore();
                                 var ps = getPsychScore();
                                 postAssessment(ps, gs, true); //force to send regardless of state.  anytime after scoring is _really_ done
+                                Ext.Msg.alert("Submit Survey", '<p>Your survey was submitted successfully. <br>' + new Date().toISOString());
                                 Ext.Viewport.unmask();
                             });
-                            task.delay(1900);
                         }
                     },
                     {
