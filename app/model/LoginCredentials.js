@@ -33,8 +33,7 @@ Ext.define('adnat.model.LoginCredentials', {
         ],
         proxy: {
             type: 'rest',
-//            url: 'https://auth.myadnat.co.uk/login' //PROD
-            url: 'https://auth.myadnat.co.uk:4443/login' //DEV
+            url: AppUrl.login()
         }
     }
 });

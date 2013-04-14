@@ -1,7 +1,8 @@
 var AppConstants = {
     REGEX_URL: /^(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/,
     REGEX_EMAIL: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/,
-    REGEX_NUMBER: /^\s*(\-|\+)?(\d+|(\d*(\.\d*)))\s*$/
+    REGEX_NUMBER: /^\s*(\-|\+)?(\d+|(\d*(\.\d*)))\s*$/,
+    APP_KEY: '8C5F216E-6A3E-444B-8371-FC872A775112'
 };
 
 var AppSettings = {

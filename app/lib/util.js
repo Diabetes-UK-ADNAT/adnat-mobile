@@ -1,7 +1,5 @@
-
-
 function log(m) {
-    console.log(m);
+    //console.log(m);
 }
 
 function makeArray(v) {

@@ -63,7 +63,7 @@ Ext.define("adnat.view.Welcome", {
                         handler: function() {
                             var loginCredentials = Ext.ModelMgr.create(this.up('panel').up('panel').getValues(), 'adnat.model.LoginCredentials');
                             var errors = loginCredentials.validate();
-                            if (true || errors.isValid()) {
+                            if (errors.isValid()) {
                                 if (window.navigator.onLine) {
                                     Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Logging in...'});
                                     Ext.Ajax.request({
@@ -72,14 +72,16 @@ Ext.define("adnat.view.Welcome", {
                                         async: false,
                                         params: {
                                             email: loginCredentials.get('email'),
-                                            password: loginCredentials.get('password')
+                                            password: loginCredentials.get('password'),
+                                            appKey: AppConstants.APP_KEY
                                         },
                                         success: function(response, opts) {
                                             log(response);
                                             log(opts);
                                             Ext.Viewport.unmask();
-                                            AppAuth.setToken('TOKEN FIXME'); //FIXME set real token
-                                            AppAuth.setPrincipal('PRINCIPAL FIXME'); //FIXME set real token
+                                            var data = Ext.JSON.decode(response.responseText.trim());
+                                            AppAuth.setToken(data.userToken); 
+                                            AppAuth.setPrincipal(data.userName); 
                                             adnat.app.getController('QuestionController').initMainView();
                                         },
                                         failure: function(response, opts) {
