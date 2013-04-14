@@ -7,39 +7,60 @@ var AppConstants = {
 var AppSettings = {
     '_ASSESSMENT_LAST_SYNC': 0,
     '_ASSESSMENT_LAST_UPDATED': 1,
+    '_USER_TOKEN': 2,
     'updateLastSynced': function() {
         // set last updated //fixme only set on success sync
         settings = Ext.getStore('Settings');
         settings.load();
-        lastSync = settings.findSettingRecordByName(this._ASSESSMENT_LAST_SYNC);
-        lastSync.set('value', new Date().getTime());
-        settings.saveSetting(lastSync);
+        setting = settings.findSettingRecordByName(this._ASSESSMENT_LAST_SYNC);
+        setting.set('value', new Date().getTime());
+        settings.saveSetting(setting);
     },
     'updateLastUpdated': function() {
         settings = Ext.getStore('Settings');
         settings.load();
-        lastUpdated = settings.findSettingRecordByName(this._ASSESSMENT_LAST_UPDATED);
-        lastUpdated.set('value', new Date().getTime());
-        settings.saveSetting(lastUpdated);
+        setting = settings.findSettingRecordByName(this._ASSESSMENT_LAST_UPDATED);
+        setting.set('value', new Date().getTime());
+        settings.saveSetting(setting);
     },
     'clearLastUpdated': function() {
         settings = Ext.getStore('Settings');
         settings.load();
-        lastUpdated = settings.findSettingRecordByName(this._ASSESSMENT_LAST_UPDATED);
-        lastUpdated.set('value', null);
-        settings.saveSetting(lastUpdated);
+        setting = settings.findSettingRecordByName(this._ASSESSMENT_LAST_UPDATED);
+        setting.set('value', null);
+        settings.saveSetting(setting);
+    },
+    'setUserToken': function(token) {
+        settings = Ext.getStore('Settings');
+        settings.load();
+        setting = settings.findSettingRecordByName(this._USER_TOKEN);
+        setting.set('value', token);
+        settings.saveSetting(setting);
+    },
+    'clearUserToken': function() {
+        settings = Ext.getStore('Settings');
+        settings.load();
+        setting = settings.findSettingRecordByName(this._USER_TOKEN);
+        setting.set('value', null);
+        settings.saveSetting(setting);
+    },
+    'getUserToken': function() {
+        settings = Ext.getStore('Settings');
+        settings.load();
+        setting = settings.findSettingRecordByName(this._USER_TOKEN);
+        return setting.get('value');
     },
     'getLastSynced': function() {
         settings = Ext.getStore('Settings');
         settings.load();
-        lastSync = settings.findSettingRecordByName(this._ASSESSMENT_LAST_SYNC);
-        return lastSync.get('value');
+        setting = settings.findSettingRecordByName(this._ASSESSMENT_LAST_SYNC);
+        return setting.get('value');
     },
     'getLastUpdated': function() {
         settings = Ext.getStore('Settings');
         settings.load();
-        lastUpdated = settings.findSettingRecordByName(this._ASSESSMENT_LAST_UPDATED);
-        return lastUpdated.get('value');
+        setting = settings.findSettingRecordByName(this._ASSESSMENT_LAST_UPDATED);
+        return setting.get('value');
     }
 };
 

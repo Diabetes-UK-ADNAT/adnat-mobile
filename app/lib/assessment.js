@@ -59,7 +59,7 @@ function prep() {
     var assessment = new Object();
     assessment.responses = assessmentResponses;
     assessment.score = new Object();
-    assessment.userToken = AppAuth.token();
+    assessment.userToken = AppAuth.getToken();
     assessment.score.psych = getPsychScore();
     assessment.score.psychColor = getPsychScoreColor();
     assessment.score.general = getGeneralScore();

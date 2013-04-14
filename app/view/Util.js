@@ -29,7 +29,6 @@ Ext.define("adnat.view.Util", {
                         xtype: 'button',
                         margin: '30 0 0 0px',
                         text: 'Submit My Survey Now',
-                        disabled: !AppAuth.isLoggedIn(),
                         ui: 'action',
                         handler: function() {
                             Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Submitting...'});
@@ -134,7 +133,7 @@ Ext.define("adnat.view.Util", {
                                     "Confirmation", "Are you sure you want to delete all of your data and logout? <br><i>This action can not be undone</i>",
                                     function(answer) {
                                         if (answer === 'yes') {
-                                            window.localStorage.clear()
+                                            window.localStorage.clear();
                                             location.reload();
                                         }
                                     }

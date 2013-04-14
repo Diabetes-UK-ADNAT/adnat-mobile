@@ -1,9 +1,15 @@
 var AppAuth = {
     'isLoggedIn': function() {
-        return false;
+        return this.getToken() !== null;
     },
-    'token': function() {
-        return 'MYTOKENFROMAUTH';
+    'getToken': function() {
+        return AppSettings.getUserToken();
+    },
+    'setToken': function(val) {
+        AppSettings.setUserToken(val);
+    },
+    'clearToken': function() {
+        AppSettings.clearUserToken();
     }
 };
 

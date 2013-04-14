@@ -66,6 +66,7 @@ Ext.define("adnat.view.Welcome", {
                             if (true || errors.isValid()) {
                                 if (window.navigator.onLine) {
                                     Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Logging in...'});
+                                    AppAuth.clearToken();
                                     Ext.Ajax.request({
                                         url: AppUrl.login(),
                                         actionMethods: 'POST',
@@ -78,6 +79,8 @@ Ext.define("adnat.view.Welcome", {
                                             log(response);
                                             log(opts);
                                             Ext.Viewport.unmask();
+                                            //
+                                            AppAuth.setToken('FIXME'); //FIXME set real token
                                             adnat.app.getController('QuestionController').initMainView();
                                         },
                                         failure: function(response, opts) {
