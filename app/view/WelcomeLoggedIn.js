@@ -5,10 +5,17 @@ Ext.define("adnat.view.WelcomeLoggedIn", {
         'Ext.TitleBar'
     ],
     config: {
-        title: 'Server Unavailable',
+        title: 'Welcome',
         iconCls: 'home',
         styleHtmlContent: true,
         scrollable: true,
+        listeners: {
+            show: function() {
+                adnat.app.getController('WelcomeLoggedInController').onShow(event);
+            },
+            hide: function() {
+            }
+        },
         items: [
             {
                 html: [
@@ -23,22 +30,24 @@ Ext.define("adnat.view.WelcomeLoggedIn", {
                 title: 'ADNAT'
             },
             {
+                id: 'userName',
+                cls: 'centered'
+            },
+            {
+                cls: 'centered',
                 html: [
-                    "<div class=\"centered\">",
-                    "<h1>Welcome</h1>",
                     "<p>",
                     "Logged in directions here",
                     "</p>",
-                   "<p>",
+                    "<p>",
                     "Logged in directions here",
                     "</p>",
-                   "<p>",
+                    "<p>",
                     "Logged in directions here",
                     "</p>",
-                   "<p>",
+                    "<p>",
                     "Logged in directions here",
                     "</p>",
-                    "</div>"
                 ].join("")
             },
             {

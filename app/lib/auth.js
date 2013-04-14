@@ -8,8 +8,15 @@ var AppAuth = {
     'setToken': function(val) {
         AppSettings.setUserToken(val);
     },
-    'clearToken': function() {
+    'clear': function() {
         AppSettings.clearUserToken();
+        AppSettings.clearUserName();
+    },
+    'getPrincipal': function() {
+        return AppSettings.getPrincipal();
+    },
+    'setPrincipal': function(val) {
+        return AppSettings.setPrincipal(val);
     }
 };
 
