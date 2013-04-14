@@ -1,6 +1,6 @@
 var AppAuth = {
     'isLoggedIn': function() {
-        return true;
+        return false;
     },
     'token': function() {
         return 'MYTOKENFROMAUTH';

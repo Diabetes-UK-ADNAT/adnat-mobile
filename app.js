@@ -78,15 +78,22 @@ Ext.application({
      '1496x2048': 'resources/startup/1496x2048.png'
      },
      */
+
     launch: function() {
-        Ext.getStore('Settings').load();
-        Ext.Viewport.add(Ext.create('adnat.view.Main'));
-        Ext.Ajax.on('beforerequest', function(conn, options, eOptions) {
-            //options.headers['X-Auth-Token'] = AppAuth.token();
-        }, this);
-        Ext.fly('appLoadingIndicator').destroy();
-        // fixme go to questions
-        // Ext.getCmp('mainTabPanel').setActiveItem(1);
+        Ext.getStore('Settings').load(function() {
+            if (AppAuth.isLoggedIn()) {
+                adnat.app.getController('QuestionController').initMainView();
+            } else {
+                Ext.Viewport.add(Ext.create('adnat.view.Welcome'));
+            }
+
+            Ext.Ajax.on('beforerequest', function(conn, options, eOptions) {
+                //options.headers['X-Auth-Token'] = AppAuth.token();
+            }, this);
+            Ext.fly('appLoadingIndicator').destroy();
+            // fixme go to questions
+            // Ext.getCmp('mainTabPanel').setActiveItem(1);
+        });
     },
     onUpdated: function() {
         Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Updating Application...'});

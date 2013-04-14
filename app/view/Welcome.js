@@ -63,25 +63,27 @@ Ext.define("adnat.view.Welcome", {
                         handler: function() {
                             var loginCredentials = Ext.ModelMgr.create(this.up('panel').up('panel').getValues(), 'adnat.model.LoginCredentials');
                             var errors = loginCredentials.validate();
-                            if (errors.isValid()) {
+                            if (true || errors.isValid()) {
                                 if (window.navigator.onLine) {
+                                    Ext.Viewport.mask({xtype: 'loadmask', indicator: false, message: 'Logging in...'});
                                     Ext.Ajax.request({
                                         url: AppUrl.login(),
                                         actionMethods: 'POST',
                                         async: false,
                                         params: {
-                                            email: 'email@example.com',
-                                            password: 'mypassword'
+                                            email: loginCredentials.get('email'),
+                                            password: loginCredentials.get('password')
                                         },
                                         success: function(response, opts) {
                                             log(response);
                                             log(opts);
-                                            //welcome text
-                                            //Ext.Viewport.setActiveItem(Ext.create('adnat.view.WelcomeLoggedIn'));
+                                            Ext.Viewport.unmask();
+                                            adnat.app.getController('QuestionController').initMainView();
                                         },
                                         failure: function(response, opts) {
                                             log(response);
                                             log(opts);
+                                            Ext.Viewport.unmask();
                                             Ext.Msg.alert("Thank You", "Thank you, we will contact you within 24 hours. <br><b>If you are having an emergency, please contact your doctor or the emergency room.</b>");
                                         }
                                     });

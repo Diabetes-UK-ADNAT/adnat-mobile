@@ -23,13 +23,15 @@ Ext.define('adnat.controller.QuestionController', {
             }
         }
     },
-    launch: function() {
+    initMainView: function() {
         Ext.getStore('Questions').load({
             callback: this.onQuestionsStoreLoad,
             scope: this
         });
     },
     onQuestionsStoreLoad: function() {
+        Ext.Viewport.removeAll();
+        Ext.Viewport.add(Ext.create('adnat.view.Main')); // must have store to init this main view
         var currentOrdinal = Ext.getStore('Responses').getCount();
         this.showQuestion(currentOrdinal, 0);
     },
