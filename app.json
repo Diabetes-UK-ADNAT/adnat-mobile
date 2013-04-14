@@ -72,6 +72,9 @@
             "index.html",
             "app.js",
             "app.json",
+            "resources/css/add2home.css",
+            "resources/css/app.css",
+            "resources/css/adnat.css",
             "resources/data/scoreconfigs.json",
             "resources/data/questions.json",
             "app/lib/score.js",
@@ -91,11 +94,7 @@
             "resources/images/tl-red.png",
             "resources/images/adnatpic3.png",
             "resources/images/adnatpic4.1.png",
-            "resourceso/images/adnatpic4.png",
-            "resources/css/add2home.css",
-            "resources/css/app.css",
-            "resources/css/adnat.css"
-
+            "resources/images/adnatpic4.png"
         ],
         "network": [
             "*"
