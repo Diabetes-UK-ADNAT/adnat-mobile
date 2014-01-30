@@ -59,7 +59,7 @@ Ext.define("adnat.view.Welcome", {
                     },
                     {
                         xtype: 'button',
-                        text: 'Login',
+                        text: 'Patient Login',
                         ui: 'action',
                         handler: function() {
                             var loginCredentials = Ext.ModelMgr.create(this.up('panel').up('panel').getValues(), 'adnat.model.LoginCredentials');
